@@ -1,0 +1,95 @@
+@import '../../../../constants';
+$height: 70px;
+
+.navbarDefault {
+  height: $height;
+  background-color: $white!important;
+  border: none!important;
+}
+.navbarHeader {
+  height: $height;
+}
+.navbarNav {
+  float: right!important;
+  margin-right: 80px!important;
+  >li{
+    height: $height;
+  }
+}
+.navbarBrand {
+  @extend .vCenter;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  height: auto!important;
+  font-family: $fontABold;
+  font-size: 16px;
+  color: $darkGray!important;
+  float: left;
+  @media#{$isTablet}{
+    font-size: 14px !important;
+  }
+  &::before{
+    content: "";
+    @extend .icon-layout;
+    @include sprite($layout-phone_icon);
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 1px;
+  }
+}
+
+.navbarCollapse{
+  border: none;
+}
+.navbarNavAnchor {
+  @extend .vCenter;
+  font-family: $fontABold;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  font-size: 12px;
+  color: $darkGray;
+  text-transform: uppercase;
+  &:hover {
+    color: $black;
+    background-color: initial;
+  }
+}
+.socialNetwork {
+  margin: 0 -15px;
+  position: relative;
+  float: right;
+  padding: 0;
+  li{
+    height: $height;
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    list-style: none;
+  }
+}
+.sm_icon {
+  @extend .fCenter;
+}
+.facebook {
+  @extend .icon-layout;
+  @include sprite($layout-sm_facebook);
+  @extend .sm_icon;
+}
+.portfolio {
+  @extend .icon-layout;
+  @include sprite($layout-sm_portfolio);
+  @extend .sm_icon;
+}
+@media#{$isPhone}{
+  .navbarCollapse{
+    background: $white;
+    position: relative;
+    z-index: 1000;
+  }
+  .navbarNav, .socialNetwork {
+    float: none!important;
+    margin-left: 35px!important;
+    margin-right: 0!important;
+  }
+}
