@@ -2,20 +2,41 @@
 
 export default {
   block1: {
-    texts: {
-      text1: 'LA CLÍNICA DE LA PIEL',
-      text2: 'La clínica',
-    },
-    links: {
-      link1: {
-        href: '/la-clinica',
-        title: '',
-      },
-    },
-    images: {
-      image1: {
-        src: '',
-        alt: 'la clinica de la piel',
+    carousels: {
+      carousel1: {
+        meta: {
+          sliderID: 'slider_home',
+          interval: 8000,
+          showIndicators: false,
+          showControls: true,
+        },
+        slides: [{
+          classes: {
+            class1: 'slide1',
+          },
+          texts: {
+            text1: 'LA CLÍNICA DE LA PIEL',
+          },
+          links: {
+            link1: {
+              href: '/nosotros',
+              title: 'La clínica',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide2',
+          },
+          texts: {
+            text1: 'LA CLÍNICA DE LA PIEL',
+          },
+          links: {
+            link1: {
+              href: '/nosotros',
+              title: 'La clínica',
+            },
+          },
+        }],
       },
     },
   },
