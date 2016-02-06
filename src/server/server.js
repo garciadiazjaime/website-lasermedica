@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 
 import config from '../../config';
 import apiRoutes from './helpers/api';
-import routes from '../shared/routes';
+import routes from '../shared/config/routes';
 
 const app = express();
 

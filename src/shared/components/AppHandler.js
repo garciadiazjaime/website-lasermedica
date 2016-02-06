@@ -1,8 +1,8 @@
 import React from 'react';
 
-import menuData from '../menuData';
-import Menu1 from './layout/menu/menu1';
-import Footer1 from './layout/footer/footer1';
+import sitemap from '../config/sitemap';
+import MainMenu from './layout/menu/menu1';
+import Footer from './layout/footer/footer1';
 import scrollUtil from '../utils/scroll';
 import menuUtil from '../utils/menu';
 
@@ -48,9 +48,9 @@ export default class AppHandler extends React.Component {
 
   render() {
     return (<div>
-      <Menu1 items={menuData.items.children} icons={menuData.icons} onClick={this.clickHandler} />
+      <MainMenu items={sitemap.items.children} icons={sitemap.icons} onClick={this.clickHandler} />
       {this.props.children}
-      <Footer1 items={menuData.items.children} addresses={menuData.addresses}/>
+      <Footer items={sitemap.items.children} addresses={sitemap.addresses}/>
     </div>);
   }
 }
