@@ -1,8 +1,8 @@
-import AppHandler from './components/AppHandler';
-import HomeSection from './components/sections/home';
-import AboutSection from './components/sections/about';
-import ServicesSection from './components/sections/services';
-import ContactSection from './components/sections/contact';
+import AppHandler from '../../components/AppHandler';
+import HomeSection from '../../components/sections/home';
+import AboutSection from '../../components/sections/about';
+import ServicesSection from '../../components/sections/services';
+import ContactSection from '../../components/sections/contact';
 
 
 export default {
