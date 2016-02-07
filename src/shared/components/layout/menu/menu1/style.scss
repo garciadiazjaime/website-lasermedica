@@ -23,7 +23,7 @@ $height: 70px;
   height: auto!important;
   font-family: $fontABold;
   font-size: 16px;
-  color: $darkGray!important;
+  color: $blue!important;
   float: left;
   @media#{$isTablet}{
     font-size: 14px !important;
@@ -48,7 +48,7 @@ $height: 70px;
   padding-top: 0!important;
   padding-bottom: 0!important;
   font-size: 12px;
-  color: $darkGray;
+  color: $blue;
   text-transform: uppercase;
   &:hover {
     color: $black;
@@ -73,12 +73,7 @@ $height: 70px;
 }
 .facebook {
   @extend .icon-layout;
-  @include sprite($layout-sm_facebook);
-  @extend .sm_icon;
-}
-.portfolio {
-  @extend .icon-layout;
-  @include sprite($layout-sm_portfolio);
+  @include sprite($sprites-imagen-facebook);
   @extend .sm_icon;
 }
 @media#{$isPhone}{

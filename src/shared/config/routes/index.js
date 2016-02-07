@@ -7,7 +7,7 @@ const { items } = sitemap;
 const routes = items.children.map((item, index) => {
   return (<Route path={item.url} component={item.component} key={index} />);
 });
-const history = process.env.NODE_ENV === 'DEV' ? createBrowserHistory() : null;
+const history = process.env.TIER === 'FE' ? createBrowserHistory() : null;
 
 
 export default(
