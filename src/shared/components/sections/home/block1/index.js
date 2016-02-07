@@ -4,6 +4,8 @@ import Carousel from '../../../elements/carousel';
 import Repeat from '../../../elements/repeat';
 import Template from './template';
 
+// const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+
 
 export default class Block1 extends React.Component {
 
