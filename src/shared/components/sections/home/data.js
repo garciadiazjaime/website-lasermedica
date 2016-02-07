@@ -60,16 +60,16 @@ export default {
     },
     links: {
       link1: {
-        href: '/servicios/dermatologia-certificados',
-        title: '',
+        href: '/servicios/dermatologia-cosmetica',
+        title: 'Dermatología Cosmetíca',
       },
       link2: {
-        href: '/servicios/dermatologia-cosmetica',
-        title: '',
+        href: '/equipo/dermatologos-clinica',
+        title: 'Dermatología Clínica',
       },
       link3: {
-        href: '/equipo/dermatologos-clinica',
-        title: '',
+        href: '/servicios/dermatologia-certificados',
+        title: 'Dermatólogos Certificados',
       },
       link4: {
         href: '/ubicacion/tijuana',
@@ -101,9 +101,8 @@ export default {
       text1: 'Contamos con una amplia variedad de productos para tratamientos dermatológicos, cremas y cuidado de la piel.',
       text2: 'En Tijuana:',
       text3: '(664) 634-1615',
-      text4: 'LLAMANÓS',
-      text5: 'Visítanos en:',
-      text6: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
+      text4: 'Visítanos en:',
+      text5: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
     },
     links: {
       link1: {
@@ -124,6 +123,67 @@ export default {
   },
 
   block4: {
+    carousels: {
+      carousel1: {
+        meta: {
+          sliderID: 'slider_brands',
+          interval: 80000,
+          showIndicators: false,
+          showControls: true,
+        },
+        slides: [{
+          classes: {
+            class1: 'slide1',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'la roche posay',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide2',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'avene',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide3',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'vichy',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide4',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'cetaphil',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide5',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }],
+      },
+    },
     images: {
       image1: {
         src: '',
@@ -139,11 +199,11 @@ export default {
       },
       image4: {
         src: '',
-        alt: 'cetaphil',
+        alt: '',
       },
       image5: {
         src: '',
-        alt: 'a derma',
+        alt: '',
       },
     },
   },
@@ -152,46 +212,23 @@ export default {
     texts: {
       text1: 'TRATAMIENTOS',
       text2: 'Dermatológicos',
-      text3: 'Depilación Laser ',
-      text4: 'tratamiento 360',
-      text5: 'Acné',
-      text6: 'Melasma',
     },
-    links: {
-      link1: {
-        href: '/servicios/depilacion-laser',
-        title: 'depilacion laser',
-      },
-      link2: {
-        href: '/servicios/tratamiento-360',
-        title: 'tratamiento 360',
-      },
-      link3: {
-        href: '/servicios/acne',
-        title: 'acné',
-      },
-      link4: {
-        href: '/servicios/melasma',
-        title: 'melasma',
-      },
-    },
-    images: {
-      image1: {
-        src: '',
-        alt: 'depilacion laser',
-      },
-      image2: {
-        src: '',
-        alt: 'tratamiento 360',
-      },
-      image3: {
-        src: '',
-        alt: 'acne',
-      },
-      image4: {
-        src: '',
-        alt: 'melasma',
-      },
-    },
+    items: [{
+      title: 'depilacion laser',
+      href: '/servicios/depilacion-laser',
+      className: 'item1',
+    }, {
+      title: 'tratamiento 360',
+      href: '/servicios/tratamiento-360',
+      className: 'item2',
+    }, {
+      title: 'Acné',
+      href: '/servicios/acne',
+      className: 'item3',
+    }, {
+      title: 'Melasma',
+      href: '/servicios/melasma',
+      className: 'item4',
+    }],
   },
 };

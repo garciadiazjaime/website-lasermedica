@@ -1,0 +1,12 @@
+@import '../../../../theme/constants.scss';
+
+// ---- IMAGES
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-logo-farmacia);
+}
+
+.image2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-productos);
+}

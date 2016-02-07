@@ -1,0 +1,32 @@
+@import '../../../../theme/constants.scss';
+
+// ---- brands slider
+.slider1 {
+  background-size: cover;
+  height: 500px;
+}
+
+.slide1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-marca-le-roche-posay);
+}
+
+.slide2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-marca-avene);
+}
+
+.slide3 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-marca-vichy);
+}
+
+.slide4 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-marca-cetaphil);
+}
+
+.slide5 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-marca-aderma);
+}

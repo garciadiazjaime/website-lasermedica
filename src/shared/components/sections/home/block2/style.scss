@@ -1,0 +1,13 @@
+@import '../../../../theme/constants.scss';
+@import '../../../../theme/wrappers/wrappers.scss';
+
+// ---- IMAGES
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-doctor);
+}
+
+.image2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-enfermeras);
+}

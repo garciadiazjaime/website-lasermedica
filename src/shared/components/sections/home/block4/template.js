@@ -4,16 +4,15 @@ import { Link } from 'react-router';
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 
-export default class HomeCarouselTemplate extends React.Component {
+export default class HomeBrandsTemplate extends React.Component {
 
   render() {
-    const { classes, texts, links } = this.props.data;
-    const statusClass = this.props.index ? 'active' : null;
-    const className = ['item', style[classes.class1], statusClass].join(' ');
+    const { classes, links } = this.props.data;
+    const statusClass = !this.props.index ? 'active' : null;
+    const className = ['item', statusClass].join(' ');
 
     return (<div className={className}>
-      <div>
-        <h2>{texts.text1}</h2>
+      <div className={style[classes.class1]}>
         <Link to={links.link1.href} title={links.link1.title}>
           {links.link1.title}
         </Link>
@@ -22,7 +21,7 @@ export default class HomeCarouselTemplate extends React.Component {
   }
 }
 
-HomeCarouselTemplate.propTypes = {
+HomeBrandsTemplate.propTypes = {
   data: React.PropTypes.object.isRequired,
   index: React.PropTypes.number.isRequired,
 };

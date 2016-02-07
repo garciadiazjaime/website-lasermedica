@@ -8,7 +8,7 @@ var replace = require('gulp-replace');
 
 gulp.task('sprites:generate', () => {
   return sprity.src({
-    src: './resources/images/**/*.{png,jpg}',
+    src: './resources/**/*.{png,jpg}',
     style: './sprite.scss',
     dimension: [{
       ratio: 1, dpi: 72
@@ -18,7 +18,7 @@ gulp.task('sprites:generate', () => {
     margin: 0,
     processor: 'sass',
   })
-  .pipe(gulpif('*.png', gulp.dest('./public/images/sprites'), gulp.dest('./src/shared')))
+  .pipe(gulpif('*.png', gulp.dest('./public/images/sprites'), gulp.dest('./src/shared/theme')))
 });
 
 gulp.task('clean:sprites', () => {
@@ -29,14 +29,10 @@ gulp.task('clean:sprites', () => {
 });
 
 gulp.task('replace:sprite_url', () => {
-  gulp.src(['./src/shared/sprite.scss'])
+  gulp.src(['./src/shared/theme/sprite.scss'])
     .pipe(replace(/\.\.\/images/g, '/images/sprites'))
-    .pipe(gulp.dest('./src/shared'));
+    .pipe(gulp.dest('./src/shared/theme/'));
 });
-
-gulp.task('clean:spritejs', () => {
-  del(['./public/images/sprites/sprite.js']);
-})
 
 gulp.task('build:sprites', (cb) => {
   runSequence('clean:sprites', 'sprites:generate', 'replace:sprite_url', cb);
