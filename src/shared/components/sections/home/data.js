@@ -7,8 +7,14 @@ export default {
         meta: {
           sliderID: 'slider_home',
           interval: 8000,
-          showIndicators: false,
-          showControls: true,
+          controls: {
+            status: true,
+            className: 'control1',
+          },
+          indicators: {
+            status: false,
+            className: 'indicator1',
+          },
         },
         slides: [{
           classes: {
@@ -128,8 +134,14 @@ export default {
         meta: {
           sliderID: 'slider_brands',
           interval: 80000,
-          showIndicators: false,
-          showControls: true,
+          indicators: {
+            status: false,
+            className: '',
+          },
+          controls: {
+            status: true,
+            className: '',
+          },
         },
         slides: [{
           classes: {

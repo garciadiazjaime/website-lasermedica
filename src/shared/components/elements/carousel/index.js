@@ -1,9 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
 
+const style = process.env.TIER === 'FE' ? require('../../../theme/carousels/carousels.scss') : {};
+
+
 export default class Carousel1 extends React.Component {
 
-  renderIndicators(data, sliderID) {
+  renderIndicators(data, sliderID, className) {
     if (_.isArray(data) && data.length) {
       const bullets = data.map((slide, index) => {
         const c = !index ? 'active' : null;
@@ -11,15 +14,15 @@ export default class Carousel1 extends React.Component {
           <li data-target={'#' + sliderID} data-slide-to={index} key={index} className={c}></li>
         );
       }, this);
-      return (<ol className="carousel-indicators">
+      return (<ol className={'carousel-indicators ' + style[className]}>
         { bullets }
       </ol>);
     }
     return null;
   }
 
-  renderControls(data, sliderID) {
-    return (<div>
+  renderControls(data, sliderID, className) {
+    return (<div className={style[className]}>
       <a className="left carousel-control" href={'#' + sliderID} role="button" data-slide="prev">
         <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span className="sr-only">Previous</span>
@@ -32,17 +35,16 @@ export default class Carousel1 extends React.Component {
   }
 
   render() {
-    const { sliderID, interval, showIndicators, showControls } = this.props.data;
+    const { sliderID, interval, indicators, controls } = this.props.data;
     const slides = this.props.children.props.data;
-
     return (
       <div id={sliderID} className="carousel slide" data-ride="carousel" data-interval={interval}>
 
-        { showIndicators ? this.renderIndicators(slides, sliderID) : null }
+        { indicators.status ? this.renderIndicators(slides, sliderID, indicators.className) : null }
 
         { this.props.children }
 
-        { showControls ? this.renderControls(slides, sliderID) : null }
+        { controls.status ? this.renderControls(slides, sliderID, controls.className) : null }
       </div>
     );
   }
@@ -52,8 +54,14 @@ Carousel1.propTypes = {
   data: React.PropTypes.shape({
     sliderID: React.PropTypes.string.isRequired,
     interval: React.PropTypes.number.isRequired,
-    showIndicators: React.PropTypes.bool.isRequired,
-    showControls: React.PropTypes.bool.isRequired,
+    indicators: React.PropTypes.shape({
+      status: React.PropTypes.bool.isRequired,
+      className: React.PropTypes.string,
+    }),
+    controls: React.PropTypes.shape({
+      status: React.PropTypes.bool.isRequired,
+      className: React.PropTypes.string,
+    }),
   }),
   children: React.PropTypes.any,
 };
