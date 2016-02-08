@@ -101,7 +101,7 @@ block6: {
   links: {
     link1: {
       href: 'servicios/ver-servicios',
-      title: 'VER SERVICIOS '',
+      title: 'VER SERVICIOS ',
     },
     link4: {
       href: '/ubicacion/tijuana',
