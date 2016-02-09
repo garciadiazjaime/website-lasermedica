@@ -105,7 +105,7 @@ export default {
   block3: {
     texts: {
       text1: 'Contamos con una amplia variedad de productos para tratamientos dermatológicos, cremas y cuidado de la piel.',
-      text2: 'En Tijuana:',
+      text2: 'En Tijuana: ',
       text3: '(664) 634-1615',
       text4: 'Visítanos en:',
       text5: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',

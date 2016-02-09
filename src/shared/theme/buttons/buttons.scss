@@ -46,3 +46,29 @@
 		margin-bottom: 0;
 	}
 }
+.btn4{
+	width: 200px;
+	padding: 20px 50px 20px 20px;
+	color: $white;
+	position: relative;
+	display: block;
+	font-family: $fontBBold;
+	font-size: 14px;
+	&::after {
+		@extend .vCenter;
+		right: 20px;
+		content: "";
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_white_simple);
+	}
+	&:hover{
+		color: $white;
+	}
+}
+.btn4red{
+	@extend .btn4;
+	background-color: $red;
+	&:hover{
+		background-color: $hoverRed;
+	}
+}
