@@ -1,8 +1,16 @@
+@import '../../../../theme/buttons/buttons'; 
 // ---- main slider
-
+#slider_home{
+	border: 10px solid #ff0;
+	text-align: center;
+}
 .slider1 {
   background-size: cover;
+  background-position: center top;
   height: 500px;
+  h2{
+  	margin-top: 0;
+  }
 }
 
 .slide1 {
@@ -13,4 +21,19 @@
 .slide2 {
   background-image: url('/images/home/banner/slider_02.png');
   @extend .slider1;
+}
+
+h1{
+	color: $white;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 42px;
+	margin-top: 230px;
+	font-family: $fontA;
+	letter-spacing: 12px;
+}
+.btn1{
+	width: 150px;
+	display: block;
+	margin: 0 auto; 
 }

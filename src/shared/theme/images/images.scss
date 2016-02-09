@@ -1,0 +1,9 @@
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-doctor);
+}
+
+.image2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-enfermeras);
+}

@@ -1,11 +1,25 @@
-// ---- Controls
+@import '../constants'; 
+// ********** Controls **********
 .control1 {
-  
+  	@extend .vCenter;
+  	left: 0;
+  	@extend .icon-sprites;
+  	@include sprite($sprites-carousel_control_triangle);
+  	position: absolute;
+  	a{
+  		display: none;
+  	}
 }
 
-
-
-//  Indicators
+//  ********** Indicators **********
 .indicator1 {
-
+	li{
+		border: 2px solid $white;
+		margin: 0 5px;
+	}
+	.active{
+		background-color: $blue;
+		border: 2px solid $blue;
+		margin: 0 20px;
+	}
 }

@@ -1,19 +1,28 @@
-.wrapper1 {
+.wr1 {
+  background-color: $darkBlue;
+  position: relative;
+}
+
+.wr2 {
   background-color: $red;
+  height: 230px;
 }
 
-.wrapper2 {
+.wr3 {
   background-color: $orange;
+  height: 230px;
 }
 
-.wrapper3 {
+.wr4 {
   background-color: $blue;
+  height: 250px;
 }
 
-.wrapper4 {
+.wr5 {
   background-color: $darkBlue;
 }
-
-.wrapper5 {
-  background-color: $lightBlue;
+.wr6{
+	background-color: $lightBlue;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
 }

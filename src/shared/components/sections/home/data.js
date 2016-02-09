@@ -12,7 +12,7 @@ export default {
             className: 'control1',
           },
           indicators: {
-            status: false,
+            status: true,
             className: 'indicator1',
           },
         },
@@ -54,15 +54,15 @@ export default {
       text3: 'Procedimientos de alta tecnología para el cuidado de la piel.',
       text4: 'Dermatología Clínica',
       text5: 'Tratamientos para enfermedades de la piel.',
-      text6: 'NUESTROS DOCTORES',
+      text6: 'Nuestros doctores',
       text7: 'Dermatólogos Certificados',
       text8: 'Doctores certificados por el consejo mexicano de dermatología.',
-      text9: 'NUESTRAS',
+      text9: 'Nuestras',
       text10: 'Ubicaciones',
       text11: 'Tijuana',
       text12: 'Ensenada',
       text13: 'Mexicali',
-      text14: 'LA SIGUIENTE GENERACIÓN EN DERMATOLOGÍA',
+      text14: 'La siguiente generación en dermatología',
     },
     links: {
       link1: {
