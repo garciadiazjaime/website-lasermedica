@@ -3,7 +3,7 @@
 export default {
   block1: {
     texts: {
-      text1: 'MÁS DE 30 AñOS DE EXPERIENCIA',
+      text1: 'MÁS DE 30 AÑOS DE EXPERIENCIA',
 
     },
     links: {
