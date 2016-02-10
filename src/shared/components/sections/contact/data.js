@@ -21,10 +21,10 @@ export default {
     links: {
       link1: {
         href: '/contacto/enviar',
-        title: 'ENVIAR',
+        title: '',
       },
       link2: {
-        href: '/contacto/agendar-cita',
+        href: '',
         title: 'AGENDAR CITA',
       },
     },
@@ -37,29 +37,30 @@ export default {
       text3: '(664) 634-1615 / 684-7425',
       text4: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
       text5: 'tijuanainfo@lasermedica.com.mx',
-      text6: 'Dr.Jorge Ibarra',
-      text7: 'Dra.Priscilla Ibarra',
-      text8: 'Carlos Sanchez Jimenez',
-      text9: 'Mexicali B.C.',
-      text10: '01 686 552 3672',
-      text11: 'Madero 703, 21000 Mexicali, B.C.',
-      text12: 'mexicaliinfo@lasermedica.com.mx',
-      text13: 'Ensenada B.C.',
-      text14: '01 646 1773600',
-      text15: 'Calle floresta #160 entre 1ra y 2da colonia obrera, CP 22830 Ensenada, B.C.',
-      text16: 'ensenadainfo@lasermedica.com.mx',
+      text6: 'Mexicali B.C.',
+      text7: '01 686 552 3672',
+      text8: 'Madero 703, 21000 Mexicali, B.C.',
+      text9: 'mexicaliinfo@lasermedica.com.mx',
+      text10: 'Ensenada B.C.',
+      text11: '01 646 1773600',
+      text12: 'Calle floresta #160 entre 1ra y 2da colonia obrera, CP 22830 Ensenada, B.C.',
+      text13: 'ensenadainfo@lasermedica.com.mx',
     },
   },
   links: {
     link1: {
-      href: '/contacto/enviar',
-      title: 'ENVIAR',
+      href: '/equipo',
+      title: 'Dr.Jorge Ibarra',
     },
     link2: {
-      href: '/contacto/agendar-cita',
-      title: 'AGENDAR CITA',
+      href: '/equipo',
+      title: 'Dra.Priscilla Ibarra',
     },
     link3: {
+      href: '/equipo',
+      title: 'Carlos Sanchez Jimenez',
+    },
+    link4: {
       href: '/contacto/ver-en-google-maps',
       title: 'VER EN GOOGLE MAPS',
     },
@@ -67,11 +68,15 @@ export default {
   images: {
     image1: {
       src: '',
-      alt: 'google maps imagen',
+      alt: 'google maps tijuana',
     },
     image2: {
       src: '',
-      alt: 'sucursal imagen',
+      alt: 'google maps mexicali',
+    },
+    image3: {
+      src: '',
+      alt: 'google maps ensenada',
     },
   },
 };
