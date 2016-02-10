@@ -4,12 +4,12 @@ export default {
   block1: {
     texts: {
       text1: 'MÁS DE 30 AÑOS DE EXPERIENCIA',
-      text2: 'La clínica',
+
     },
     links: {
       link1: {
         href: '/la-clinica',
-        title: '',
+        title: 'La clinica',
       },
     },
     images: {
@@ -73,7 +73,6 @@ export default {
       text1: 'NUESTRA VISIÓN',
       text2: 'Nuestro futuro',
       text3: 'Seguir consolidados en la región como la clínica dermatológica más reconocida por su labor profesional y altruista, así como mantenernos actualizados para seguir ofreciendo a nuestros clientes los mejores y más innovadores tratamientos dermatológicos.',
-      text4: 'AGENDAR CITA',
     },
     links: {
       link1: {
@@ -92,11 +91,7 @@ export default {
   block6: {
     texts: {
       text1: 'Conoce nuestros servicios y descubre cómo podemos ayudarte.',
-      text2: 'VER SERVICIOS',
-      text3: 'Conoce nuestras Ubicaciones',
-      text4: 'Tijuana',
-      text5: 'Ensenada',
-      text6: 'Mexicali',
+      text2: 'Conoce nuestras Ubicaciones',
     },
     links: {
       link1: {
