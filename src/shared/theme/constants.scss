@@ -1,3 +1,5 @@
+@import './helpers';
+@import './mixins';
 @import './sprite';
 
 $blue: #04B9C9;
@@ -12,8 +14,17 @@ $gray: #58595B;
 $black: #000;
 $white: #fff;
 
-$fontA: 'noto-sans-regular';
-$fontABold: 'noto-sans-bold';
+$fontA: 'novecentowide_medium';
+$fontABold: 'novecentowide_bold';
+$fontADemibold: 'novecentowide_demibold';
+$fontALight: 'novecentowide_light';
+$fontABook: 'novecentowide_book';
+
+$fontB: 'opensans_regular';
+$fontBBold: 'opensans_bold';
+$fontBItalic: 'opensans_italic';
+
+$fontCItalic: 'droidserif_italic.ttf';
 
 
 $isTablet: "only screen and (max-width: 1023px)";

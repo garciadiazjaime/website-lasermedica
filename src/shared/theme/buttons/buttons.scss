@@ -1,0 +1,48 @@
+@import '../constants'; 
+.btn {
+	display: inline-block;
+	position: relative;
+	&:hover{
+		color: auto;
+		text-decoration: none;
+	}
+}
+.btn1 {
+	@extend .btn;
+	color: $white;
+	font-size: 24px;
+	padding-left: 35px;
+	font-family: $fontB;
+	&::after {
+		content: "";
+		@extend .vCenter;
+		left: 0;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+	}
+}
+.btn2 {
+	@extend .icon-sprites;
+  	@include sprite($sprites-button_arrow_white);
+  	position: absolute; 
+  	right: 20px;
+  	bottom: 35px;
+  	text-indent: 100px;
+  	opacity: .6;
+  	&:hover{
+  		opacity: 1;
+  	}
+}
+.btn3{
+	display: block;
+	background-color: $blue;
+	padding: 6px 0;
+	text-align: center;
+	color: $white;
+	font-size: 14px;
+	font-family: $fontB;
+	margin-bottom: 5px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
