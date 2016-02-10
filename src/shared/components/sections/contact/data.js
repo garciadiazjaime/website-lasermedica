@@ -20,8 +20,8 @@ export default {
     },
     links: {
       link1: {
-        href: '/contacto/enviar',
-        title: '',
+        href: '',
+        title: 'ENVIAR',
       },
       link2: {
         href: '',
