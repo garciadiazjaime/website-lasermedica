@@ -44,3 +44,10 @@ h1{
   background-image: url('/images/la-clinica/banner.png');
   @extend .slider1;
 }
+
+
+// ---- la clinica banner
+.equipo-banner {
+	background-image: url('/images/equipo/banner.png');
+  @extend .slider1;
+}

@@ -11,11 +11,8 @@ export default {
         title: 'Nuestro Equipo',
       },
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'nuestro equipo',
-      },
+    classes: {
+      class1: 'equipo-banner',
     },
   },
   block2: {
