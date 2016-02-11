@@ -1,4 +1,4 @@
-@import '../constants'; 
+@import '../constants';
 .btn {
 	display: inline-block;
 	position: relative;
@@ -24,7 +24,7 @@
 .btn2 {
 	@extend .icon-sprites;
   	@include sprite($sprites-button_arrow_white);
-  	position: absolute; 
+  	position: absolute;
   	right: 20px;
   	bottom: 35px;
   	text-indent: 100px;
@@ -44,5 +44,55 @@
 	margin-bottom: 5px;
 	&:last-child{
 		margin-bottom: 0;
+	}
+}
+.btn4{
+	width: 200px;
+	padding: 20px 50px 20px 20px;
+	color: $white;
+	position: relative;
+	display: block;
+	font-family: $fontBBold;
+	font-size: 14px;
+	&::after {
+		@extend .vCenter;
+		right: 20px;
+		content: "";
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_white_simple);
+	}
+	&:hover{
+		color: $white;
+	}
+}
+.btn4red{
+	@extend .btn4;
+	background-color: $red;
+	&:hover{
+		background-color: $hoverRed;
+	}
+}
+.btn5{
+	background-color: $lightBlue;
+	display: block;
+	padding: 0 45px 0 45px;
+	color: $lightGray;
+	height: 110px;
+	font-family: $fontBBold;
+	position: relative;
+	font-size: 18px;
+	span{
+		color: $lightGray;
+		@extend .vCenter;
+		margin: 0;
+		padding: 0 65px 0 0;
+	}
+	&::after{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+		right: 20px;
+
 	}
 }

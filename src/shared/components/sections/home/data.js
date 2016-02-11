@@ -105,7 +105,7 @@ export default {
   block3: {
     texts: {
       text1: 'Contamos con una amplia variedad de productos para tratamientos dermatológicos, cremas y cuidado de la piel.',
-      text2: 'En Tijuana:',
+      text2: 'En Tijuana: ',
       text3: '(664) 634-1615',
       text4: 'Visítanos en:',
       text5: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
@@ -136,14 +136,15 @@ export default {
           interval: 80000,
           indicators: {
             status: false,
-            className: '',
+            className: 'indicator2',
           },
           controls: {
             status: true,
-            className: '',
+            className: 'control2',
           },
         },
         slides: [{
+          className: 'slide',
           classes: {
             class1: 'slide1',
           },
@@ -226,11 +227,11 @@ export default {
       text2: 'Dermatológicos',
     },
     items: [{
-      title: 'depilacion laser',
+      title: 'Depilacion Laser',
       href: '/servicios/depilacion-laser',
       className: 'item1',
     }, {
-      title: 'tratamiento 360',
+      title: 'Tratamiento 360',
       href: '/servicios/tratamiento-360',
       className: 'item2',
     }, {

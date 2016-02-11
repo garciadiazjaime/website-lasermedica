@@ -1,17 +1,41 @@
-@import '../constants'; 
-// ********** Controls **********
+@import '../constants';
+// --- Controls
+.control{
+  width: 100%;
+  @extend .vCenter;
+  a{
+    @extend .vCenter;
+    content: "";
+		@extend .icon-sprites;
+    left: 0;
+	}
+  a:first-child{
+    left: 0;
+  }
+  a:last-child{
+    right: 0;
+  }
+}
 .control1 {
-  	@extend .vCenter;
-  	left: 0;
-  	@extend .icon-sprites;
-  	@include sprite($sprites-carousel_control_triangle);
-  	position: absolute;
-  	a{
-  		display: none;
-  	}
+  @extend .control;
+  @extend .icon-sprites;
+	@include sprite($sprites-carousel_control_triangle);
+	a{
+		display: none;
+    @extend .icon-sprites;
+  }
+}
+.control2{
+  @extend .control;
+  a:first-child{
+    @include sprite($sprites-button_arrow_orange_left);
+  }
+  a:last-child{
+    @include sprite($sprites-button_arrow_orange_right);
+  }
 }
 
-//  ********** Indicators **********
+//  --- Indicators
 .indicator1 {
 	li{
 		border: 2px solid $white;
@@ -22,4 +46,18 @@
 		border: 2px solid $blue;
 		margin: 0 20px;
 	}
+}
+.indicator2{
+
+}
+// --- RESPONSIVE
+@media #{$isTablet}{
+  .control1{
+    @include sprite($sprites-carousel_control_triangle_tablet);
+  }
+}
+@media #{$isPhone}{
+  .control1{
+    @include sprite($sprites-carousel_control_triangle_phone);
+  }
 }
