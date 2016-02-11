@@ -18,6 +18,9 @@ export default {
         alt: 'mas de 30 anos de experiencia',
       },
     },
+    classes: {
+      class1: 'clinica-banner',
+    },
   },
 
   block2: {
