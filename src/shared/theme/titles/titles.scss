@@ -37,3 +37,11 @@
 	color: $blue;
 	margin: 0 0 25px;
 }
+@media #{$isPhone}{
+  .title2{
+    font-size: 16px;
+  }
+	.title4{
+    font-size: 30px;
+  }
+}

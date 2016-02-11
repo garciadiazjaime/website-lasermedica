@@ -30,8 +30,14 @@
 }
 .wr7{
   overflow: hidden;
-  margin-right: 0;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
 }
 .pad45{
   padding: 0 45px;
+}
+@media #{$isPhone}{
+  .wr4{
+    height: 150px;
+  }
 }

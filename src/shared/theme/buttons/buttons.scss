@@ -96,3 +96,18 @@
 
 	}
 }
+// --- Responsive
+@media #{$isTablet}{
+  .btn5{
+		font-size: 16px;
+		padding: 0 45px 0 20px;
+    &::after{
+			right: 10px;
+		}
+  }
+}
+@media #{$isPhone}{
+	.btn5{
+		margin-bottom: 20px;
+	}
+}
