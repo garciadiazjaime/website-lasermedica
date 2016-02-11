@@ -64,49 +64,34 @@ export default {
       text1: 'NUESTRA VISIÓN',
       text2: 'Nuestro futuro',
       text3: 'Seguir consolidados en la región como la clínica dermatológica más reconocida por su labor profesional y altruista, así como mantenernos actualizados para seguir ofreciendo a nuestros clientes los mejores y más innovadores tratamientos dermatológicos.',
+      text4: 'Conoce nuestros servicios y descubre cómo podemos ayudarte.',
+      text5: 'Conoce nuestras Ubicaciones',
     },
     links: {
       link1: {
         href: 'contacto/agendar-cita',
         title: 'AGENDAR CITA',
       },
-    },
-    images: {
-      image1: {
-        src: '',
-        alt: 'doctores agendar cita',
-      },
-    },
-  },
-
-  block6: {
-    texts: {
-      text1: 'Conoce nuestros servicios y descubre cómo podemos ayudarte.',
-      text2: 'Conoce nuestras Ubicaciones',
-    },
-    links: {
-      link1: {
+      link2: {
         href: 'servicios/ver-servicios',
         title: 'VER SERVICIOS ',
       },
-      link4: {
+      link3: {
         href: '/ubicacion/tijuana',
         title: 'Tijuana',
       },
-      link5: {
+      link4: {
         href: '/ubicacion/ensenada',
         title: 'Ensenada',
       },
-      link6: {
+      link5: {
         href: '/ubicacion/mexicali',
         title: 'Mexicali',
       },
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'conoce nuestras ubicaciones',
-      },
+    classes: {
+      class1: 'image1',
+      class2: 'image2',
     },
   },
 };
