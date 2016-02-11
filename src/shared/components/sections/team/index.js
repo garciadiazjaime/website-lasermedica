@@ -5,10 +5,11 @@ import Block2 from './block2';
 import Block3 from './block3';
 import Block4 from './block4';
 import Block5 from './block5';
+
 import data from './data';
 
 
-export default class AboutSection extends React.Component {
+export default class EquipoSection extends React.Component {
   render() {
     return (<div>
       <Block1 data={data.block1} />

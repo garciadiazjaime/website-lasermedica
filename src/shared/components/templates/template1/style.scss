@@ -1,4 +1,4 @@
-@import '../../../../theme/buttons/buttons'; 
+@import '../../../theme/buttons/buttons';
 // ---- main slider
 #slider_home{
 	border: 10px solid #ff0;
@@ -13,6 +13,7 @@
   }
 }
 
+// ---- home carousel
 .slide1 {
   background-image: url('/images/home/banner/slider_01.png');
   @extend .slider1;
@@ -35,5 +36,18 @@ h1{
 .btn1{
 	width: 150px;
 	display: block;
-	margin: 0 auto; 
+	margin: 0 auto;
+}
+
+// ---- la clinica banner
+.clinica-banner {
+  background-image: url('/images/la-clinica/banner.png');
+  @extend .slider1;
+}
+
+
+// ---- la clinica banner
+.equipo-banner {
+	background-image: url('/images/equipo/banner.png');
+  @extend .slider1;
 }

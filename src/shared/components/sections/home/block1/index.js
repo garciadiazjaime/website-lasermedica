@@ -2,7 +2,7 @@ import React from 'react';
 
 import Carousel from '../../../elements/carousel';
 import Repeat from '../../../elements/repeat';
-import Template from './template';
+import Template from '../../../templates/template1';
 
 // const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
