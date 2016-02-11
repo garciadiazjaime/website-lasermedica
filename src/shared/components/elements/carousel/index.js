@@ -22,7 +22,7 @@ export default class Carousel1 extends React.Component {
   }
 
   renderControls(data, sliderID, className) {
-    return (<div className={style[className] + ' blah'}>
+    return (<div className={style[className]}>
       <a className="left carousel-control" href={'#' + sliderID} role="button" data-slide="prev">
         <span className="sr-only">Previous</span>
       </a>

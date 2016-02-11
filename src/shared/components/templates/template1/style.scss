@@ -18,18 +18,20 @@
   background-image: url('/images/home/banner/slider_01.png');
   @extend .slider1;
 }
+.heightFix{
+	height: 500px;
+}
 
 .slide2 {
   background-image: url('/images/home/banner/slider_02.png');
   @extend .slider1;
 }
 
-h1{
+.title{
 	color: $white;
 	font-size: 40px;
 	text-align: center;
 	margin-bottom: 42px;
-	margin-top: 230px;
 	font-family: $fontA;
 	letter-spacing: 12px;
 }
@@ -50,4 +52,11 @@ h1{
 .equipo-banner {
 	background-image: url('/images/equipo/banner.png');
   @extend .slider1;
+}
+
+// --- Responsive
+@media #{$isPhone}{
+  .title{
+    font-size: 25px;
+  }
 }

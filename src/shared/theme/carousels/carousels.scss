@@ -1,5 +1,5 @@
 @import '../constants';
-// ********** Controls **********
+// --- Controls
 .control{
   width: 100%;
   @extend .vCenter;
@@ -35,7 +35,7 @@
   }
 }
 
-//  ********** Indicators **********
+//  --- Indicators
 .indicator1 {
 	li{
 		border: 2px solid $white;
@@ -49,4 +49,15 @@
 }
 .indicator2{
 
+}
+// --- RESPONSIVE
+@media #{$isTablet}{
+  .control1{
+    @include sprite($sprites-carousel_control_triangle_tablet);
+  }
+}
+@media #{$isPhone}{
+  .control1{
+    @include sprite($sprites-carousel_control_triangle_phone);
+  }
 }
