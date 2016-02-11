@@ -54,11 +54,8 @@ export default {
       text8: 'Responsabilidad',
       text9: 'Compromiso',
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'nuestra mision',
-      },
+    classes: {
+      class1: 'image1',
     },
   },
 
