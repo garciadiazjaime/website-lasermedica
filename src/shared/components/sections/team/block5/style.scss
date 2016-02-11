@@ -1,0 +1,13 @@
+@import '../../../../theme/constants.scss';
+@import '../../../../theme/wrappers/wrappers.scss';
+
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-clinica-equipo);
+}
+
+.image2 {
+  @extend .wr5;
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper-flechas-azules-ubicaciones);
+}

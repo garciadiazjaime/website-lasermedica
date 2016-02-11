@@ -1,6 +1,7 @@
 import AppHandler from '../../components/AppHandler';
 import HomeSection from '../../components/sections/home';
 import AboutSection from '../../components/sections/about';
+import EquipoSection from '../../components/sections/team';
 import ServicesSection from '../../components/sections/services';
 import ContactSection from '../../components/sections/contact';
 
@@ -14,9 +15,13 @@ export default {
       url: '/inicio',
       component: HomeSection,
     }, {
-      title: 'Nosotros',
+      title: 'La Clínica',
       url: '/nosotros',
       component: AboutSection,
+    }, {
+      title: 'Equipo',
+      url: '/equipo',
+      component: EquipoSection,
     }, {
       title: 'Servicios',
       url: '/servicios',
