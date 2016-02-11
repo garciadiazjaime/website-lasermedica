@@ -227,11 +227,11 @@ export default {
       text2: 'Dermatológicos',
     },
     items: [{
-      title: 'depilacion laser',
+      title: 'Depilacion Laser',
       href: '/servicios/depilacion-laser',
       className: 'item1',
     }, {
-      title: 'tratamiento 360',
+      title: 'Tratamiento 360',
       href: '/servicios/tratamiento-360',
       className: 'item2',
     }, {
