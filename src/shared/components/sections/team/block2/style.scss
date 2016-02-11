@@ -3,5 +3,10 @@
 
 .image1 {
   @extend .icon-sprites;
-  @include sprite($sprites-imagen-clinica-doctor);
+  @include sprite($sprites-imagen-equipo-doctor-jorge);
+}
+
+.image2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-equipo-doctor-prisicilla);
 }
