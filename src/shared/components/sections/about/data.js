@@ -12,12 +12,6 @@ export default {
         title: 'La clinica',
       },
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'mas de 30 anos de experiencia',
-      },
-    },
     classes: {
       class1: 'clinica-banner',
     },
@@ -31,11 +25,8 @@ export default {
       text4: 'A través de nuestra especialización en dermatología, cosmetología y cirugía dermatológica en Lasermedica nos avocamos a una atención única en el cuidado de la piel avalándonos en nuestra experiencia y buscando las técnicas más novedosas - y sobre todo eficientes - para lograr los mejores resultados en nuestros pacientes.',
       text5: 'Atención única en el cuidado de la piel',
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'atencion unica en el cuidado de la piel',
-      },
+    classes: {
+      class1: 'image1',
     },
   },
 
