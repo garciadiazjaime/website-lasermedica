@@ -1,16 +1,18 @@
-$sprites-button_arrow_blue: -606px -370px 23px 25px;
+$sprites-button_arrow_blue: -656px -370px 23px 25px;
+$sprites-button_arrow_orange_left: -581px -370px 25px 40px;
+$sprites-button_arrow_orange_right: -606px -370px 25px 40px;
 $sprites-button_arrow_white: -802px -622px 14px 16px;
 $sprites-button_arrow_white_simple: -780px -230px 12px 20px;
 $sprites-carousel_control_triangle: -802px -0px 167px 322px;
 $sprites-imagen-doctor: -290px -0px 512px 230px;
 $sprites-imagen-enfermeras: -0px -425px 285px 215px;
-$sprites-imagen-facebook: -581px -370px 25px 25px;
+$sprites-imagen-facebook: -631px -370px 25px 25px;
 $sprites-imagen-logo-farmacia: -290px -370px 291px 49px;
-$sprites-imagen-marca-aderma: -285px -565px 160px 75px;
-$sprites-imagen-marca-avene: -802px -322px 160px 75px;
-$sprites-imagen-marca-cetaphil: -802px -397px 160px 75px;
-$sprites-imagen-marca-le-roche-posay: -802px -472px 160px 75px;
-$sprites-imagen-marca-vichy: -802px -547px 160px 75px;
+$sprites-imagen-marca-aderma: -802px -322px 160px 75px;
+$sprites-imagen-marca-avene: -802px -472px 160px 75px;
+$sprites-imagen-marca-cetaphil: -802px -547px 160px 75px;
+$sprites-imagen-marca-le-roche-posay: -285px -565px 160px 75px;
+$sprites-imagen-marca-vichy: -802px -397px 160px 75px;
 $sprites-imagen-productos: -0px -0px 290px 425px;
 $sprites-imagen-tratamiento-360: -530px -425px 245px 140px;
 $sprites-imagen-tratamiento-acne: -285px -425px 245px 140px;
@@ -42,5 +44,5 @@ $sprites-imagen-tratamiento-melasma: -290px -230px 245px 140px;
   @include sprite-height($sprite);
 }
 .icon-sprites {
-  background-image: url('/images/sprites/sprite-sprites.png');
+  background-image: url('/images/sprites/sprite-sprites.png')!important;
 }

@@ -22,13 +22,11 @@ export default class Carousel1 extends React.Component {
   }
 
   renderControls(data, sliderID, className) {
-    return (<div className={style[className]}>
+    return (<div className={style[className] + ' blah'}>
       <a className="left carousel-control" href={'#' + sliderID} role="button" data-slide="prev">
-        <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span className="sr-only">Previous</span>
       </a>
       <a className="right carousel-control" href={'#' + sliderID} role="button" data-slide="next">
-        <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span className="sr-only">Next</span>
       </a>
     </div>);

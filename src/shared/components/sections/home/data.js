@@ -136,14 +136,15 @@ export default {
           interval: 80000,
           indicators: {
             status: false,
-            className: '',
+            className: 'indicator2',
           },
           controls: {
             status: true,
-            className: '',
+            className: 'control2',
           },
         },
         slides: [{
+          className: 'slide',
           classes: {
             class1: 'slide1',
           },
