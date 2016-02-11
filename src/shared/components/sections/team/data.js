@@ -59,30 +59,31 @@ export default {
       },
     },
   },
-  block4: {
+  block4: [{
+    classes: {
+      class1: 'image1',
+    },
     texts: {
       text1: 'Ana Luisa Encinas',
       text2: 'Cosmetóloga',
-      text3: 'Dr. Jorge Varela',
-      text4: 'Cirugía Laser y Medicina estética',
-      text5: 'Dr. Carlos Rojo',
-      text6: 'Cirugía Laser',
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'Ana Luisa Encinas',
-      },
-      image2: {
-        src: '',
-        alt: 'Dr. Jorge Varela',
-      },
-      image3: {
-        src: '',
-        alt: 'Dr. Carlos Rojo',
-      },
+  }, {
+    classes: {
+      class1: 'image2',
     },
-  },
+    texts: {
+      text1: 'Dr. Jorge Varela',
+      text2: 'Cirugía Laser y Medicina estética',
+    },
+  }, {
+    classes: {
+      class1: 'image3',
+    },
+    texts: {
+      text1: 'Dr. Carlos Rojo',
+      text2: 'Cirugía Laser',
+    },
+  }],
   block5: {
     texts: {
       text1: 'Conoce nuestros servicios y descubre cómo podemos ayudarte.',
