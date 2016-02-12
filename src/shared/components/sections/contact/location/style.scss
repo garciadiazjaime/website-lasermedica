@@ -1,0 +1,25 @@
+@import '../../../../theme/constants.scss';
+
+.locationItem {
+
+}
+
+.active {
+  border-left: 1px solid $blue;
+}
+
+
+.location1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper-ubicacion-tijuana);
+}
+
+.location2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper-ubicacion-mexicali);
+}
+
+.location3 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper-ubicacion-ensenada);
+}
