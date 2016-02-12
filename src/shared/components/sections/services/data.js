@@ -1,5 +1,7 @@
 /* eslint max-len: [2, 600, 4] */
 
+import servicesData from './db';
+
 export default {
   block1: {
     texts: {
@@ -15,7 +17,8 @@ export default {
       },
     },
   },
-  block2: {
+  services: servicesData,
+  block22: {
     links: {
       link1: {
         href: '/servicios/dermatologia-cosmetica',
