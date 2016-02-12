@@ -23,7 +23,8 @@ export default {
       text2: 'Quiénes Somos',
       text3: 'Lasermedica fue fundada en la ciudad de Tijuana hace más de 30 años por el Doctor Jorge Alberto Ibarra Ibarra, quien al egresar de la Universidad Autónoma de Guadalajara vio en la localidad la necesidad de una clínica dermatológica seria y preocupada por la salud de la piel; Aunado a lo anterior, su dedicación por el estudio de las enfermedades de la piel y su tratamiento lo ha llevado a ser una de las eminencias en cuanto a la cosmetología clínica en México.',
       text4: 'A través de nuestra especialización en dermatología, cosmetología y cirugía dermatológica en Lasermedica nos avocamos a una atención única en el cuidado de la piel avalándonos en nuestra experiencia y buscando las técnicas más novedosas - y sobre todo eficientes - para lograr los mejores resultados en nuestros pacientes.',
-      text5: 'Atención única en el cuidado de la piel',
+      text5: 'Atención única',
+      text6: 'en el cuidado de la piel',
     },
     classes: {
       class1: 'image1',

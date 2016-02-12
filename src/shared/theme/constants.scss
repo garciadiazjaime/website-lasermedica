@@ -3,6 +3,7 @@
 @import './sprite';
 
 $blue: #04B9C9;
+$hoverBlue: #0BCED3;
 $darkBlue: #1D3A4C;
 $blueGray: #839DAA;
 $lightBlue: #E6FFFE;
@@ -25,7 +26,7 @@ $fontB: 'opensans_regular';
 $fontBBold: 'opensans_bold';
 $fontBItalic: 'opensans_italic';
 
-$fontCItalic: 'droidserif_italic.ttf';
+$fontCItalic: 'droidserif_italic';
 
 
 $isTablet: "only screen and (max-width: 1023px)";
