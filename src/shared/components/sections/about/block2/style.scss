@@ -24,3 +24,9 @@
 .pad45{
   margin-bottom: 45px;
 }
+@media #{$isPhone}{
+  .paragraph3{
+    margin-left: 0;
+    font-size: 18px;
+  }
+}

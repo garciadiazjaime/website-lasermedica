@@ -5,6 +5,7 @@
 .image1 {
   @extend .icon-sprites;
   @include sprite($sprites-imagen-clinica-equipo2);
+  margin-bottom: 100px;
 }
 .title6{
   margin-bottom: 50px;
@@ -29,5 +30,10 @@
       left: -7px;
       @extend .vCenter;
     }
+  }
+}
+@media #{$isPhone}{
+  .bluelist{
+    margin-bottom: 100px;
   }
 }

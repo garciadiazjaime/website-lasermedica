@@ -8,13 +8,13 @@ export default class Block4 extends React.Component {
   render() {
     const { texts, classes } = this.props.data;
     return (<div className="container-fluid">
-
+      <div className="row">
         <div className="col-xs-12 col-sm-6">
           <div className={style[classes.class1]} />
         </div>
 
         <div className="col-xs-12 col-sm-6">
-          <div className={'row ' + style.pad0_65}>
+          <div className={'row ' + style.pad45}>
             <h3 className={style.title5}>{texts.text1}</h3>
             <h2 className={style.title6}>{texts.text2}</h2>
             <p className={style.par2}>
@@ -22,7 +22,7 @@ export default class Block4 extends React.Component {
             </p>
 
             <h3 className={style.title5 + ' ' + style.pad0_0_50}>{texts.text4}</h3>
-            <div className="col-xs-12 col-sm-5">
+            <div className="col-xs-6 col-sm-5">
               <div className="row">
                 <ul className={style.bluelist}>
                   <li>{texts.text5}</li>
@@ -31,7 +31,7 @@ export default class Block4 extends React.Component {
                 </ul>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-5">
+            <div className="col-xs-6 col-sm-5">
               <div className="row">
                 <ul className={style.bluelist}>
                   <li>{texts.text8}</li>
@@ -41,7 +41,7 @@ export default class Block4 extends React.Component {
             </div>
           </div>
         </div>
-
+      </div>
       </div>);
   }
 }

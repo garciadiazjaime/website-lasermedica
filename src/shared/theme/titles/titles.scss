@@ -46,10 +46,18 @@
 	letter-spacing: 8px;
 	margin: 0;
 }
+@media #{$isTablet}{
+	.title7{
+		font-size: 30px;
+	}
+}
 @media #{$isPhone}{
   .title2{
     font-size: 16px;
   }
+	.title7{
+		font-size: 22px;
+	}
 	.title4{
     font-size: 30px;
   }

@@ -30,3 +30,8 @@
 .title6{
   margin-bottom: 60px;
 }
+@media #{$isTablet}{
+  .btn4blue{
+    margin-bottom: 45px;
+  }
+}

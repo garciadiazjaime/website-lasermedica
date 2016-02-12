@@ -26,10 +26,12 @@
 	background-image: url('/images/equipo/banner.png');
   @extend .slider1;
 }
-
+.title7{
+  margin-bottom: 40px;  
+}
 // --- Responsive
 @media #{$isPhone}{
-  .title{
-    font-size: 25px;
+  .clinica-banner{
+    background-position: center top;
   }
 }
