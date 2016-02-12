@@ -1,10 +1,13 @@
 import React from 'react';
 
-// import data from './data';
+import Block1 from './block1';
+import data from './data';
 
 
 export default class ServicesSection extends React.Component {
   render() {
-    return (<h3>Services</h3>);
+    return (<div>
+      <Block1 data={data.block1} />
+    </div>);
   }
 }

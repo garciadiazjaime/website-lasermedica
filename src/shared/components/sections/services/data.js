@@ -2,10 +2,16 @@
 
 export default {
   block1: {
-    images: {
-      image1: {
-        src: '',
-        alt: 'imagen principal servicios',
+    texts: {
+      text1: 'Tratamientos de Alta Tecnología',
+    },
+    classes: {
+      class1: 'servicios-banner',
+    },
+    links: {
+      link1: {
+        title: 'Nuestros Servicios',
+        href: '/servicios',
       },
     },
   },
