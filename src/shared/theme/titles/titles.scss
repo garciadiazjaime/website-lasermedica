@@ -53,6 +53,18 @@
 	@extend .vCenterRel;
 	margin: 0;
 }
+.title9{
+	color: $gray;
+	font-size: 18px;
+	font-family: $fontBBold;
+	margin: 50px 0 0 0;
+}
+.title10{
+	color: $blueGray;
+	font-size: 14px;
+	font-family: $fontB;
+	margin: 0;
+}
 @media #{$isTablet}{
 	.title7{
 		font-size: 30px;

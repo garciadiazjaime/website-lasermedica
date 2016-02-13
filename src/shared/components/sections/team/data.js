@@ -72,16 +72,16 @@ export default {
       class1: 'image2',
     },
     texts: {
-      text1: 'Dr. Jorge Varela',
-      text2: 'Cirugía Laser y Medicina estética',
+      text1: 'Dr. Carlos Rojo',
+      text2: 'Cirugía Laser',
     },
   }, {
     classes: {
       class1: 'image3',
     },
     texts: {
-      text1: 'Dr. Carlos Rojo',
-      text2: 'Cirugía Laser',
+      text1: 'Dr. Jorge Varela',
+      text2: 'Cirugía Laser y Medicina estética',
     },
   }],
   block5: {

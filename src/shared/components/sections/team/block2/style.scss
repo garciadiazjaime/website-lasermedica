@@ -28,3 +28,8 @@
 .wr6{
   margin-bottom: 0;
 }
+@media #{$isPhone}{
+  .pad0_60{
+    padding: 0 25px;
+  }
+}
