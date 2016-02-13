@@ -1,0 +1,16 @@
+@import '../../../theme/constants.scss';
+
+.service1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper_services_derma-cosmetica);
+}
+
+.service2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper_services_derma-clinica);
+}
+
+.service3 {
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper_services_tratami-dermatologicos);
+}

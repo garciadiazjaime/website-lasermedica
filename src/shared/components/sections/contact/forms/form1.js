@@ -1,7 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
 
-// adust scss
 const style = process.env.NODE_ENV === 'DEV' ? require('../style.scss') : {};
 import restClient from '../../../../../server/helpers/rest-client';
 
