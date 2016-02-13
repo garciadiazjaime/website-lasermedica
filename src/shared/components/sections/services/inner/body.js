@@ -1,68 +1,104 @@
 import React from 'react';
 import { Link } from 'react-router';
-// import _ from 'lodash';
+import _ from 'lodash';
 
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import Repeat from '../../../elements/repeat';
 import Template7 from '../../../templates/template7';
-
-//
-// import Title1 from '../../../elements/titles/title1';
-// import Paragraph1 from '../../../elements/paragraphs/paragraph1';
-// import Button1 from '../../../elements/buttons/button1';
-// import Wrapper1 from '../../../elements/wrappers/wrapper1';
-//
-// import Engine1 from '../../../engines/engine1';
-// import Template4 from '../../../templates/template4';
 import Utils from './utils';
 
 export default class Body extends React.Component {
 
-  // renderContent(data) {
-  //   const { texts, links } = data;
-  //   let textsEl;
-  //   let linksEl;
-  //
-  //   if (_.isArray(texts) && texts.length) {
-  //     textsEl = texts.map((item, index) => {
-  //       return index === 0 ?
-  //       (<Title1 className="q" key={index}>
-  //         {item}
-  //       </Title1>) :
-  //       (<Paragraph1 className="i" key={index} data={item} />);
-  //     });
-  //   }
-  //
-  //   if (_.isArray(links) && links.length) {
-  //     linksEl = links.map((item, index) => {
-  //       return (<div key={index}>
-  //         <Button1 className={item.className} href={item.href} title={item.title} key={index}>
-  //         {item.title}
-  //       </Button1>
-  //     </div>);
-  //     });
-  //   }
-  //
-  //   return (<div>
-  //     {textsEl}
-  //     {linksEl}
-  //     </div>);
-  // }
-  //
-  // renderMenu(data, rootUrl) {
-  //   let itemsEl;
-  //   if (_.isArray(data) && data.length) {
-  //     itemsEl = data.map((item, index) => {
-  //       return (<li key={index}>
-  //           <Button1 href={[rootUrl, item.href].join('/')} title={item.title}>
-  //             {item.title}
-  //           </Button1>
-  //         </li>);
-  //     });
-  //   }
-  //   return (<ul>
-  //       {itemsEl}
-  //     </ul>);
-  // }
+  renderTitle(data) {
+    if (!_.isEmpty(data)) {
+      return (<h2 className={data.className}>
+        {data.text}
+      </h2>);
+    }
+    return null;
+  }
+
+  renderSubtitle(data) {
+    if (!_.isEmpty(data)) {
+      return (<h3 className={data.className}>
+        {data.text}
+      </h3>);
+    }
+    return null;
+  }
+
+  renderText(data) {
+    if (!_.isEmpty(data)) {
+      return (<p className={data.className}>
+        {data.text}
+      </p>);
+    }
+    return null;
+  }
+
+  renderStrong(data) {
+    if (!_.isEmpty(data)) {
+      return (<p><strong className={data.className}>
+        {data.text}
+      </strong></p>);
+    }
+    return null;
+  }
+
+  renderImage(data) {
+    if (!_.isEmpty(data)) {
+      return (<img className={data.className} src={data.src} alt={data.alt} />);
+    }
+    return null;
+  }
+
+  renderList(data) {
+    if (!_.isEmpty(data)) {
+      if (_.isArray(data.items) && data.items.length) {
+        const itemsEl = data.items.map((item, index) => {
+          return (<li key={index}>{item}</li>);
+        });
+        return itemsEl ? (<ul className={data.className}>
+          {itemsEl}
+        </ul>) : null;
+      }
+    }
+    return null;
+  }
+
+  renderLink(data) {
+    if (!_.isEmpty(data)) {
+      return (<Link className={data.className} to={data.href}>
+        {data.text}
+      </Link>);
+    }
+    return null;
+  }
+
+  renderContent(data) {
+    if (_.isArray(data) && data.length) {
+      return data.map((item) => {
+        switch (item.type.toUpperCase()) {
+          case 'TITLE':
+            return this.renderTitle(item);
+          case 'SUBTITLE':
+            return this.renderSubtitle(item);
+          case 'TEXT':
+            return this.renderText(item);
+          case 'STRONG':
+            return this.renderStrong(item);
+          case 'IMAGE':
+            return this.renderImage(item);
+          case 'LIST':
+            return this.renderList(item);
+          case 'LINK':
+            return this.renderLink(item);
+          default:
+            return null;
+        }
+      });
+    }
+  }
 
   renderControls(data, service) {
     const controls = Utils.getPrevNext(data, service);
@@ -87,25 +123,9 @@ export default class Body extends React.Component {
   }
 
   render() {
-    // const { data, menuItems, service } = this.props;
-    // return (<div className="container-fluid" id={service}>
-    //     <div className="col-xs-12 col-sm-6">
-    //       <Wrapper1 className="c">
-    //         <Button1 className="stm" href="/servicios" title="servicios">
-    //           Menú de Servicios
-    //         </Button1>
-    //         <Engine1 data={menuItems} Template={Template4} />
-    //       </Wrapper1>
-    //     </div>
-    //     <div className="col-xs-12 col-sm-6">
-    //       <Wrapper1 className="cb">
-    //         {this.renderControls(menuItems, service)}
-    //       </Wrapper1>
-    //       {this.renderContent(data)}
-    //     </div>
-    //   </div>);
-    const { menuItems, service } = this.props;
-    return (<div className="container-fluid">
+    const { data, menuItems, service, category } = this.props;
+    console.log('category', category);
+    return (<div className="container-fluid" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
         <div className="">
           <Link className="" to="/servicios" title="servicios">
@@ -116,17 +136,18 @@ export default class Body extends React.Component {
       </div>
 
       <div className="col-xs-12 col-sm-6">
-        <div className="cb">
+        <div className="">
           {this.renderControls(menuItems, service)}
         </div>
-
+        {this.renderContent(data)}
       </div>
     </div>);
   }
 }
 
 Body.propTypes = {
-//   data: React.PropTypes.object.isRequired,
+  data: React.PropTypes.array.isRequired,
   menuItems: React.PropTypes.array.isRequired,
   service: React.PropTypes.string,
+  category: React.PropTypes.string.isRequired,
 };

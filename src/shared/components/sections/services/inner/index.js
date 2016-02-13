@@ -5,11 +5,7 @@ import _ from 'lodash';
 
 import Header from './header';
 import Body from './body';
-// import Footer from './footer';
-// import Block5 from './../../home/block5';
 import servicesData from '../db';
-import dataService from './data';
-// import dataBlocksHome from '../../home/data';
 import Utils from './utils';
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -29,17 +25,17 @@ export default class ServiceInner extends React.Component {
     return null;
   }
 
-  // getData(data, category, subcategory, service) {
-  //   try {
-  //     return {
-  //       header: require('../db/' + category + '/' + subcategory + '/header_common'),
-  //       content: require('../db/' + category + '/' + subcategory + '/' + service),
-  //     };
-  //   } catch (err) {
-  //     console.error(err.message);
-  //     return null;
-  //   }
-  // }
+  getData(category, service) {
+    try {
+      return {
+        header: require('../db' + category + '/header'),
+        body: require('../db' + category + '/services' + service),
+      };
+    } catch (err) {
+      console.error(err.message);
+      return null;
+    }
+  }
 
   getMenuItems(data, categoryUrl, service) {
     if (_.isArray(data) && data.length) {
@@ -103,17 +99,13 @@ export default class ServiceInner extends React.Component {
     const category = '/' + bits[2];
     const service = bits[3] ? '/' + bits[3] : null;
     const params = this.getDefaultValues(servicesData, '/servicios', category, service);
-    // const data = this.getData(servicesData, category, params.subcategory, params.service);
+    const data = this.getData(category, params.service);
     const categoryUrl = [params.section, params.category].join('');
     const menuItems = this.getMenuItems(servicesData, categoryUrl, service);
-    //
-    // return (<div id={category}>
-    //   <Header data={data.header} subcategory={subcategory} />
-    // <Body data={data.content} menuItems={menuItems} service={service} />
-    // </div>);
+    console.log('params', params);
     return (<div>
-      <Header data={dataService.block1} />
-      <Body menuItems={menuItems} service={service} />
+      <Header data={data.header} />
+      <Body data={data.body} menuItems={menuItems} service={service} category={category} />
     </div>);
   }
 }
