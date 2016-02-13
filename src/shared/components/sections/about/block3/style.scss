@@ -1,11 +1,14 @@
 @import '../../../../theme/wrappers/wrappers.scss';
+@import '../../../../theme/titles/titles.scss';
 @import '../../../../theme/constants.scss';
 
 .blockWrapper1 {
   background-image: url('/images/la-clinica/wrapper-flechas-blancas.png');
   background-size: cover;
+  background-color: $blue;
   background-position: center top;
   height: 275px;
+  margin-bottom: 100px;
 }
 
 .wr4 {
@@ -17,4 +20,10 @@
     margin: 0 auto;
     @extend .vCenterRel;
   }
+}
+.heightFixer{
+  height: 275px;
+}
+.title7{
+  @extend .vCenterRel;
 }

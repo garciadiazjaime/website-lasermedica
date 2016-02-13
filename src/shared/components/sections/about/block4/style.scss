@@ -1,7 +1,39 @@
 @import '../../../../theme/constants.scss';
 @import '../../../../theme/wrappers/wrappers.scss';
-
+@import '../../../../theme/titles/titles.scss';
+@import '../../../../theme/paragraphs/paragraphs.scss';
 .image1 {
   @extend .icon-sprites;
   @include sprite($sprites-imagen-clinica-equipo2);
+  margin-bottom: 100px;
+}
+.title6{
+  margin-bottom: 50px;
+}
+.par2{
+  margin-bottom: 50px;
+}
+.pad0_0_50{
+  margin-bottom: 50px;
+}
+.bluelist{
+  padding: 0;
+  margin-bottom: 100px;
+  li{
+    list-style: none;
+    color: $blue;
+    font-size: 14px;
+    font-family: $fontB;
+    position: relative;
+    &::before{
+      content: '-';
+      left: -7px;
+      @extend .vCenter;
+    }
+  }
+}
+@media #{$isPhone}{
+  .bluelist{
+    margin-bottom: 100px;
+  }
 }

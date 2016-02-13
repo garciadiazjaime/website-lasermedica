@@ -13,12 +13,17 @@
 	font-size: 24px;
 	padding-left: 35px;
 	font-family: $fontB;
+	opacity: .8;
 	&::after {
 		content: "";
 		@extend .vCenter;
 		left: 0;
 		@extend .icon-sprites;
 		@include sprite($sprites-button_arrow_blue);
+	}
+	&:hover{
+		color: $white;
+		opacity: 1;
 	}
 }
 .btn2 {
@@ -45,6 +50,10 @@
 	&:last-child{
 		margin-bottom: 0;
 	}
+	&:hover{
+		background-color: $hoverBlue;
+		color: $white;
+	}
 }
 .btn4{
 	width: 200px;
@@ -70,6 +79,13 @@
 	background-color: $red;
 	&:hover{
 		background-color: $hoverRed;
+	}
+}
+.btn4blue{
+	@extend .btn4;
+	background-color: $blue;
+	&:hover{
+		background-color: $hoverBlue;
 	}
 }
 .btn5{

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
-import Template from '../../../templates/template1';
+import Template from '../../../templates/template2';
 
 export default class Block1 extends React.Component {
 
