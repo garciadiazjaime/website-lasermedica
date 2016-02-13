@@ -124,7 +124,6 @@ export default class Body extends React.Component {
 
   render() {
     const { data, menuItems, service, category } = this.props;
-    console.log('category', category);
     return (<div className="container-fluid" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
         <div className="">
