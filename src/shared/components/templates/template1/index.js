@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
-
+// **************** Banner used on home carrousel
 export default class Template1 extends React.Component {
 
   render() {

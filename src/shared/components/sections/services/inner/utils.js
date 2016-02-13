@@ -22,7 +22,7 @@ export default class Utils {
       } else {
         for (let i = 0, len = data.length; i < len; i++) {
           const bits = data[i].href.split('/');
-          const currentService = bits.pop();
+          const currentService = '/' + bits.pop();
           if (currentService.toUpperCase() === service.toUpperCase()) {
             if (i === 0) {
               next = data[i + 1].href;

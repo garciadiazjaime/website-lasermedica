@@ -4,7 +4,7 @@ import React from 'react';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
-
+// **************** Service Inner Carrousel
 export default class Template1 extends React.Component {
 
   render() {
