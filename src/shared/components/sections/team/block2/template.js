@@ -9,7 +9,7 @@ export default class Template extends React.Component {
   renderContent(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<p key={index}>
+        return (<p key={index} className={style.par2}>
           {item}
         </p>);
       });
@@ -21,15 +21,16 @@ export default class Template extends React.Component {
     const { texts, classes } = data;
     return (<div className={style[className] || ''}>
       <div className={style[classes.class1]} />
+      <div className={'row ' + style.pad0_60}>
+        <h2 className={style.title5}>{texts.text1}</h2>
+        <h3 className={style.title6}>{texts.text2}</h3>
 
-      <h2>{texts.text1}</h2>
-      <h3>{texts.text2}</h3>
+        <p className={style.paragraph3}>
+          {texts.text3}
+        </p>
 
-      <p>
-        {texts.text3}
-      </p>
-
-      {this.renderContent(texts.text4)}
+        {this.renderContent(texts.text4)}
+      </div>
     </div>);
   }
 }

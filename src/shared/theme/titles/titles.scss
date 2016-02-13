@@ -46,6 +46,13 @@
 	letter-spacing: 8px;
 	margin: 0;
 }
+.title8{
+	color: $white;
+	font-size: 18px;
+	font-family: $fontBBold;
+	@extend .vCenterRel;
+	margin: 0;
+}
 @media #{$isTablet}{
 	.title7{
 		font-size: 30px;

@@ -1,5 +1,7 @@
 @import '../../../../theme/constants.scss';
 @import '../../../../theme/wrappers/wrappers.scss';
+@import '../../../../theme/paragraphs/paragraphs.scss';
+@import '../../../../theme/titles/titles.scss';
 
 .image1 {
   @extend .icon-sprites;
@@ -9,4 +11,17 @@
 .image2 {
   @extend .icon-sprites;
   @include sprite($sprites-imagen-equipo-doctor-prisicilla);
+}
+.paragraph3{
+  color: $gray;
+  margin-bottom: 50px;
+}
+.paragraph4{
+  margin: 30px 0 80px;
+}
+.title5{
+  margin-top: 50px;
+}
+.title6{
+  margin-bottom: 50px;
 }
