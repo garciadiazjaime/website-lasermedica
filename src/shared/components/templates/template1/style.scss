@@ -48,8 +48,14 @@
 }
 
 
-// ---- la clinica banner
+// ---- equipo banner
 .equipo-banner {
+	background-image: url('/images/equipo/banner.png');
+  @extend .slider1;
+}
+
+// ---- servicios banner
+.servicios-banner {
 	background-image: url('/images/equipo/banner.png');
   @extend .slider1;
 }
