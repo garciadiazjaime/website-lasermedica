@@ -15,3 +15,29 @@
 		display: block;
 	}
 }
+.paragraph3{
+	font-family: $fontCItalic;
+	font-size: 24px;
+	position: relative;
+	color: $blue;
+	text-align: center;
+	&::before{
+		content: "";
+		@extend .icon-sprites;
+		display: inline-block!important;
+		margin-right: 10px;
+		@include sprite($sprites-paragraph_left_quote_blue);
+	}
+	&::after{
+		content: "";
+		@extend .icon-sprites;
+		margin-left: 10px;
+		display: inline-block!important;
+		@include sprite($sprites-paragraph_right_quote_blue);
+	}
+}
+.paragraph4{
+		color: $gray;
+		font-family: $fontBBold;
+		font-size: 24px;
+}
