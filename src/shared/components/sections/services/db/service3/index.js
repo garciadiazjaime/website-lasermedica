@@ -5,49 +5,30 @@ export default {
   title: 'TRATAMIENTOS DERMATOLÓGICOS',
   description: 'Portafolio de seguros para <b>Vehiculos Comerciales.</b> Cobertura en México y USA.',
   href: '/servicios/tratamientos-dermatologicos',
-  className: 'w3',
+  className: 'btn-service3',
   children: [{
     type: 'title',
-    title: 'Seguros para Vehículos Comerciales',
-    className: 'sc3',
+    title: 'TRATAMIENTOS DERMATOLÓGICOS',
+    className: '',
   }, {
     type: 'list',
-    className: 'sl7',
-    title: 'Seguros con <br />cobertura en <br />USA',
-    href: 'seguros-usa',
+    classes: {
+      class1: 'service3',
+    },
+    texts: [
+      'En Lasermedica mejoramos la apariencia de tu piel; nuestro objetivo es que nuestros pacientes luzcan una piel saludable y radiante.',
+      'En base a las necesidades de tu piel, te podemos guiar a través de diferentes procedimientos.',
+    ],
+    href: '/tratamientos-dermatologicos',
     children: [{
-      title: 'Liability Truck',
-      href: 'liability-truck',
+      href: '/rejuvenecimiento',
+      title: 'Rejuvenecimiento',
     }, {
-      title: 'Cargo Insurance',
-      href: 'cargo-insurance',
+      href: '/reafirmación-de-la-piel',
+      title: 'Reafirmación de la Piel',
     }, {
-      title: 'Trailer Interchange',
-      href: 'trailer-interchange',
-    }, {
-      title: 'Physical Damage',
-      href: 'physical-damage',
-    }, {
-      title: 'General Liability',
-      href: 'general-liability',
-    }],
-  }, {
-    type: 'list',
-    className: 'sl8',
-    title: 'Seguros con <br /> cobertura en <br />México',
-    href: 'seguros-mx',
-    children: [{
-      title: 'Responsabilidad Civil a Terceros',
-      href: 'responsabilidad-civil-terceros',
-    }, {
-      title: 'Daños Fisicos (Cobertura Amplia)',
-      href: 'danos-fisicos-cobertura-amplia',
-    }, {
-      title: 'Seguro de Mercancias',
-      href: 'seguro-mercancias',
-    }, {
-      title: 'Accidentes Personales',
-      href: 'accidentes-personales',
+      href: '/remocion-cicatrices',
+      title: 'Remoción: Cicatrices',
     }],
   }],
 };

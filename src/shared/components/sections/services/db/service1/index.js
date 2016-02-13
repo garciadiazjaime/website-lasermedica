@@ -3,60 +3,85 @@
 export default {
   isRoot: true,
   title: 'DERMATOLOGÍA COSMETICA',
-  description: 'Trámites en USA y México, Placas DMV y SCT en México.',
+  texts: [
+    'Existen diferentes tipos de procedimientos dermatológicos cosméticos a los que te puedes someter dependiendo de tu condición de la piel y del resultado que quieras obtener.',
+    'En base a las necesidades de tu cuerpo, te podemos guiar a través de diferentes procedimientos.',
+  ],
   href: '/servicios/dermatologia-cosmetica',
-  className: 'w1',
+  classes: {
+    class1: 'btn-service1',
+  },
   children: [{
     type: 'title',
-    title: 'Trámites',
-    className: 'sc1',
+    title: 'DERMATOLOGÍA COSMÉTICA',
+    className: '',
   }, {
     type: 'list',
-    className: 'sl1',
-    title: 'Trámites en USA',
-    href: 'tramites-usa',
+    classes: {
+      class1: 'service1',
+    },
+    texts: [
+      'Existen diferentes tipos de procedimientos dermatológicos cosméticos a los que te puedes someter dependiendo de tu condición de la piel y del resultado que quieras obtener.',
+      'En base a las necesidades de tu cuerpo, te podemos guiar a través de diferentes procedimientos.',
+    ],
+    href: '/dermatologia-cosmetica',
     children: [{
-      title: 'PNP- Pull Notice Programa',
-      href: 'pnp-pull-notice-programa',
+      href: '/depilacion-laser',
+      title: 'Depilación láser',
     }, {
-      title: 'BIT- Biennial Inspection of Terminals',
-      href: 'bit-biennial-inspection-terminals',
+      href: '/tratamiento-360',
+      title: 'Tratamiento 360',
     }, {
-      title: 'SCAC- Standard Carrier Alpha Code',
-      href: 'scac-standard-carrier-alpha-code',
+      href: '/laser-erbium-fraccionado',
+      title: 'Láser Erbium Fraccionado',
     }, {
-      title: 'Forma 2290UCR -Unified Carrier Registration',
-      href: 'forma-2290ucr-unified-carrier-registration',
+      href: '/laser-CO2-fraccionado',
+      title: 'Láser CO2 Fraccionado',
     }, {
-      title: 'Decal (User Fee) -US Customs',
-      href: 'decal-user-fee-us-customs',
+      href: '/radiofrecuencia',
+      title: 'Radiofrecuencia',
     }, {
-      title: 'FASTID Badge US CBP- (Gafete USA)',
-      href: 'fastid-badge-us-cbp',
+      href: '/IPL(vasculight)',
+      title: 'IPL (vasculight)',
     }, {
-      title: 'Pago de TicketsARB- Air Resources Board',
-      href: 'pago-ticketsarb-air-resources-board',
+      href: '/escleroterapia-con-laser',
+      title: 'Escleroterapia con Láser',
     }, {
-      title: 'Permisos temporales para otros Estados',
-      href: 'permisos-temporales-otros-estados',
+      href: '/escleroterapia-inyectada',
+      title: 'Escleroterapia Inyectada',
     }, {
-      title: 'Hazardous Material (Hazmat)',
-      href: 'hazardous-material-hazmat',
+      href: '/carboxiterapia',
+      title: 'Carboxiterapia',
     }, {
-      title: 'Cumplimiento para DOT',
-      href: 'cumplimiento-dot',
-    }],
-  }, {
-    type: 'list',
-    className: 'sl2',
-    title: 'Trámites en México',
-    href: 'tramites-mx',
-    children: [{
-      title: 'CAAT- Código Alfanumerico Armonizado para Transportista',
-      href: 'caat-codigo-alfanumerico-armonizado-transportista',
+      href: '/liquid-face-lift',
+      title: 'Liquid Face Lift',
     }, {
-      title: 'Gafete para Transportista Aduana',
-      href: 'gafete-transportista-aduana',
+      href: '/rellenos-dérmicos',
+      title: 'Rellenos Dérmicos',
+    }, {
+      href: '/toxina-botulínica',
+      title: 'Toxina Botulínica',
+    }, {
+      href: '/mesoterapia-corporal',
+      title: 'Mesoterapia Corporal',
+    }, {
+      href: '/mesoterapia-facial',
+      title: 'Mesoterapia Facial',
+    }, {
+      href: '/faciales',
+      title: 'Faciales',
+    }, {
+      href: '/microdermoabrasion',
+      title: 'Microdermoabrasión',
+    }, {
+      href: '/peeling-quimicos',
+      title: 'Peeling Químicos',
+    }, {
+      href: '/laser-q-switched',
+      title: 'Láser Q Switched',
+    }, {
+      href: '/plasma-rico-en-plaquetas',
+      title: 'Plasma rico en plaquetas',
     }],
   }],
 };

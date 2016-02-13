@@ -2,52 +2,68 @@
 
 export default {
   isRoot: true,
-  title: 'DERMATOLOGÍA CLINICA',
-  description: 'Permisos para Vehículos Comerciales en USA y <strong>Nuevos Entrantes</strong>',
+  title: 'DERMATOLOGÍA CLÍNICA',
+  texts: [
+    'En Lasermedica ofrecemos los mejores tratamientos en cuanto dermatología clínica, atendiendo enfermedades que afectan tu piel, ofreciendo su prevención, diagnóstico y tratamiento.',
+    'En base a las necesidades de tu cuerpo, te podemos guiar a través de diferentes procedimientos.',
+  ],
   href: '/servicios/dermatologia-clinica',
-  className: 'w2',
+  classes: {
+    class1: 'btn-service2',
+  },
   children: [{
     type: 'title',
-    title: 'Permisos',
-    className: 'sc2',
+    title: 'DERMATOLOGÍA CLÍNICA',
+    className: '',
   }, {
     type: 'list',
-    className: 'sl5',
-    title: 'Permisos <br />en USA',
-    href: 'permisos-usa',
+    classes: {
+      class1: 'service2',
+    },
+    texts: [
+      'En Lasermedica ofrecemos los mejores tratamientos en cuanto dermatología clínica, atendiendo enfermedades que afectan tu piel, ofreciendo su prevención, diagnóstico y tratamiento.',
+      'En base a las necesidades de tu cuerpo, te podemos guiar a través de diferentes procedimientos.',
+    ],
+    href: '/dermatologia-clinica',
     children: [{
-      title: 'Licencia sobre Impuesto Diesel',
-      href: 'licencia-sobre-impuesto-diesel',
+      href: '/acne',
+      title: 'Acné',
     }, {
-      title: 'Diesel-Interstate User Diesel Fuel Tax Return',
-      href: 'diesel-interstate-user-fuel-tax-return',
+      href: '/cicatrices-de-acne',
+      title: 'Cicatrices de Acné',
     }, {
-      title: 'IFTA-International Fuel Tax Agreement',
-      href: 'ifta-international-fuel-tax-agreement',
+      href: '/melasma',
+      title: 'Melasma',
     }, {
-      title: 'CA Number',
-      href: 'ca-number',
-    }],
-  }, {
-    type: 'list',
-    className: 'sl6',
-    title: 'Nuevo <br />entrante',
-    href: 'permisos-otros',
-    children: [{
-      title: 'MC Enterprise',
-      href: 'mc-enterprise',
+      href: '/psoriasis',
+      title: 'Psoriasis',
     }, {
-      title: 'MC',
-      href: 'mc',
+      href: '/vitiligio',
+      title: 'Vitiligio',
     }, {
-      title: 'MX Op2',
-      href: 'mx-op2',
+      href: '/verrugas-vulgares',
+      title: 'Verrugas Vulgares',
     }, {
-      title: 'MX Op1',
-      href: 'mx-op1',
+      href: '/fibromas-laxos',
+      title: 'Fibromas laxos',
     }, {
-      title: 'DOT Number',
-      href: 'dot-number',
+      href: '/varices',
+      title: 'Várices',
+    }, {
+      href: '/cancer-en-la-piel',
+      title: 'Cáncer de Piel',
+    }, {
+      href: '/alopecia',
+      title: 'Alopecia',
+    }, {
+      href: '/rosacea',
+      title: 'Rosácea',
+    }, {
+      href: '/hiperhidrosis',
+      title: 'Hiperhidrosis',
+    }, {
+      href: '/molusco-contagioso',
+      title: 'Molusco Contagioso',
     }],
   }],
 };
