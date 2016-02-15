@@ -1,11 +1,11 @@
 import React from 'react';
 import _ from 'lodash';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-import restClient from '../../../../server/helpers/rest-client';
+const style = process.env.NODE_ENV === 'DEV' ? require('../style.scss') : {};
+import restClient from '../../../../../server/helpers/rest-client';
 
 
-export default class Form extends React.Component {
+export default class Form1 extends React.Component {
 
   constructor(props) {
     super(props);
@@ -48,8 +48,8 @@ export default class Form extends React.Component {
         value: '',
         require: true,
       },
-      tel: {
-        title: 'Tel&eacute;fono',
+      location: {
+        title: 'Para',
         value: '',
         require: true,
       },
@@ -105,7 +105,7 @@ export default class Form extends React.Component {
       const data = {
         fromname: formData.name.value,
         replyto: formData.email.value,
-        subject: 'Forma de Contacto Website: Project',
+        subject: 'Forma de Contacto Website: Lasermedica',
         html,
       };
 
@@ -133,7 +133,7 @@ export default class Form extends React.Component {
   }
 
   render() {
-    const { name, email, tel, message } = this.state.formData;
+    const { name, email, location, message } = this.state.formData;
 
     return (<form id="form" className={style.form + ' form-horizontal'}>
         <div className="form-group">
@@ -153,9 +153,13 @@ export default class Form extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_tel" className="col-sm-2 control-label">Teléfono</label>
+          <label id="lab_location" className="col-sm-2 control-label">Para</label>
           <div className="col-sm-10">
-            <input type="tel" name="tel" onChange={this.onChangeHandler} value={tel.value}/>
+            <select name="location" onChange={this.onChangeHandler} value={location.value}>
+              <option value="Tijuana">Tijuana</option>
+              <option value="Mexicali">Mexicali</option>
+              <option value="Ensenada">Ensenada</option>
+            </select>
           </div>
           <div className={style.borderBottom}></div>
         </div>

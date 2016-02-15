@@ -1,24 +1,47 @@
 @font-face {
-  font-family: montserrat;
-  src: url(/fonts/montserrat/montserrat-regular.ttf);
+  font-family: novecentowide_regular;
+  src: url("/fonts/novecentowide_regular.otf");
 }
 @font-face {
-  font-family: montserrat-bold;
-  src: url(/fonts/montserrat/montserrat-bold.ttf);
+  font-family: novecentowide_bold;
+  src: url("/fonts/novecentowide_bold.otf");
+}
+@font-face {
+  font-family: novecentowide_demibold;
+  src: url("/fonts/novecentowide_demibold.otf");
+}
+@font-face {
+  font-family: novecentowide_light;
+  src: url("/fonts/novecentowide_light.otf");
+}
+@font-face {
+  font-family: novecentowide_book;
+  src: url("/fonts/novecentowide_book.otf");
+}
+@font-face {
+  font-family: novecentowide_medium;
+  src: url("/fonts/novecentowide_medium.otf");
+}
+@font-face {
+  font-family: opensans_regular;
+  src: url("/fonts/opensans_regular.ttf");
+}
+@font-face {
+  font-family: opensans_bold;
+  src: url("/fonts/opensans_bold.ttf");
+}
+@font-face {
+  font-family: opensans_italic;
+  src: url("/fonts/opensans_italic.ttf");
+}
+@font-face {
+  font-family: droidserif_italic;
+  src: url("/fonts/droidserif_italic.ttf");
 }
 
-@font-face {
-  font-family: nunito;
-  src: url(/fonts/nunito/nunito-regular.ttf);
-}
-@font-face {
-  font-family: nunito-bold;
-  src: url(/fonts/nunito/nunito-bold.ttf);
-}
-@font-face {
-  font-family: nunito-light;
-  src: url(/fonts/nunito/nunito-light.ttf);
-}
+
+
+
 
 a:hover {
   text-decoration: none;
@@ -35,4 +58,11 @@ li {
 
 .container-fluid{
 	max-width: 1024px;
+}
+/* este código debe pasarse a sass una vez este el setup*/
+#slider_home .active{
+  background-color: #04B9C9;
+}
+#slider_home .carousel-indicators{
+  bottom: 60px;
 }

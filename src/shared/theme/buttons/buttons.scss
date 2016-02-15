@@ -1,0 +1,129 @@
+@import '../constants';
+.btn {
+	display: inline-block;
+	position: relative;
+	&:hover{
+		color: auto;
+		text-decoration: none;
+	}
+}
+.btn1 {
+	@extend .btn;
+	color: $white;
+	font-size: 24px;
+	padding-left: 35px;
+	font-family: $fontB;
+	opacity: .8;
+	&::after {
+		content: "";
+		@extend .vCenter;
+		left: 0;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+	}
+	&:hover{
+		color: $white;
+		opacity: 1;
+	}
+}
+.btn2 {
+	@extend .icon-sprites;
+  	@include sprite($sprites-button_arrow_white);
+  	position: absolute;
+  	right: 20px;
+  	bottom: 35px;
+  	text-indent: 100px;
+  	opacity: .6;
+  	&:hover{
+  		opacity: 1;
+  	}
+}
+.btn3{
+	display: block;
+	background-color: $blue;
+	padding: 6px 0;
+	text-align: center;
+	color: $white;
+	font-size: 14px;
+	font-family: $fontB;
+	margin-bottom: 5px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&:hover{
+		background-color: $hoverBlue;
+		color: $white;
+	}
+}
+.btn4{
+	width: 200px;
+	padding: 20px 50px 20px 20px;
+	color: $white;
+	position: relative;
+	display: block;
+	font-family: $fontBBold;
+	font-size: 14px;
+	&::after {
+		@extend .vCenter;
+		right: 20px;
+		content: "";
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_white_simple);
+	}
+	&:hover{
+		color: $white;
+	}
+}
+.btn4red{
+	@extend .btn4;
+	background-color: $red;
+	&:hover{
+		background-color: $hoverRed;
+	}
+}
+.btn4blue{
+	@extend .btn4;
+	background-color: $blue;
+	&:hover{
+		background-color: $hoverBlue;
+	}
+}
+.btn5{
+	background-color: $lightBlue;
+	display: block;
+	padding: 0 45px 0 45px;
+	color: $lightGray;
+	height: 110px;
+	font-family: $fontBBold;
+	position: relative;
+	font-size: 18px;
+	span{
+		color: $lightGray;
+		@extend .vCenter;
+		margin: 0;
+		padding: 0 65px 0 0;
+	}
+	&::after{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+		right: 20px;
+
+	}
+}
+// --- Responsive
+@media #{$isTablet}{
+  .btn5{
+		font-size: 16px;
+		padding: 0 45px 0 20px;
+    &::after{
+			right: 10px;
+		}
+  }
+}
+@media #{$isPhone}{
+	.btn5{
+		margin-bottom: 20px;
+	}
+}

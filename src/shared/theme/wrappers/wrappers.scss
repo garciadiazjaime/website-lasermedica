@@ -1,19 +1,59 @@
-.wrapper1 {
+@import '../constants.scss';
+
+.wr1 {
+  background-color: $darkBlue;
+  position: relative;
+}
+
+.wr2 {
   background-color: $red;
+  height: 230px;
 }
 
-.wrapper2 {
+.wr3 {
   background-color: $orange;
+  height: 230px;
 }
 
-.wrapper3 {
+.wr4 {
   background-color: $blue;
+  height: 250px;
 }
 
-.wrapper4 {
+.wr5 {
   background-color: $darkBlue;
 }
-
-.wrapper5 {
-  background-color: $lightBlue;
+.wr6{
+	background-color: $lightBlue;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+}
+.wr7{
+  overflow: hidden;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+// --- Paddings
+.pad45{
+  padding: 0 45px;
+}
+.pad50_45_0{
+  padding: 50px 45px 0;
+}
+.pad100_45_0{
+  padding: 100px 45px 0;
+}
+.pad100_120_0{
+  padding: 100px 120px 0;
+}
+.pad0_60{
+  padding: 0 60px;
+}
+@media #{$isPhone}{
+  .wr4{
+    height: 150px;
+  }
+  .pad100_120_0{
+    padding: 100px 60px 0;
+  }
 }

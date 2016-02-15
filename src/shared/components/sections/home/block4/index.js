@@ -16,11 +16,12 @@ export default class Block4 extends React.Component {
   render() {
     const { meta, slides } = this.props.data.carousels.carousel1;
     return (<div className="container-fluid">
-      {/* row1 */}
-      <div className="col-sm-12 col-xs-12">
-        <Carousel data={meta}>
-          <Repeat data={slides} Template={Template} className="carousel-inner" />
-        </Carousel>
+      <div className="row">
+        <div className="col-sm-12 col-xs-12">
+          <Carousel data={meta}>
+            <Repeat data={slides} Template={Template} className="carousel-inner" />
+          </Carousel>
+        </div>
       </div>
     </div>);
   }

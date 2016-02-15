@@ -1,0 +1,83 @@
+.title1 {
+	color: $white;
+	font-family: $fontB;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 0;
+}
+.title2 {
+	color: $white;
+	font-family: $fontBBold;
+	font-size: 22px;
+	margin: 0;
+}
+.title3 {
+	color: $white;
+	font-size: 14px;
+	font-family: $fontB;
+	text-transform: uppercase;
+	margin: 0;
+}
+.title4{
+	font-family: $fontALight;
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $blueGray;
+}
+.title5{
+	font-family: $fontB;
+	font-size: 18px;
+	color: $lightGray;
+	margin: 0 0 5px;
+}
+.title6{
+	font-family: $fontBBold;
+	font-size: 28px;
+	color: $blue;
+	margin: 0 0 25px;
+}
+.title7{
+	color: $white;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 42px;
+	font-family: $fontALight;
+	letter-spacing: 8px;
+	margin: 0;
+}
+.title8{
+	color: $white;
+	font-size: 18px;
+	font-family: $fontBBold;
+	@extend .vCenterRel;
+	margin: 0;
+}
+.title9{
+	color: $gray;
+	font-size: 18px;
+	font-family: $fontBBold;
+	margin: 50px 0 0 0;
+}
+.title10{
+	color: $blueGray;
+	font-size: 14px;
+	font-family: $fontB;
+	margin: 0;
+}
+@media #{$isTablet}{
+	.title7{
+		font-size: 30px;
+	}
+}
+@media #{$isPhone}{
+  .title2{
+    font-size: 16px;
+  }
+	.title7{
+		font-size: 22px;
+	}
+	.title4{
+    font-size: 30px;
+  }
+}

@@ -33,50 +33,58 @@ export default {
   block2: {
     texts: {
       text1: 'Ubicaciones',
-      text2: 'Tijuana B.C.',
-      text3: '(664) 634-1615 / 684-7425',
-      text4: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
-      text5: 'tijuanainfo@lasermedica.com.mx',
-      text6: 'Mexicali B.C.',
-      text7: '01 686 552 3672',
-      text8: 'Madero 703, 21000 Mexicali, B.C.',
-      text9: 'mexicaliinfo@lasermedica.com.mx',
-      text10: 'Ensenada B.C.',
-      text11: '01 646 1773600',
-      text12: 'Calle floresta #160 entre 1ra y 2da colonia obrera, CP 22830 Ensenada, B.C.',
-      text13: 'ensenadainfo@lasermedica.com.mx',
     },
-  },
-  links: {
-    link1: {
-      href: '/equipo',
-      title: 'Dr.Jorge Ibarra',
+    maps: {
+      locationTijuana: {
+        className: 'location1',
+        href: '#',
+      },
+      locationMexicali: {
+        className: 'location2',
+        href: '#',
+      },
+      locationEnsenada: {
+        className: 'location3',
+        href: '#',
+      },
     },
-    link2: {
-      href: '/equipo',
-      title: 'Dra.Priscilla Ibarra',
-    },
-    link3: {
-      href: '/equipo',
-      title: 'Carlos Sanchez Jimenez',
-    },
-    link4: {
-      href: '/contacto/ver-en-google-maps',
-      title: 'VER EN GOOGLE MAPS',
-    },
-  },
-  images: {
-    image1: {
-      src: '',
-      alt: 'google maps tijuana',
-    },
-    image2: {
-      src: '',
-      alt: 'google maps mexicali',
-    },
-    image3: {
-      src: '',
-      alt: 'google maps ensenada',
-    },
+    locations: [{
+      id: 'locationTijuana',
+      texts: {
+        text1: 'Tijuana B.C.',
+        text2: '(664) 634-1615 / 684-7425',
+        text3: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
+        text4: 'tijuanainfo',
+        text5: '@lasermedica.com.mx',
+      },
+      doctors: [{
+        href: '/equipo',
+        title: 'Dr.Jorge Ibarra',
+      }, {
+        href: '/equipo',
+        title: 'Dra.Priscilla Ibarra',
+      }, {
+        href: '/equipo',
+        title: 'Carlos Sanchez Jimenez',
+      }],
+    }, {
+      id: 'locationMexicali',
+      texts: {
+        text1: 'Mexicali B.C.',
+        text2: '01 686 552 3672',
+        text3: 'Madero 703, 21000 Mexicali, B.C.',
+        text4: 'mexicaliinfo',
+        text5: '@lasermedica.com.mx',
+      },
+    }, {
+      id: 'locationEnsenada',
+      texts: {
+        text1: 'Ensenada B.C.',
+        text2: '01 646 1773600',
+        text3: 'Calle floresta #160 entre 1ra y 2da colonia obrera, CP 22830 Ensenada, B.C.',
+        text4: 'ensenadainfo',
+        text5: '@lasermedica.com.mx',
+      },
+    }],
   },
 };

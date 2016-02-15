@@ -11,12 +11,8 @@ export default class HomeBrandsTemplate extends React.Component {
     const statusClass = !this.props.index ? 'active' : null;
     const className = ['item', statusClass].join(' ');
 
-    return (<div className={className}>
-      <div className={style[classes.class1]}>
-        <Link to={links.link1.href} title={links.link1.title}>
-          {links.link1.title}
-        </Link>
-      </div>
+    return (<div className={className + ' ' + style.item}>
+        <Link className={style[classes.class1]} to={links.link1.href} title={links.link1.title} />
     </div>);
   }
 }
