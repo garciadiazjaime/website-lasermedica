@@ -10,7 +10,9 @@ export default class Block4 extends React.Component {
   render() {
     const { data } = this.props;
     return (<div className="container-fluid">
+      <div className="row">
         <Repeat Template={Template} data={data} />
+      </div>
       </div>);
   }
 }

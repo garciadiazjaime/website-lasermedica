@@ -27,11 +27,11 @@
   @extend .slider1;
 }
 .title7{
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
 }
 // --- Responsive
 @media #{$isPhone}{
-  .clinica-banner{
+  .slider1{
     background-position: center top;
   }
 }
