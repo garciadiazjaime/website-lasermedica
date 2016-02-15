@@ -13,7 +13,7 @@ export default class Template4 extends React.Component {
   renderContent(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<p key={index}>
+        return (<p className={style.par2} key={index}>
           {item}
         </p>);
       });
@@ -23,9 +23,13 @@ export default class Template4 extends React.Component {
   renderServiceChild(data, serviceURL) {
     switch (_.isString(data.type) && data.type.toUpperCase()) {
       case 'TITLE':
-        return (<h2 className={data.className}>
-            {data.title}
-          </h2>);
+        return (<div className="row">
+          <div className={'col-sm-7 ' + style.pad45}>
+            <h2 className={style.title11 + ' ' + style[data.className]}>
+              {data.title}
+            </h2>
+          </div>
+        </div>);
       case 'LIST':
         const { classes, texts, href, children } = data;
         const childrenData = children.map((item) => {
@@ -34,21 +38,24 @@ export default class Template4 extends React.Component {
             href: [serviceURL + item.href].join(''),
           };
         });
-        return (
-          <div className="row">
-            <div className="col-xs-12 col-sm-6">
-              <div className={style[classes.class1]}>
+        return (<div className="row">
+            <div className={'col-xs-12 col-sm-7 ' + style.pad45}>
+              <div className={style[classes.class1] + ' ' + style.service}>
               </div>
               { this.renderContent(texts) }
-              <Link to={'/contacto' + href} title={href}>
+              <Link to={'/contacto' + href} title={href} className={style[classes.class2]}>
                 AGENDAR CITA
               </Link>
             </div>
-            <div className="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-              <Repeat data={childrenData} Template={Template5} />
+            <div className="col-xs-12 col-sm-5 col-sm-offset-0">
+              <div className={'row ' + style[classes.class3] + ' ' + style.pad45}>
+                <Repeat data={childrenData} Template={Template5} />
+              </div>
             </div>
-          </div>
-        );
+            <div className="col-xs-12">
+              <hr className={style.hr}/>
+            </div>
+          </div>);
       default:
         return null;
     }
@@ -57,7 +64,7 @@ export default class Template4 extends React.Component {
   renderBlock(data, href) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<div key={index}>
+        return (<div key={index} className="container-fluid">
             {this.renderServiceChild(item, href)}
           </div>);
       });

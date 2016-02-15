@@ -3,6 +3,7 @@
 export default {
   isRoot: true,
   title: 'DERMATOLOGÍA CLÍNICA',
+  className: 'btn-service2',
   texts: [
     'En Lasermedica ofrecemos los mejores tratamientos en cuanto dermatología clínica, atendiendo enfermedades que afectan tu piel, ofreciendo su prevención, diagnóstico y tratamiento.',
     'En base a las necesidades de tu cuerpo, te podemos guiar a través de diferentes procedimientos.',
@@ -14,11 +15,13 @@ export default {
   children: [{
     type: 'title',
     title: 'DERMATOLOGÍA CLÍNICA',
-    className: '',
+    className: 'title-service2',
   }, {
     type: 'list',
     classes: {
       class1: 'service2',
+      class2: 'btn7orange',
+      class3: 'btn8orange',
     },
     texts: [
       'En Lasermedica ofrecemos los mejores tratamientos en cuanto dermatología clínica, atendiendo enfermedades que afectan tu piel, ofreciendo su prevención, diagnóstico y tratamiento.',

@@ -1,16 +1,54 @@
 @import '../../../theme/constants.scss';
-
-.service1 {
+@import '../../../theme/titles/titles';
+@import '../../../theme/paragraphs/paragraphs';
+@import '../../../theme/buttons/buttons';
+@import '../../../theme/wrappers/wrappers';
+.service{
   @extend .icon-sprites;
+  margin-bottom: 50px;
+}
+.service1 {
   @include sprite($sprites-wrapper_services_derma-cosmetica);
 }
 
 .service2 {
-  @extend .icon-sprites;
   @include sprite($sprites-wrapper_services_derma-clinica);
 }
 
 .service3 {
-  @extend .icon-sprites;
   @include sprite($sprites-wrapper_services_tratami-dermatologicos);
+}
+.title11{
+  margin-bottom: 50px;
+}
+.title-service1{
+  color: $red;
+}
+.title-service2{
+  color: $orange;
+}
+.title-service3{
+  color: $green;
+}
+.title11{
+  margin: 0 0 50px;
+}
+.par2{
+  margin-bottom: 30px;
+}
+.hr{
+  height: 2px;
+  background-color: $blueGray;
+  margin-bottom: 50px;
+}
+@media #{$isPhone}{
+  .title11{
+    font-size: 20px;
+  }
+  .pad45{
+    padding: 0 20px;
+  }
+  .btn8{
+    font-size: 14px;
+  }
 }
