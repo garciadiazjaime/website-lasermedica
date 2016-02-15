@@ -2,6 +2,7 @@ import React from 'react';
 import { IndexRoute, Router, Route } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
+import ServicesInnerSection from '../../components/sections/services/inner';
 import sitemap from '../sitemap';
 const { items } = sitemap;
 const routes = items.children.map((item, index) => {
@@ -15,6 +16,9 @@ export default(
     <Route path="/" component={items.component}>
       <IndexRoute component={items.default} />
       {routes}
+
+      <Route path="servicios/:category/:service" component={ServicesInnerSection} />
+      <Route path="servicios/:category" component={ServicesInnerSection} />
     </Route>
   </Router>
 );

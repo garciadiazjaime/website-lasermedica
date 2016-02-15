@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
-
+// **************** Banner used on sections
 export default class Template2 extends React.Component {
 
   render() {
