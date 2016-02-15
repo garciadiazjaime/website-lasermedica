@@ -33,6 +33,9 @@
   margin-right: -7.5px;
   margin-left: -7.5px;
 }
+.wr8{
+  border-right: 2px solid $white;
+}
 // --- Paddings
 .pad45{
   padding: 0 45px;
@@ -55,5 +58,8 @@
   }
   .pad100_120_0{
     padding: 100px 60px 0;
+  }
+  .wr8{
+    border-right: none;
   }
 }

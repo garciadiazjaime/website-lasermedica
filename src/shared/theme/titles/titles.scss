@@ -65,6 +65,10 @@
 	font-family: $fontB;
 	margin: 0;
 }
+.title11{
+	font-family: $fontBBold;
+	font-size: 40px;
+}
 @media #{$isTablet}{
 	.title7{
 		font-size: 30px;
