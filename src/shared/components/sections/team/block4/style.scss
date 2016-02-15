@@ -1,6 +1,10 @@
 @import '../../../../theme/constants.scss';
 @import '../../../../theme/wrappers/wrappers.scss';
+@import '../../../../theme/titles/titles.scss';
 
+.image{
+  margin-bottom: 50px;
+}
 .image1 {
   @extend .icon-sprites;
   @include sprite($sprites-imagen-equipo-doctor-ana);
@@ -14,4 +18,24 @@
 .image3 {
   @extend .icon-sprites;
   @include sprite($sprites-imagen-equipo-doctor-jorge2);
+}
+hr{
+  background-color: $blue;
+  border: none;
+  height: 1px;
+  margin: 10px 0;
+}
+.title10{
+  margin-bottom: 50px;
+}
+@media #{$isPhone}{
+  .image{
+    margin-bottom: 20px;
+  }
+  .title9{
+    margin-top: 0px;
+  }
+  .title10{
+    margin-bottom: 80px;
+  }
 }

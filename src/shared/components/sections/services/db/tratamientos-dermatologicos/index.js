@@ -3,17 +3,19 @@
 export default {
   isRoot: true,
   title: 'TRATAMIENTOS DERMATOLÓGICOS',
+  className: 'btn-service3',
   description: 'Portafolio de seguros para <b>Vehiculos Comerciales.</b> Cobertura en México y USA.',
   href: '/servicios/tratamientos-dermatologicos',
-  className: 'btn-service3',
   children: [{
     type: 'title',
     title: 'TRATAMIENTOS DERMATOLÓGICOS',
-    className: '',
+    className: 'title-service3',
   }, {
     type: 'list',
     classes: {
       class1: 'service3',
+      class2: 'btn7green',
+      class3: 'btn8green',
     },
     texts: [
       'En Lasermedica mejoramos la apariencia de tu piel; nuestro objetivo es que nuestros pacientes luzcan una piel saludable y radiante.',

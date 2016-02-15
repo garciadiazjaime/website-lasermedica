@@ -112,6 +112,114 @@
 
 	}
 }
+.btn6{
+	background-color: $darkBlue;
+	display: block;
+	position: relative;
+	padding-left: 50px;
+	padding-right: 40px;
+	color: $white;
+	height: 80px;
+	margin-bottom: 100px;
+	span{
+		@extend .vCenterRel;
+		display: block;
+		font-family: $fontBBold;
+	}
+	&:hover{
+		color: $white;
+	}
+	&::after{
+		content: "";
+		@extend .icon-sprites;
+		@extend .vCenter;
+		right: 25px;
+	}
+}
+.btn7{
+	@extend .btn4;
+	width: 100%;
+	margin: 20px 0 80px;
+}
+.btn7red{
+	@extend .btn7;
+	background-color: $red;
+}
+.btn7orange{
+	@extend .btn7;
+	background-color: $orange;
+}
+.btn7green{
+	@extend .btn7;
+	background-color: $green;
+}
+.btn8{
+	margin-bottom: 80px;
+	a{
+		display: block;
+		font-size: 18px;
+		font-family: $fontB;
+		border-bottom: 1px solid $gray;
+		color: $gray;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+		padding-right: 50px;
+		position: relative;
+		&::after{
+			content: "";
+			@extend .vCenter;
+			@extend .icon-sprites;
+			right: 0;
+		}
+		&:hover{
+		}
+	}
+}
+.btn8red{
+	@extend .btn8;
+	a{
+
+		&::after{
+			@include sprite($sprites-button_services_square_red);
+		}
+		&:hover{
+			color: $red;
+			&::after{
+				@include sprite($sprites-button_services_square_red_hover);
+			}
+		}
+	}
+}
+.btn8orange{
+	@extend .btn8;
+	a {
+
+			&::after{
+				@include sprite($sprites-button_services_square_orange);
+			}
+			&:hover{
+				color: $orange;
+				&::after{
+					@include sprite($sprites-button_services_square_orange_hover);
+				}
+			}
+	}
+}
+.btn8green{
+	@extend .btn8;
+	a {
+
+		&::after{
+			@include sprite($sprites-button_services_square_green);
+		}
+		&:hover{
+			color: $green;
+			&::after{
+				@include sprite($sprites-button_services_square_green_hover);
+			}
+		}
+	}
+}
 // --- Responsive
 @media #{$isTablet}{
   .btn5{
@@ -125,5 +233,8 @@
 @media #{$isPhone}{
 	.btn5{
 		margin-bottom: 20px;
+	}
+	.btn6{
+		margin-bottom: 2px;
 	}
 }
