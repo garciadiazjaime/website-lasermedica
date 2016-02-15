@@ -93,7 +93,7 @@ export default {
     images: {
       image1: {
         src: '',
-        alt: 'dermatologos sertificados',
+        alt: 'dermatologos certificados',
       },
       image2: {
         src: '',
