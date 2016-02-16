@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'depilacion-laser',
+  text: 'mesoterapia-facial',
   className: '',
 }, {
   type: 'image',
