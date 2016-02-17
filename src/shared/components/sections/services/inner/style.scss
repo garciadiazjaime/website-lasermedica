@@ -1,4 +1,5 @@
 @import '../../../../theme/constants';
+@import '../../../../theme/buttons/buttons';
 .active{
   a {
     color: $red;
@@ -7,12 +8,19 @@
 
 #dermatologia-cosmetica {
 
+  .service_content {
+    background: red;
+  }
 }
 
 #dermatologia-clinica {
-
+  .service_content {
+    background: blue;
+  }
 }
 
 #tratamientos-dermatologicos {
-  
+  .service_content {
+    background: yellow;
+  }
 }

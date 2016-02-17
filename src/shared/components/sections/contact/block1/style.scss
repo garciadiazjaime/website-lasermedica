@@ -1,0 +1,41 @@
+@import "../../../../theme/wrappers/wrappers.scss";
+@import "../../../../theme/titles/titles.scss";
+
+.wr4 {
+  height: 520px;
+}
+
+.title1 {
+  text-transform: inherit;
+
+}
+
+.title2 {
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+
+.borderBottom {
+  
+}
+
+.form1 {
+  padding-top: 50px;
+
+  label {
+    @extend .title1;
+    font-size: 12px;
+  }
+
+  input, textarea {
+    background: $blue;
+    border: none;
+    color: $white;
+    height: 30px;
+    width: 90%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
