@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import Repeat from '../../../elements/repeat';
-import Template7 from '../../../templates/template7';
+import Template5 from '../../../templates/template5';
 import Utils from './utils';
 
 export default class Body extends React.Component {
@@ -123,14 +123,15 @@ export default class Body extends React.Component {
   }
 
   render() {
-    const { data, menuItems, service, category } = this.props;
-    return (<div className="container-fluid" id={style[category.replace('/', '')]}>
+    const { data, menuItems, service, category, common } = this.props;
+    const { classes } = common;
+    return (<div className="container-fluid jaime" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
-        <div className="">
+        <div className={style[classes.class1]}>
           <Link className="" to="/servicios" title="servicios">
             Menú de Servicios
           </Link>
-          <Repeat data={menuItems} Template={Template7} />
+          <Repeat data={menuItems} Template={Template5} />
         </div>
       </div>
 
@@ -138,7 +139,9 @@ export default class Body extends React.Component {
         <div className="">
           {this.renderControls(menuItems, service)}
         </div>
-        {this.renderContent(data)}
+        <div className={style.service_content}>
+          {this.renderContent(data)}
+        </div>
       </div>
     </div>);
   }
@@ -149,4 +152,5 @@ Body.propTypes = {
   menuItems: React.PropTypes.array.isRequired,
   service: React.PropTypes.string,
   category: React.PropTypes.string.isRequired,
+  common: React.PropTypes.object,
 };

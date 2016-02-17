@@ -30,5 +30,8 @@ module.exports = {
       },
     }],
   },
+  classes: {
+    class1: 'btn8orange',
+  },
 
 };
