@@ -1,9 +1,5 @@
 @import '../../../../theme/constants';
-.active{
-  a {
-    color: $red;
-  }
-}
+@import '../../../../theme/buttons/buttons';
 
 #dermatologia-cosmetica {
 
@@ -14,5 +10,5 @@
 }
 
 #tratamientos-dermatologicos {
-  
+
 }

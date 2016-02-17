@@ -9,11 +9,9 @@ export default class Header extends React.Component {
 
   render() {
     const { meta, slides } = this.props.data.carousel;
-    return (<div className="container-fluid">
-        <Carousel data={meta}>
+    return (<Carousel data={meta}>
           <Repeat data={slides} Template={Template} className="carousel-inner" />
-        </Carousel>
-      </div>);
+        </Carousel>);
   }
 }
 

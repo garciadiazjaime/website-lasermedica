@@ -124,7 +124,7 @@ export default class Body extends React.Component {
 
   render() {
     const { data, menuItems, service, category } = this.props;
-    return (<div className="container-fluid" id={style[category.replace('/', '')]}>
+    return (<div className="row" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
         <div className="">
           <Link className="" to="/servicios" title="servicios">

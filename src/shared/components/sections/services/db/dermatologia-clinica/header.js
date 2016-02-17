@@ -6,12 +6,12 @@ module.exports = {
       sliderID: 'slider_dermatologia_clinica',
       interval: 8000,
       controls: {
-        status: true,
-        className: 'control1',
+        status: false,
+        className: 'contro3',
       },
       indicators: {
-        status: true,
-        className: 'indicator1',
+        status: false,
+        className: 'indicator3',
       },
     },
     slides: [{
