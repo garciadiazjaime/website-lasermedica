@@ -28,7 +28,7 @@ export default class ServiceInner extends React.Component {
   getData(category, service) {
     try {
       return {
-        header: require('../db' + category + '/header'),
+        header: require('../db' + category + '/common'),
         body: require('../db' + category + '/services' + service),
       };
     } catch (err) {
@@ -104,7 +104,7 @@ export default class ServiceInner extends React.Component {
     const menuItems = this.getMenuItems(servicesData, categoryUrl, service);
     return (<div className="container-fluid">
       <Header data={data.header} />
-      <Body data={data.body} menuItems={menuItems} service={service} category={category} />
+      <Body data={data.body} menuItems={menuItems} service={service} category={category} common={data.header} />
     </div>);
   }
 }

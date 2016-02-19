@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'Depilacion Laser',
+  text: 'plasma-rico-en-plaquetas',
   className: '',
 }, {
   type: 'image',

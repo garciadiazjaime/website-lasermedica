@@ -167,9 +167,10 @@
 		position: relative;
 		&::after{
 			content: "";
-			@extend .vCenter;
 			@extend .icon-sprites;
+			position: absolute;
 			right: 0;
+			bottom: 14px;
 		}
 		&:hover{
 		}

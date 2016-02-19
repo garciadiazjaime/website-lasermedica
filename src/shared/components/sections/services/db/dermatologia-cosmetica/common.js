@@ -3,11 +3,11 @@
 module.exports = {
   carousel: {
     meta: {
-      sliderID: 'slider_dermatologia_clinica',
+      sliderID: 'slider_dermatologia_cosmetica',
       interval: 8000,
       controls: {
         status: false,
-        className: 'contro3',
+        className: 'control3',
       },
       indicators: {
         status: false,
@@ -16,19 +16,21 @@ module.exports = {
     },
     slides: [{
       classes: {
-        class1: 'dermatologia-clinica-slide1',
+        class1: 'dermatologia-cosmetica-slide1',
       },
       texts: {
-        text1: 'Dermatología Clínica',
+        text1: 'Dermatología Cosmética',
       },
     }, {
       classes: {
-        class1: 'dermatologia-clinica-slide2',
+        class1: 'dermatologia-cosmetica-slide1',
       },
       texts: {
-        text1: 'Dermatología Clínica2',
+        text1: 'Dermatología Cosmética',
       },
     }],
   },
-
+  classes: {
+    class1: 'btn8red',
+  },
 };

@@ -1,14 +1,36 @@
 @import '../../../../theme/constants';
 @import '../../../../theme/buttons/buttons';
-
+.active{
+  a {
+    color: $red;
+  }
+}
+.service_content{
+  h3{
+    color: $blue;
+  }
+}
 #dermatologia-cosmetica {
 
+  .service_content {
+    h2{
+      color: $red;
+    }
+  }
 }
 
 #dermatologia-clinica {
-
+  .service_content {
+    h2{
+      color: $orange;
+    }
+  }
 }
 
 #tratamientos-dermatologicos {
-
+  .service_content {
+    h2{
+      color: $green;
+    }
+  }
 }
