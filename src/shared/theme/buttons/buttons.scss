@@ -221,6 +221,22 @@
 		}
 	}
 }
+.btn9{
+	font-family: $fontBBold;
+	font-size: 14px;
+	color: $darkBlue;
+	display: block;
+	margin-bottom: 80px;
+	position: relative;
+	padding-left: 20px;
+	&::before{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_double_arrows_left);
+		left: 0;
+	}
+}
 // --- Responsive
 @media #{$isTablet}{
   .btn5{

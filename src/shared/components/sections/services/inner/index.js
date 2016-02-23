@@ -50,7 +50,6 @@ export default class ServiceInner extends React.Component {
           } else if (service && !className) {
             className = service.toUpperCase() === item.href.toUpperCase() ? activeClass : null;
           }
-
           return {
             title: item.title,
             href: [categoryUrl, item.href].join(''),

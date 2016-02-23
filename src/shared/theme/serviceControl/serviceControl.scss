@@ -1,0 +1,106 @@
+.serviceControl{
+  border-bottom: 1px solid $lightGray;
+  padding-bottom: 10px;
+  a{
+    font-family: $fontB;
+    font-size: 12px;
+    color: $gray;
+    display: block;
+    position: relative;
+    opacity: 0.8;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  a:first-child{
+    float: left;
+    padding-left: 16px;
+    position: relative;
+    &::before{
+      content: "";
+      @extend .vCenter;
+      @extend .icon-sprites;
+      left: 0;
+    }
+  }
+  a:last-child{
+    float: right;
+    position: relative;
+    padding-right: 16px;
+    &::after{
+      content: "";
+      @extend .vCenter;
+      @extend .icon-sprites;
+      right: 0;
+    }
+
+  }
+  span{
+    color: $lightGray;
+    font-family: $fontB;
+    font-size: 12px;
+    display: block;
+    position: relative;
+  }
+  span:first-child{
+    float: left;
+    padding-left: 16px;
+    &::before{
+      content: "";
+      @extend .vCenter;
+      @extend .icon-sprites;
+      @include sprite($sprites-service_control_left);
+      left: 0;
+    }
+  }
+  span:last-child{
+    float: right;
+    padding-right: 16px;
+    &::before{
+      content: "";
+      @extend .vCenter;
+      @extend .icon-sprites;
+      @include sprite($sprites-service_control_right);
+      right: 0;
+    }
+  }
+}
+.serviceControl_dermatologia-cosmetica{
+  @extend .serviceControl;
+  a:first-child{
+    &::before{
+      @include sprite($sprites-service_control_left_red);
+    }
+  }
+  a:last-child{
+    &::after{
+      @include sprite($sprites-service_control_right_red);
+    }
+  }
+}
+.serviceControl_dermatologia-clinica{
+  @extend .serviceControl;
+  a:first-child{
+    &::before{
+      @include sprite($sprites-service_control_left_green);
+    }
+  }
+  a:last-child{ç
+    &::after{
+      @include sprite($sprites-service_control_right_green);
+    }
+  }
+}
+.serviceControl_tratamientos-dermatologicos{
+  @extend .serviceControl;
+  a:first-child{
+    &::before{
+      @include sprite($sprites-service_control_left_orange);
+    }
+  }
+  a:last-child{
+    &::after{
+      @include sprite($sprites-service_control_right_orange);
+    }
+  }
+}
