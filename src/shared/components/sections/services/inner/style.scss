@@ -8,8 +8,34 @@
   }
 }
 .service_content{
+  h2{
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
   h3{
     color: $blue;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+  img{
+    margin-bottom: 50px;
+  }
+  p{
+    margin-bottom: 50px;
+  }
+
+  ul{
+    margin-bottom: 50px;
+    padding-left: 20px;
+    li{
+      list-style-type: disc;
+    }
+  }
+  strong{
+    font-family: $fontBBold;
+    color: $gray;
+    font-size: 14px;
+    margin-bottom: 25px;
   }
 }
 #dermatologia-cosmetica {

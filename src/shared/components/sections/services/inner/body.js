@@ -68,7 +68,7 @@ export default class Body extends React.Component {
 
   renderLink(data) {
     if (!_.isEmpty(data)) {
-      return (<Link className={data.className} to={data.href}>
+      return (<Link className={style[data.className]} to={data.href}>
         {data.text}
       </Link>);
     }
@@ -125,13 +125,13 @@ export default class Body extends React.Component {
   render() {
     const { data, menuItems, service, category, common } = this.props;
     const { classes } = common;
-    return (<div className="container-fluid jaime" id={style[category.replace('/', '')]}>
+    return (<div className="container-fluid" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
         <div className={'row ' + style.pad45}>
           <Link className={style.btn9} to="/servicios" title="servicios">
             Menú de Servicios
           </Link>
-          <div className={style[classes.class1]}>
+          <div className={style[classes.class2]}>
             <Repeat data={menuItems} Template={Template5} />
           </div>
         </div>
