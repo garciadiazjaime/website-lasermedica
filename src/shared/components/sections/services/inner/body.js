@@ -138,12 +138,14 @@ export default class Body extends React.Component {
       </div>
 
       <div className="col-xs-12 col-sm-6">
-        <div className={style['serviceControl_' + category.replace('/', '')]}>
-          {this.renderControls(menuItems, service)}
-          <div className="clearfix" />
-        </div>
-        <div className={style.service_content}>
-          {this.renderContent(data)}
+        <div className="row">
+          <div className={style['serviceControl_' + category.replace('/', '')]}>
+            {this.renderControls(menuItems, service)}
+            <div className="clearfix" />
+          </div>
+          <div className={style.service_content}>
+            {this.renderContent(data)}
+          </div>
         </div>
       </div>
     </div>);
