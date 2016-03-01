@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'depilacion-laser',
+  text: 'Depilacion Laser',
   className: '',
 }, {
   type: 'image',
@@ -38,7 +38,7 @@ module.exports = [{
   text: 'La triple combinación de láser fraccionado, IPL y haz de luz mejorarán invariablemente el aspecto de tu piel. El láser fraccionado ayuda a mejo- rar textura y tono, también a borrar arrugas pequeñas, aunado a lo anteri- or también cierra poros y alisa la piel, Lo mejor de todo es que este trata- miento no causa molesta alguna. El láser IPL (por sus siglas en inglés Luz Pulzada Intensa) elimina manchas en la piel mejorando visiblemente su aspecto pues el haz de luz que emite destruye las lesiones que provocan dichas manchas. Y por último, la terapia de radio frecuencia ayuda a dar firmeza a la piel, induce a la producción de colágeno mejorando también los contornos del rostro. Te invitamos a hacer una cita con nosotros para ayudarte a elegir el tratamiento específico para tu piel, en Láser médica nos preocupamos por tener tecnología de punta y ofrecer el mejor servi- cio a nuestros clientes.',
 }, {
   type: 'link',
-  className: '',
+  className: 'btn7red',
   text: 'AGENDAR CITA',
   href: '/contacto/agendar-cita/servicio/depilacion-laser',
 }];

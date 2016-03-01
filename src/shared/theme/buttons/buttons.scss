@@ -167,9 +167,10 @@
 		position: relative;
 		&::after{
 			content: "";
-			@extend .vCenter;
 			@extend .icon-sprites;
+			position: absolute;
 			right: 0;
+			bottom: 14px;
 		}
 		&:hover{
 		}
@@ -218,6 +219,22 @@
 				@include sprite($sprites-button_services_square_green_hover);
 			}
 		}
+	}
+}
+.btn9{
+	font-family: $fontBBold;
+	font-size: 14px;
+	color: $darkBlue;
+	display: block;
+	margin-bottom: 80px;
+	position: relative;
+	padding-left: 20px;
+	&::before{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_double_arrows_left);
+		left: 0;
 	}
 }
 // --- Responsive

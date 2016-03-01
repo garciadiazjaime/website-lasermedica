@@ -42,7 +42,7 @@ module.exports = [{
   text: 'Los antibióticos orales son básicos en el cuidado del acné moderado a severo, sobre todo al que resiste el tratamiento tópico y el acné que cubre largas áreas del cuerpo. Algunos de los antibióticos orales que pueden ser prescritos para tratar el acné incluyen tetraciclina, doxiciclina, eritromici- na, azitromicina, minociclina y clindamicina.',
 }, {
   type: 'link',
-  className: '',
+  className: 'btn7orange',
   text: 'AGENDAR CITA',
   href: '/contacto/agendar-cita/servicio/acne',
 }];

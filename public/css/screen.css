@@ -66,3 +66,7 @@ li {
 #slider_home .carousel-indicators{
   bottom: 60px;
 }
+.navbar-default .navbar-nav>.active>a{
+  background-color: transparent!important;
+  color: #04B9C9!important;
+}

@@ -50,7 +50,6 @@ export default class ServiceInner extends React.Component {
           } else if (service && !className) {
             className = service.toUpperCase() === item.href.toUpperCase() ? activeClass : null;
           }
-
           return {
             title: item.title,
             href: [categoryUrl, item.href].join(''),
@@ -102,7 +101,7 @@ export default class ServiceInner extends React.Component {
     const data = this.getData(category, params.service);
     const categoryUrl = [params.section, params.category].join('');
     const menuItems = this.getMenuItems(servicesData, categoryUrl, service);
-    return (<div>
+    return (<div className="container-fluid">
       <Header data={data.header} />
       <Body data={data.body} menuItems={menuItems} service={service} category={category} common={data.header} />
     </div>);
