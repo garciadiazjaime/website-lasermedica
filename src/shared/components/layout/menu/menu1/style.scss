@@ -59,9 +59,17 @@ $height: 110px;
   @extend .fCenter;
 }
 .facebook {
-  @extend .icon-layout;
+  @extend .icon-sprites;
   @include sprite($sprites-imagen-facebook);
   @extend .sm_icon;
+}
+@media#{$isTablet}{
+  .navbarNav {
+    margin-right: 10px!important;
+  }
+  .navbarNavAnchor {
+    padding: 10px 10px!important;
+  }
 }
 @media#{$isPhone}{
   .navbarCollapse{

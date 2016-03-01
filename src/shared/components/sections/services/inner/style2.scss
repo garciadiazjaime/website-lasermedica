@@ -63,7 +63,12 @@
 .title_tratamientos_dermatologicos{
   background-color: rgba(202, 221, 23, .75);
 }
-
+@media #{$isTablet}{
+  .title{
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+}
 @media #{$isPhone}{
   .title{
     font-size: 20px;
