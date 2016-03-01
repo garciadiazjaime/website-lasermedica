@@ -1,30 +1,34 @@
 @import "../../../../theme/wrappers/wrappers.scss";
 @import "../../../../theme/titles/titles.scss";
+@import "../../../../theme/paragraphs/paragraphs.scss";
+@import "../../../../theme/buttons/buttons.scss";
 
+// left column with blue background
 .wr4 {
-  height: 520px;
-}
-
-.title1 {
-  text-transform: inherit;
-
-}
-
-.title2 {
-  font-size: 24px;
-  padding-bottom: 25px;
-}
-
-.borderBottom {
-  
-}
-
-.form1 {
+  height: 620px;
   padding-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+
+  h2 {
+    @extend .title2;
+  }
+
+  p {
+    @extend .par1;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
 
   label {
-    @extend .title1;
+    @extend .par1;
     font-size: 12px;
+    text-align: left!important;
+  }
+
+  a {
+    @extend .btn4white;
+    margin-top: 80px;
   }
 
   input, textarea {
@@ -36,6 +40,6 @@
   }
 
   textarea {
-    height: 100px;
+    height: 80px;
   }
 }

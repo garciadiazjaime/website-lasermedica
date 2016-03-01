@@ -52,7 +52,7 @@ export default class Form1 extends React.Component {
       },
       location: {
         title: 'Para',
-        value: '',
+        value: 'Tijuana',
         require: true,
       },
       message: {
