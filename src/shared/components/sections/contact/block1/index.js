@@ -21,9 +21,13 @@ export default class Block1 extends React.Component {
         </div>
       </div>
       <div className="col-xs-12 col-sm-6">
-        <h2>{texts.text3}</h2>
-        <p>{texts.text4}</p>
-        <Form2 />
+        <div className="row">
+          <div className={style.localWrapper1}>
+            <h2>{texts.text3}</h2>
+            <p>{texts.text4}</p>
+            <Form2 />
+          </div>
+        </div>
       </div>
     </div>);
   }

@@ -5,18 +5,8 @@ export default {
     texts: {
       text1: 'Contáctanos',
       text2: 'Para cualquier duda o comentario, contáctanos, te responderemos lo más pronto posible.',
-      text3: 'Nombre',
-      text4: 'Correo',
-      text5: 'Para: Tijuana',
-      text6: 'Mensaje',
-      text7: 'Solicita una cita',
-      text8: 'Si estas interesado en agendar una cita con nosotros, completa la forma e incluye el procedimiento y fecha de interes y nos pondremos en contacto contigo para confirmar tu lugar.',
-      text9: 'Nombre',
-      text10: 'Correo',
-      text11: 'Teléfono',
-      text12: 'Para: Tijuana',
-      text13: 'Fecha',
-      text14: 'Procedimiento de Interés',
+      text3: 'Solicita una cita',
+      text4: 'Si estas interesado en agendar una cita con nosotros, completa la forma e incluye el procedimiento y fecha de interes y nos pondremos en contacto contigo para confirmar tu lugar.',
     },
     links: {
       link1: {

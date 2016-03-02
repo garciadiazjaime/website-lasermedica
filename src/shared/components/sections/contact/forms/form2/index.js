@@ -1,7 +1,9 @@
+/* eslint max-len: [2, 600, 4] */
+
 import React from 'react';
 import _ from 'lodash';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('../../style.scss') : {};
+const style = process.env.TIER === 'FE' ? require('../../style.scss') : {};
 import restClient from '../../../../../../server/helpers/rest-client';
 
 
@@ -55,7 +57,7 @@ export default class Form2 extends React.Component {
       },
       location2: {
         title: 'Para',
-        value: '',
+        value: 'Tijuana',
         require: true,
       },
       date2: {
@@ -147,57 +149,59 @@ export default class Form2 extends React.Component {
 
     return (<form id="form" className={style.form + ' form-horizontal'}>
         <div className="form-group">
-          <label id="lab_name2" className="col-sm-2 control-label">Nombre</label>
-          <div className="col-sm-10">
+          <label id="lab_name2" className="col-sm-3 control-label">Nombre</label>
+          <div className="col-sm-9">
             <input type="text" name="name2" onChange={this.onChangeHandler} value={name2.value} />
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div className="form-group">
-          <label id="lab_email2" className="col-sm-2 control-label">Correo</label>
-          <div className="col-sm-10">
+          <label id="lab_email2" className="col-sm-3 control-label">Correo</label>
+          <div className="col-sm-9">
             <input type="text" name="email2" onChange={this.onChangeHandler} value={email2.value}/>
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div className="form-group">
-          <label id="lab_tel2" className="col-sm-2 control-label">Teléfono</label>
-          <div className="col-sm-10">
+          <label id="lab_tel2" className="col-sm-3 control-label">Teléfono</label>
+          <div className="col-sm-9">
             <input type="tel" name="tel2" onChange={this.onChangeHandler} value={tel2.value}/>
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div className="form-group">
-          <label id="lab_location2" className="col-sm-2 control-label">Para</label>
-          <div className="col-sm-10">
-            <select name="location2" onChange={this.onChangeHandler} value={location2.value}>
-              <option value="Tijuana">Tijuana</option>
-              <option value="Mexicali">Mexicali</option>
-              <option value="Ensenada">Ensenada</option>
-            </select>
+          <label id="lab_location2" className="col-sm-3 control-label">Para</label>
+          <div className="col-sm-9">
+            <div className={style.styled_select2}>
+              <select name="location2" onChange={this.onChangeHandler} value={location2.value}>
+                <option value="Tijuana">Tijuana</option>
+                <option value="Mexicali">Mexicali</option>
+                <option value="Ensenada">Ensenada</option>
+              </select>
+            </div>
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div className="form-group">
-          <label id="lab_date2" className="col-sm-2 control-label">Fecha</label>
-          <div className="col-sm-10">
+          <label id="lab_date2" className="col-sm-3 control-label">Fecha</label>
+          <div className="col-sm-9">
             <input type="text" name="date2" onChange={this.onChangeHandler} value={date2.value} />
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div className="form-group">
-          <label id="lab_message2" className="control-label">
+          <label id="lab_message2" className="col-sm-10 control-label">
             Procedimiento de Interés
           </label>
-          <div className="col-sm-12">
-            <textarea name="message2" onChange={this.onChangeHandler} value={message2.value} />
+          <div className="col-sm-12 col-sm-offset-1">
+            <input type="text" name="message2" onChange={this.onChangeHandler} value={message2.value} />
           </div>
-          <div className={style.borderBottom}></div>
+          <div className={style.borderBottom2}></div>
         </div>
 
         <div><span id="msg2"></span></div>

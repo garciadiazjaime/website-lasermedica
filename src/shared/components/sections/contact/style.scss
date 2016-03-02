@@ -116,6 +116,17 @@
   }
 }
 
+.borderBottom2 {
+  clear: both;
+  height: 1px;
+  background-color: $blue;
+  margin: 30px 15px 0px 15px;
+
+  @media #{$isPhone} {
+    margin: 0 15px;
+  }
+}
+
 .errorCSSClass {
   color: $red !important;
 }
@@ -173,4 +184,31 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.styled_select{
+  font-size: 12px;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+
+  select {
+    font-size: 12px;
+    font-family: $fontB;
+    background: transparent;
+    border: none;
+    height: 29px;
+    padding: 5px;
+    width: 268px;
+  }
+}
+
+.styled_select_1 {
+  @extend .styled_select;
+  color: $white;
+}
+
+.styled_select2 {
+  @extend .styled_select;
+  color: $black;
 }
