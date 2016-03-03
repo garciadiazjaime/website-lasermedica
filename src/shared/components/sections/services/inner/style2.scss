@@ -47,7 +47,6 @@
 	color: $white;
 	font-size: 40px;
 	text-align: center;
-	margin-bottom: 42px;
 	font-family: $fontA;
 	letter-spacing: 12px;
   margin: 0;
@@ -63,4 +62,16 @@
 }
 .title_tratamientos_dermatologicos{
   background-color: rgba(202, 221, 23, .75);
+}
+@media #{$isTablet}{
+  .title{
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+}
+@media #{$isPhone}{
+  .title{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 }
