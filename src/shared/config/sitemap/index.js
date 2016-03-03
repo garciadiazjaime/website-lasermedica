@@ -37,10 +37,16 @@ export default {
     url: 'https://www.facebook.com/',
   }],
   addresses: [{
-    id: 'google',
-    title: 'Mountain View',
-    location: '1600 Amphitheatre Parkway Mountain View, CA 94043',
-    gmaps: 'https://www.maps.google.com/',
-    tels: '1 650-253-0000',
+    title: 'Tijuana',
+    tel: '(664) 634-1615 / 684-7425',
+  }, {
+    title: 'Mexicali',
+    tel: '(686) 552-3672',
+  }, {
+    title: 'Ensenada',
+    tel: '(686) 552-3672',
+  }, {
+    title: 'Farmacia de la Piel',
+    tel: '(664) 684-8288',
   }],
 };

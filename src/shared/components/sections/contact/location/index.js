@@ -17,6 +17,7 @@ export default class Location extends React.Component {
   }
 
   changeLocation(element) {
+    console.log('changeLocation', element.target.id);
     this.setState({
       location: element.target.id,
     });
@@ -25,7 +26,7 @@ export default class Location extends React.Component {
   renderLocations(data, locationSelected) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<Address data={item} key={index} changeLocation={this.changeLocation} locationSelected={locationSelected}/>);
+        return (<Address data={item} key={index} index={index} changeLocation={this.changeLocation} locationSelected={locationSelected}/>);
       }, this);
     }
     return null;
@@ -46,13 +47,15 @@ export default class Location extends React.Component {
   render() {
     const { texts, locations, maps } = this.props.data;
     const { location } = this.state;
-    return (<div className="row">
+    return (<div className={'row ' + style.locationWrapper}>
         <div className="col-sm-6">
           <h2>{texts.text1}</h2>
           {this.renderLocations(locations, location)}
         </div>
         <div className="col-sm-6 hidden-xs">
-          {this.renderMap(maps[location])}
+          <div className="row">
+            {this.renderMap(maps[location])}
+          </div>
         </div>
       </div>);
   }
