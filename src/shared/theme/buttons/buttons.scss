@@ -256,6 +256,13 @@
 			right: 10px;
 		}
   }
+	.btn6{
+		padding-left: 30px;
+		font-size: 14px;
+		&::after{
+			right: 15px;
+		}
+	}
 }
 @media #{$isPhone}{
 	.btn5{

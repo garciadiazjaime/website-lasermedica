@@ -14,6 +14,9 @@
 	span{
 		display: block;
 	}
+	&:last-child{
+		margin-bottom: 50px;
+	}
 }
 .par3 {
 	color: $blueGray;

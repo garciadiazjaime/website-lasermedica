@@ -8,11 +8,13 @@ export default class Header extends React.Component {
 
     return (<div className={'container-fluid ' + style[classes.class1]}>
       <div className="row">
-          <div className={'col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ' + style.heightFix}>
-                <h1 className={style.title}>{texts.text1}</h1>
-            </div>
+        <div className={'col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ' + style.heightFix}>
+          <div className="row">
+              <h1 className={style.title}>{texts.text1}</h1>
           </div>
-        </div>);
+        </div>
+      </div>
+    </div>);
   }
 }
 

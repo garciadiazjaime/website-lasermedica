@@ -62,3 +62,13 @@
     }
   }
 }
+@media #{$isPhone}{
+  .title{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .pad45{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
