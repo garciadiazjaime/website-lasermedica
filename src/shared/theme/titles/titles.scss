@@ -69,6 +69,21 @@
 	font-family: $fontBBold;
 	font-size: 40px;
 }
+.title12 {
+	font-family: $fontBBold;
+	font-size: 24px;
+	color: $gray;
+}
+.title13 {
+	font-family: $fontBBold;
+	font-size: 18px;
+	color: $gray;
+}
+.title14 {
+	font-family: $fontBBold;
+	font-size: 14px;
+	color: $gray;
+}
 @media #{$isTablet}{
 	.title7{
 		font-size: 30px;

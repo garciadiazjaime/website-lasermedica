@@ -1,5 +1,24 @@
 @import '../../../../theme/constants';
 
+.footerWrapper {
+  background-color: $darkBlue;
+  padding-top: 50px;
+}
+
+.logo {
+  @extend .icon-sprites;
+  @include sprite($sprites-brand-footer);
+}
+
+.facebook {
+
+  &:after {
+    content: '';
+    @extend .icon-sprites;
+    @include sprite($sprites-imagen-facebook);
+  }
+}
+
 #footer {
   background-color: $blue;
   padding-top: 80px;
@@ -15,15 +34,6 @@
 
   a {
     font-size: 10px;
-  }
-}
-
-.footerWrapper {
-  position: relative;
-  padding-left: 52px;
-
-  @media #{$isPhone} {
-    padding-left: 15px;
   }
 }
 

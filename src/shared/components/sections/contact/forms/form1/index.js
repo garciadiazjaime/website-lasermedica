@@ -52,7 +52,7 @@ export default class Form1 extends React.Component {
       },
       location: {
         title: 'Para',
-        value: '',
+        value: 'Tijuana',
         require: true,
       },
       message: {
@@ -157,11 +157,13 @@ export default class Form1 extends React.Component {
         <div className="form-group">
           <label id="lab_location" className="col-sm-2 control-label">Para</label>
           <div className="col-sm-10">
-            <select name="location" onChange={this.onChangeHandler} value={location.value}>
-              <option value="Tijuana">Tijuana</option>
-              <option value="Mexicali">Mexicali</option>
-              <option value="Ensenada">Ensenada</option>
-            </select>
+            <div className={style.styled_select_1}>
+              <select name="location" onChange={this.onChangeHandler} value={location.value}>
+                <option value="Tijuana">Tijuana</option>
+                <option value="Mexicali">Mexicali</option>
+                <option value="Ensenada">Ensenada</option>
+              </select>
+            </div>
           </div>
           <div className={style.borderBottom}></div>
         </div>

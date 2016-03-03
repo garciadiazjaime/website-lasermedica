@@ -1,25 +1,121 @@
 @import '../../../../theme/constants.scss';
+@import '../../../../theme/titles/titles.scss';
+@import '../../../../theme/paragraphs/paragraphs.scss';
+
+
+.locationWrapper {
+
+  h2 {
+    @extend .title12;
+    padding-left: 75px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    @extend .title13;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:before {
+      @extend .icon-sprites;
+      @include sprite($sprites-button_blue_location);
+      content: '';
+      position: absolute;;
+      left: 30px;
+      margin-top: -5px;
+    }
+  }
+
+  h4 {
+    @extend .title14;
+    padding-bottom: 5px;
+  }
+
+  p {
+    @extend .par2;
+    padding-bottom: 5px;
+
+    span {
+      display: inline-block;
+      color: $blue;
+    }
+
+    strong {
+      font-family: $fontBBold;
+    }
+  }
+
+  a {
+    @extend .par3;
+  }
+}
+
+.borderBottom {
+  height: 1px;
+  background: $lightGray;
+  margin-top: 25px;
+  margin-left: -70px;
+}
 
 .locationItem {
+  margin-left: 25px;
+  padding-left: 75px;
+  padding-right: 50px;
+  border-left: 5px solid white;
+  opacity: 0.5;
+  position: relative;
 
+  i {
+    display: none;
+  }
 }
 
 .active {
-  border-left: 1px solid $blue;
+  border-left: 5px solid $blue;
+  opacity: 1;
+
+  i {
+    color: $blue;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 12px;
+    top: 0;
+  }
+}
+
+.location {
+  @extend .icon-sprites;
+
+  a {
+    @extend .par4;
+
+    position: absolute;
+    top: 333px;
+    right: 0px;
+    padding: 10px 30px;
+    display: block;
+    background-color: $blue;
+  }
 }
 
 
 .location1 {
-  @extend .icon-sprites;
+  @extend .location;
   @include sprite($sprites-wrapper-ubicacion-tijuana);
 }
 
 .location2 {
-  @extend .icon-sprites;
+  @extend .location;
   @include sprite($sprites-wrapper-ubicacion-mexicali);
 }
 
 .location3 {
-  @extend .icon-sprites;
+  @extend .location;
   @include sprite($sprites-wrapper-ubicacion-ensenada);
 }

@@ -14,9 +14,20 @@
 	span{
 		display: block;
 	}
+	&:last-child{
+		margin-bottom: 50px;
+	}
 }
-.par2:last-child{
-	margin-bottom: 50px;
+.par3 {
+	color: $blueGray;
+	font-size: 12px;
+	font-family: $fontBBold;
+}
+.par4 {
+	color: $white;
+	font-size: 12px;
+	font-family: $fontBBold;
+	text-transform: uppercase;
 }
 .paragraph3{
 	font-family: $fontCItalic;

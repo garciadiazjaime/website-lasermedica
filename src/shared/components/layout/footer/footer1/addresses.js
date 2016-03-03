@@ -1,0 +1,39 @@
+import React from 'react';
+import { Link } from 'react-router';
+// const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+
+
+export default class Addresses extends React.Component {
+
+  renderAddress(item, index) {
+    return (<div className="col-xs-12 col-sm-3" key={index}>
+      <div>
+        <div>
+          {item.title}
+        </div>
+        <p>
+          {item.tel}
+        </p>
+      </div>
+    </div>);
+  }
+
+  render() {
+    const itemsEl = this.props.data.map((item, index) => {
+      return this.renderAddress(item, index);
+    });
+
+    return (<div>
+      <div className="row">
+        <Link to="contacto" title="Contáctanos">Contáctanos</Link>
+      </div>
+      <div className="row">
+        {itemsEl}
+      </div>
+    </div>);
+  }
+}
+
+Addresses.propTypes = {
+  data: React.PropTypes.array,
+};

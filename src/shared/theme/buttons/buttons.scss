@@ -88,6 +88,16 @@
 		background-color: $hoverBlue;
 	}
 }
+.btn4white{
+	@extend .btn4;
+	color: $blue;
+	text-transform: uppercase;
+	background-color: $white;
+	&:hover{
+		background-color: $hoverBlue;
+		cursor: pointer;
+	}
+}
 .btn5{
 	background-color: $lightBlue;
 	display: block;
