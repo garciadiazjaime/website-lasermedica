@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
-// const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 
 export default class Addresses extends React.Component {
 
   renderAddress(item, index) {
-    return (<div className="col-xs-12 col-sm-3" key={index}>
+    return (<div className={style.addresses + ' col-xs-12 col-sm-3'} key={index}>
       <div>
-        <div>
+        <h4>
           {item.title}
-        </div>
+        </h4>
         <p>
           {item.tel}
         </p>
@@ -25,7 +25,7 @@ export default class Addresses extends React.Component {
 
     return (<div>
       <div className="row">
-        <Link to="contacto" title="Contáctanos">Contáctanos</Link>
+        <Link className={style.contactBlock} to="contacto" title="Contáctanos">Contáctanos</Link>
       </div>
       <div className="row">
         {itemsEl}

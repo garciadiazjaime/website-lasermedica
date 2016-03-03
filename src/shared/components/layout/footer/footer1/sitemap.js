@@ -1,6 +1,6 @@
 import React from 'react';
 
-// const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 
 export default class SiteMap extends React.Component {
@@ -14,7 +14,7 @@ export default class SiteMap extends React.Component {
         { children }
       </li>);
     }, this);
-    return (<ul>{items}</ul>);
+    return (<div className={'row ' + style.sitemap}><ul>{items}</ul></div>);
   }
 
   render() {

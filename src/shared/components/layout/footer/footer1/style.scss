@@ -1,122 +1,101 @@
 @import '../../../../theme/constants';
-
+@import '../../../../theme/wrappers/wrappers';
 .footerWrapper {
   background-color: $darkBlue;
   padding-top: 50px;
+  a{
+    font-size: 10px;
+    &:hover{
+      color: $blue;
+    }
+  }
 }
-
+.brand{
+  margin-bottom: 50px;
+}
 .logo {
   @extend .icon-sprites;
   @include sprite($sprites-brand-footer);
 }
-
+.sitemap{
+  a{
+    color: $white!important;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: $fontBBold;
+  }
+}
 .facebook {
-
+  display: block;
+  float: right;
+  padding-right: 35px;
+  margin-right: 65px;
+  color: $blue!important;
+  position: relative;
   &:after {
     content: '';
     @extend .icon-sprites;
+    @extend .vCenter;
+    right: 0;
     @include sprite($sprites-imagen-facebook);
   }
 }
-
-#footer {
-  background-color: $blue;
-  padding-top: 80px;
-
-  ul {
-    padding: 0;
-    padding-top: 10px;
+.serviceTitle{
+  @extend .pad45;
+  color: $white!important;
+  font-family: $fontBBold;
+  display: block;
+  border-bottom: 1px solid $gray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.serviceElement{
+  @extend .pad45;
+  a{
+    color: $blue!important;
+    font-family: $fontB;
+    display: block;
+    margin-bottom: 10px;
   }
+}
+.contactBlock{
+  color: $white!important;
+  font-family: $fontBBold;
+  display: block;
+  border-bottom: 1px solid $gray;
+  border-top: 1px solid $gray;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 20px 0;
+}
 
-  li {
-    list-style: none;
-  }
-
-  a {
+.addresses {
+  font-family: $fontB;
+  h4{
+    color: $blue!important;
+    margin-bottom: 20px;
     font-size: 10px;
   }
-}
-
-.footerMenu {
-  margin-top: 30px;
-}
-
-.menuParent {
-  float: left;
-  padding-right: 30px;
-
-  @media #{$isPhone} {
-    padding-bottom: 20px;
-  }
-
-  a {
-    font-family: $fontA;
-    color: $gray;
-    text-transform: uppercase;
+  p{
+    color: $white!important;
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 
-.menuChild {
-
-  a {
-    font-family: $fontABold;
-    color: $white;
-    text-transform: none;
-  }
-}
-
-#addresses {
-  width: 450px;
-  position: absolute;
-  right: 5px;
-
-  @media screen and (max-width: 1201px) {
-    right: -50px;
-  }
-
-  h2 {
-    font-family: $fontABold;
-    color: $white;
-    text-transform: none;
-    font-size: 10px;
-  }
-
-  p, a {
-    font-family: $fontA;
-    color: $white;
-    text-transform: none;
-    font-size: 10px;
-  }
-}
-
-.followUs {
-  padding-left: 30px;
-  margin-top: 10px;
-
-  p {
-    font-family: $fontA;
-    font-size: 10px;
-    color: $white;
-    float: left;
-    padding-right: 20px;
-    padding-top: 5px;
-  }
-}
 
 .powered {
-  margin-top: 80px;
-  background-color: $blue;
-  color: $blue;
-  padding: 15px 0;
-  font-family: $fontA;
+  background-color: $lightGray;
+  color: $white;
+  padding: 10px 0;
+  font-family: $fontB;
   font-size: 10px;
-  padding-left: 52px;
-
-  @media #{$isPhone} {
-    padding-left: 15px;
-  }
-
-  p {
-    margin: 0;
+  a{
+    color: $white;
+    &:hover{
+      color: $blue;
+    }
   }
 }
