@@ -16,7 +16,7 @@ export default class Powered extends React.Component {
       title: 'Diseño y Desarrollo Web en Tijuana',
     }];
 
-    return (<div className="wp1_">
+    return (<div>
         <div className="container-fluid">
           <div className="row">
             <div className="col-xs-12 col-sm-6">

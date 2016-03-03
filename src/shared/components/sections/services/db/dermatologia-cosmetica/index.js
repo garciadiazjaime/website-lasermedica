@@ -2,7 +2,7 @@
 
 export default {
   isRoot: true,
-  title: 'DERMATOLOGÍA COSMETICA',
+  title: 'Dermatología Cosmética',
   className: 'btn-service1',
   texts: [
     'Existen diferentes tipos de procedimientos dermatológicos cosméticos a los que te puedes someter dependiendo de tu condición de la piel y del resultado que quieras obtener.',

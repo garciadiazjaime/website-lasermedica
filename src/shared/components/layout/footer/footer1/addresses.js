@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router';
 // const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 
@@ -7,11 +7,11 @@ export default class Addresses extends React.Component {
 
   renderAddress(item, index) {
     return (<div className="col-xs-12 col-sm-3" key={index}>
-      <div className="Wrapper1">
-        <div className="Title1">
+      <div>
+        <div>
           {item.title}
         </div>
-        <p className="Paragraph1">
+        <p>
           {item.tel}
         </p>
       </div>
@@ -19,14 +19,21 @@ export default class Addresses extends React.Component {
   }
 
   render() {
-    const items = this.props.data.map((item, index) => {
+    const itemsEl = this.props.data.map((item, index) => {
       return this.renderAddress(item, index);
     });
 
-    return (<div>{items}</div>);
+    return (<div>
+      <div className="row">
+        <Link to="contacto" title="Contáctanos">Contáctanos</Link>
+      </div>
+      <div className="row">
+        {itemsEl}
+      </div>
+    </div>);
   }
 }
 
 Addresses.propTypes = {
-  data: React.PropTypes.object,
+  data: React.PropTypes.array,
 };

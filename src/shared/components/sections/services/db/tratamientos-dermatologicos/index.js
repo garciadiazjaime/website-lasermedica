@@ -2,7 +2,7 @@
 
 export default {
   isRoot: true,
-  title: 'TRATAMIENTOS DERMATOLÓGICOS',
+  title: 'Tratamientos Dermatológicos',
   className: 'btn-service3',
   description: 'Portafolio de seguros para <b>Vehiculos Comerciales.</b> Cobertura en México y USA.',
   href: '/servicios/tratamientos-dermatologicos',
