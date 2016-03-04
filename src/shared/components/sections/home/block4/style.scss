@@ -1,0 +1,42 @@
+@import '../../../../theme/constants.scss';
+
+.slidex{
+  @extend .icon-sprites;
+  display: inline-block!important;
+  margin: 0 10px;
+}
+.item{
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+// ---- brands slider
+.slider1 {
+  background-size: cover;
+  height: 500px;
+}
+
+.slide1 {
+  @extend  .slidex;
+  @include sprite($sprites-imagen-marca-le-roche-posay);
+}
+
+.slide2 {
+  @extend  .slidex;
+  @include sprite($sprites-imagen-marca-avene);
+}
+
+.slide3 {
+  @extend  .slidex;
+  @include sprite($sprites-imagen-marca-vichy);
+}
+
+.slide4 {
+  @extend .slidex;
+  @include sprite($sprites-imagen-marca-cetaphil);
+}
+
+.slide5 {
+  @extend  .slidex;
+  @include sprite($sprites-imagen-marca-aderma);
+}

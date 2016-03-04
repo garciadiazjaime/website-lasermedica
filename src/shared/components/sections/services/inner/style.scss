@@ -1,0 +1,74 @@
+@import '../../../../theme/constants';
+@import '../../../../theme/buttons/buttons';
+@import '../../../../theme/wrappers/wrappers';
+@import '../../../../theme/serviceControl/serviceControl';
+.active{
+  a {
+    color: $red;
+  }
+}
+.service_content{
+  h2{
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  h3{
+    color: $blue;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+  img{
+    margin-bottom: 50px;
+  }
+  p{
+    margin-bottom: 50px;
+  }
+
+  ul{
+    margin-bottom: 50px;
+    padding-left: 20px;
+    li{
+      list-style-type: disc;
+    }
+  }
+  strong{
+    font-family: $fontBBold;
+    color: $gray;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+#dermatologia-cosmetica {
+
+  .service_content {
+    h2{
+      color: $red;
+    }
+  }
+}
+
+#dermatologia-clinica {
+  .service_content {
+    h2{
+      color: $orange;
+    }
+  }
+}
+
+#tratamientos-dermatologicos {
+  .service_content {
+    h2{
+      color: $green;
+    }
+  }
+}
+@media #{$isPhone}{
+  .title{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .pad45{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

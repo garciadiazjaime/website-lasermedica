@@ -1,0 +1,64 @@
+@import '../../../theme/buttons/buttons';
+
+.slider1 {
+  background-size: cover;
+  background-position: center top;
+  height: 300px;
+  margin-bottom: 50px;
+
+  h2{
+  	margin-top: 0;
+  }
+}
+.heightFix{
+	height: 300px;
+}
+
+// ---- Inner service Carrousel
+// dermatologia-cosmetica
+.dermatologia-cosmetica-slide1 {
+  background-image: url('/images/servicios/dermatologia-cosmetica/banner/banner.png');
+  @extend .slider1;
+  h1{
+    @extend .title_dermatologia_cosmetica;
+  }
+}
+
+// dermatologia-clinica
+.dermatologia-clinica-slide1 {
+  background-image: url('/images/servicios/dermatologia-clinica/banner/banner.png');
+  @extend .slider1;
+  h1{
+    @extend .title_dermatologia_cosmetica;
+  }
+}
+
+// tratamientos-dermatologicos
+.tratamientos-dermatologicos-slide1 {
+  background-image: url('/images/servicios/tratamientos-dermatologicos/banner/banner.png');
+  @extend .slider1;
+  h1{
+    @extend .title_tratamientos_dermatologicos;
+  }
+}
+
+.title{
+  @extend .vCenter;
+	color: $white;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 42px;
+	font-family: $fontA;
+	letter-spacing: 12px;
+  margin: 0;
+  padding: 25px 100px;
+}
+.title_dermatologia_cosmetica{
+  background-color: rgba(236, 100, 93, .75);
+}
+.title_dermatologia_clinica{
+  background-color: rgba(248, 180, 19, .75);
+}
+.title_tratamientos_dermatologicos{
+  background-color: rgba(202, 221, 23, .75);
+}

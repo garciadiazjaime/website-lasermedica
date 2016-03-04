@@ -1,0 +1,23 @@
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-doctor);
+}
+
+.image2 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-enfermeras);
+}
+.image3 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-logo-farmacia);
+}
+
+.image4 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-productos);
+}
+@media #{$isPhone}{
+  .image3{
+    @include sprite($sprites-imagen-logo-farmacia_phone);
+  }
+}

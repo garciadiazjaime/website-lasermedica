@@ -1,0 +1,75 @@
+@import '../../../../theme/constants';
+@import '../../../../theme/buttons/buttons';
+
+
+.services_menu {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%
+}
+
+.service_0 {
+  // todo: change this for the right element
+  border-top: 7px solid $red;
+  color: $red;
+  h2{
+    font-size: 18px;
+    padding: 30px 45px;
+  }
+  a {
+    @extend .btn4red;
+    margin: 0 auto;
+  }
+}
+
+.service_1 {
+  // todo: change this for the right element
+  border-top: 7px solid $orange;
+  color: $orange;
+  h2{
+    font-size: 18px;
+    padding: 30px 45px;
+  }
+  a {
+    @extend .btn4orange;
+    margin: 0 auto;
+  }
+}
+
+.service_2 {
+  // todo: change this for the right element
+  border-top: 7px solid $green;
+  color: $green;
+  h2{
+    font-size: 18px;
+    padding: 30px 45px;
+  }
+  a {
+    @extend .btn4green;
+    margin: 0 auto;
+  }
+}
+
+.leftPanel{
+  padding-top: 30px;
+  background: $darkBlue;
+  color: $white;
+  h3{
+    font-family: $fontBBold;
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+  p{
+    font-family: $fontB;
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  &::after{
+    content: "";
+    margin: 0 -15px;
+    @extend .icon-sprites;
+    @include sprite($sprites-submenu-decor);
+  }
+}
