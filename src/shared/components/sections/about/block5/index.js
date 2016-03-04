@@ -29,7 +29,9 @@ export default class Block5 extends React.Component {
           </div>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <div className={style[classes.class1]} />
+          <div className="row">
+            <div className={style[classes.class1]} />
+          </div>
         </div>
       </div>
       <div className="row">
