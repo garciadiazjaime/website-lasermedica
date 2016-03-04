@@ -44,12 +44,11 @@ export default class ServicesMenu extends React.Component {
     const servicesData = this.getServicesData(dbServices);
     // const selectedService = servicesData[this.state.selectedServiceIndex];
 
-    return (<div id="services-menu" className="container-fluid visible-md">
+    return (<div id="services-menu" className="container-fluid">
       <div className="row">
         <div className={'col-xs-3 ' + style.leftPanel}>
           <h3>Nuestros Servicios</h3>
           <p>Conoce nuestros servicios y descubre cómo podemos ayudarte.</p>
-          <div className="bgImage" />
         </div>
         <Cover data={servicesData} />
       </div>
