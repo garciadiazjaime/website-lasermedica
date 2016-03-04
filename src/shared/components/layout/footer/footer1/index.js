@@ -19,7 +19,7 @@ export default class FooterAAA extends React.Component {
           <div className="col-xs-12 col-sm-2">
             <SiteMap data={this.props.items} />
           </div>
-          <div className="col-xs-12 col-sm-10">
+          <div className={'col-xs-12 col-sm-10 ' + style.leftBorder}>
             <Services />
             <Addresses data={addresses} />
           </div>

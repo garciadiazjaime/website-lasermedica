@@ -53,15 +53,13 @@ export default class Services extends React.Component {
         </div>
       </div>);
     });
-    return (<div className="row">
-      {servicesEl}
-    </div>);
+    return (<div className="row">{servicesEl}</div>);
   }
 
   render() {
     const servicesData = this.getServicesData(dbServices);
 
-    return (<div className="row">
+    return (<div>
       {this.renderServices(servicesData)}
     </div>);
   }

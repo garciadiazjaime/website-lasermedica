@@ -25,7 +25,11 @@ export default class Addresses extends React.Component {
 
     return (<div>
       <div className="row">
-        <Link className={style.contactBlock} to="contacto" title="Contáctanos">Contáctanos</Link>
+        <div className="col-xs-12">
+          <Link className={style.contactBlock} to="contacto" title="Contáctanos">
+            Contáctanos
+          </Link>
+        </div>
       </div>
       <div className="row">
         {itemsEl}
