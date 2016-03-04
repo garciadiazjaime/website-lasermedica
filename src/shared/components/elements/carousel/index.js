@@ -1,3 +1,5 @@
+/* eslint max-len: [2, 500, 4] */
+
 import React from 'react';
 import _ from 'lodash';
 
@@ -9,9 +11,9 @@ export default class Carousel1 extends React.Component {
   renderIndicators(data, sliderID, className) {
     if (_.isArray(data) && data.length) {
       const bullets = data.map((slide, index) => {
-        const c = !index ? 'active' : null;
+        const itemClassName = index === 0 ? 'active' : null;
         return (
-          <li data-target={'#' + sliderID} data-slide-to={index} key={index} className={c}></li>
+          <li data-target={'#' + sliderID} data-slide-to={index} key={index} className={itemClassName}></li>
         );
       }, this);
       return (<ol className={'carousel-indicators ' + style[className]}>

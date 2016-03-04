@@ -9,7 +9,7 @@ export default class Addresses extends React.Component {
     return (<div className={style.addresses + ' col-xs-12 col-sm-3'} key={index}>
       <div>
         <h4>
-          {item.title}
+          {item.title}:
         </h4>
         <p>
           {item.tel}

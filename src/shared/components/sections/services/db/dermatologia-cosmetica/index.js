@@ -36,7 +36,7 @@ export default {
       title: 'Tratamiento 360',
     }, {
       href: '/laser-erbium-fraccionado',
-      title: 'Láser Erbium Fraccionado',
+      title: 'Láser Erbium',
     }, {
       href: '/laser-CO2-fraccionado',
       title: 'Láser CO2 Fraccionado',

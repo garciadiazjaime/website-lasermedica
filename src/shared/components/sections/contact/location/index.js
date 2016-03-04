@@ -17,7 +17,6 @@ export default class Location extends React.Component {
   }
 
   changeLocation(element) {
-    console.log('changeLocation', element.target.id);
     this.setState({
       location: element.target.id,
     });

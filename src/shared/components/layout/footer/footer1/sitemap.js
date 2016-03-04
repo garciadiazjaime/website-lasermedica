@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -10,7 +11,7 @@ export default class SiteMap extends React.Component {
       const children = item.children ? this.getItems(item.children) : null;
 
       return (<li key={index}>
-        <a href={item.url} target="_blank">{item.title}</a>
+        <Link to={item.url}>{item.title}</Link>
         { children }
       </li>);
     }, this);

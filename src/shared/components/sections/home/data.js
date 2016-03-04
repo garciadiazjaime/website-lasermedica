@@ -8,7 +8,7 @@ export default {
           sliderID: 'slider_home',
           interval: 8000,
           controls: {
-            status: true,
+            status: false,
             className: 'control1',
           },
           indicators: {
@@ -74,7 +74,7 @@ export default {
         title: 'Dermatología Clínica',
       },
       link3: {
-        href: '/servicios/dermatologia-certificados',
+        href: '/equipo',
         title: 'Dermatólogos Certificados',
       },
       link4: {
@@ -108,7 +108,8 @@ export default {
       text2: 'En Tijuana: ',
       text3: '(664) 634-1615',
       text4: 'Visítanos en:',
-      text5: 'Blvd Sánchez Taboada 101102-15, Plaza Financiera, Zona Río, Tijuana, B.C.',
+      text5: 'Blvd Sánchez Taboada 101102-15',
+      text6: 'Plaza Financiera, Zona Río, Tijuana, B.C.',
     },
     links: {
       link1: {
@@ -228,19 +229,19 @@ export default {
     },
     items: [{
       title: 'Depilacion Laser',
-      href: '/servicios/depilacion-laser',
+      href: '/servicios/dermatologia-cosmetica/depilacion-laser',
       className: 'item1',
     }, {
       title: 'Tratamiento 360',
-      href: '/servicios/tratamiento-360',
+      href: '/servicios/dermatologia-cosmetica/tratamiento-360',
       className: 'item2',
     }, {
       title: 'Acné',
-      href: '/servicios/acne',
+      href: '/servicios/dermatologia-clinica/acne',
       className: 'item3',
     }, {
       title: 'Melasma',
-      href: '/servicios/melasma',
+      href: '/servicios/dermatologia-clinica/melasma',
       className: 'item4',
     }],
   },

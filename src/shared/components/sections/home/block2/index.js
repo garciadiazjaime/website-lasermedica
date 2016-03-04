@@ -62,7 +62,7 @@ export default class Block2 extends React.Component {
         </div>
         <div className="row">
           <div className="col-sm-12 col-xs-12">
-            <h2 className={style.title4}>{texts.text14}</h2>
+            <h2 className={style.title4 + ' ' + style.max_width}>{texts.text14}</h2>
           </div>
         </div>
       </div>

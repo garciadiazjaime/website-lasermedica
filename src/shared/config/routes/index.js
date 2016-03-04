@@ -2,6 +2,7 @@ import React from 'react';
 import { IndexRoute, Router, Route } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
+import ContactSection from '../../components/sections/contact';
 import ServicesInnerSection from '../../components/sections/services/inner';
 import sitemap from '../sitemap';
 const { items } = sitemap;
@@ -19,6 +20,8 @@ export default(
 
       <Route path="servicios/:category/:service" component={ServicesInnerSection} />
       <Route path="servicios/:category" component={ServicesInnerSection} />
+      <Route path="contacto/:service" component={ContactSection} />
+      <Route path="ubicacion/:ubicacion" component={ContactSection} />
     </Route>
   </Router>
 );
