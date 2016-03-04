@@ -14,7 +14,6 @@ export default class AppHandler extends React.Component {
     window.addEventListener('scroll', this.onScroll, false);
     let isMenuServiceDisplayed = false;
     $('a#servicios').hover(() => {
-      console.log('here');
       $('#services-menu').removeClass('hidden');
     });
 
@@ -22,6 +21,7 @@ export default class AppHandler extends React.Component {
       isMenuServiceDisplayed = true;
     }, () => {
       isMenuServiceDisplayed = false;
+      $('#services-menu').addClass('hidden');
     });
 
     $('body').click(() => {
