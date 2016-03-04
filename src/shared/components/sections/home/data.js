@@ -70,7 +70,7 @@ export default {
         title: 'Dermatología Cosmetíca',
       },
       link2: {
-        href: '/equipo/dermatologos-clinica',
+        href: '/servicios/dermatologia-clinica',
         title: 'Dermatología Clínica',
       },
       link3: {
