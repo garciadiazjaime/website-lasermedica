@@ -2,7 +2,7 @@
   "name": "website-lasermedica",
   "version": "0.0.3",
   "description": "Business Website",
-  "main": "index.js",
+  "main": "lib/server/server",
   "scripts": {
     "test": "npm run lint",
     "clean": "rm -rf lib",
