@@ -10,7 +10,7 @@ export default class Template1 extends React.Component {
 
   render() {
     const { classes, texts, links } = this.props.data;
-    const statusClass = this.props.index ? 'active' : null;
+    const statusClass = this.props.index === 0 ? 'active' : null;
     const className = ['item', style[classes.class1], statusClass].join(' ');
 
     return (<div className={className}>
