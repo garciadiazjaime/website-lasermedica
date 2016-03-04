@@ -1,6 +1,15 @@
 @import '../../../../theme/constants';
 @import '../../../../theme/buttons/buttons';
 
+
+.services_menu {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%
+}
+
 .service_0 {
   // todo: change this for the right element
   border-top: 7px solid $red;

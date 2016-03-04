@@ -1,9 +1,9 @@
+/* eslint max-len: [2, 500, 4] */
 import React from 'react';
 import _ from 'lodash';
 
 import dbServices from '../../../sections/services/db';
 import Cover from './cover';
-// import Services from './services';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -42,16 +42,17 @@ export default class ServicesMenu extends React.Component {
 
   render() {
     const servicesData = this.getServicesData(dbServices);
-    // const selectedService = servicesData[this.state.selectedServiceIndex];
 
-    return (<div id="services-menu" className="container-fluid visible-md">
-      <div className="row">
-        <div className={'col-xs-3 ' + style.leftPanel}>
-          <h3>Nuestros Servicios</h3>
-          <p>Conoce nuestros servicios y descubre cómo podemos ayudarte.</p>
-          <div className="bgImage" />
+    return (<div id="services-menu" className="container-fluid hidden" style={{ position: 'relative' }}>
+      <div className={'row '}>
+        <div className={style.services_menu}>
+          <div className={'col-xs-3 ' + style.leftPanel}>
+            <h3>Nuestros Servicios</h3>
+            <p>Conoce nuestros servicios y descubre cómo podemos ayudarte.</p>
+            <div className="bgImage" />
+          </div>
+          <Cover data={servicesData} />
         </div>
-        <Cover data={servicesData} />
       </div>
     </div>);
   }
