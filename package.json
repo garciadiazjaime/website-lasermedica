@@ -1,6 +1,6 @@
 {
   "name": "website-lasermedica",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Business Website",
   "main": "lib/server/server",
   "scripts": {
