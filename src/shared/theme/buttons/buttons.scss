@@ -88,6 +88,20 @@
 		background-color: $hoverBlue;
 	}
 }
+.btn4orange{
+	@extend .btn4;
+	background-color: $orange;
+	&:hover{
+		background-color: $hoverOrange;
+	}
+}
+.btn4green{
+	@extend .btn4;
+	background-color: $green;
+	&:hover{
+		background-color: $hoverGreen;
+	}
+}
 .btn4white{
 	@extend .btn4;
 	color: $blue;
