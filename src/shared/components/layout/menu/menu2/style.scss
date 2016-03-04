@@ -1,59 +1,60 @@
 @import '../../../../theme/constants';
 @import '../../../../theme/buttons/buttons';
-
+.service{
+  height: 256px;
+  h2{
+    font-size: 18px;
+    padding: 63px 45px 30px;
+    margin: 0;
+  }
+  a{
+    margin: 0 0 0 45px;
+    width: 150px;
+    padding: 15px 45px 15px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+}
 
 .services_menu {
   background-color: white;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  border-bottom: 1px solid $darkBlue;
+  top: 110px;
   z-index: 10;
-  width: 100%
+  width: 100%;
 }
 
 .service_0 {
-  // todo: change this for the right element
+  @extend .service;
   border-top: 7px solid $red;
   color: $red;
-  h2{
-    font-size: 18px;
-    padding: 30px 45px;
-  }
   a {
     @extend .btn4red;
-    margin: 0 auto;
   }
 }
 
 .service_1 {
-  // todo: change this for the right element
+  @extend .service;
   border-top: 7px solid $orange;
   color: $orange;
-  h2{
-    font-size: 18px;
-    padding: 30px 45px;
-  }
   a {
     @extend .btn4orange;
-    margin: 0 auto;
   }
 }
 
 .service_2 {
-  // todo: change this for the right element
+  @extend .service;
   border-top: 7px solid $green;
   color: $green;
-  h2{
-    font-size: 18px;
-    padding: 30px 45px;
-  }
   a {
     @extend .btn4green;
-    margin: 0 auto;
   }
 }
 
 .leftPanel{
-  padding-top: 30px;
+  height: 256px;
+  padding: 70px 45px 0 30px;
   background: $darkBlue;
   color: $white;
   h3{
@@ -66,10 +67,10 @@
     font-size: 12px;
     margin-bottom: 30px;
   }
-  &::after{
-    content: "";
-    margin: 0 -15px;
-    @extend .icon-sprites;
-    @include sprite($sprites-submenu-decor);
-  }
+  // &::after{
+  //   content: "";
+  //   margin: 0 -15px;
+  //   @extend .icon-sprites;
+  //   @include sprite($sprites-submenu-decor);
+  // }
 }
