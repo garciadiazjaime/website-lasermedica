@@ -44,5 +44,5 @@ module.exports = [{
   type: 'link',
   className: 'btn7orange',
   text: 'AGENDAR CITA',
-  href: '/contacto/agendar-cita/servicio/acne',
+  href: '/contacto/acne',
 }];

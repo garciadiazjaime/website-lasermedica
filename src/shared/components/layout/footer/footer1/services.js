@@ -35,9 +35,9 @@ export default class Services extends React.Component {
     const renderServiceChildren = (href, items) => {
       const className = items.length > 5 ? 'col-xs-12 col-md-6' : 'col-sm-12';
       return items.map((service, index) => {
-        return (<div className={className + ' ' + style.serviceElement}>
+        return (<div className={className + ' ' + style.serviceElement} key={index}>
           <div className="row">
-            <Link to={href + service.href} title={service.title} key={index}>
+            <Link to={href + service.href} title={service.title}>
             {service.title}
             </Link>
           </div>
@@ -46,8 +46,8 @@ export default class Services extends React.Component {
     };
     const servicesEl = data.map((item, index) => {
       const childrenEl = renderServiceChildren(item.href, item.items);
-      return (<div className="col-sm-4">
-        <Link className={style.serviceTitle} to={item.href} title={item.title} key={index}>
+      return (<div className="col-sm-4" key={index}>
+        <Link className={style.serviceTitle} to={item.href} title={item.title}>
           {item.title}
         </Link>
         {childrenEl}
