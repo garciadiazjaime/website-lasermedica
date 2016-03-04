@@ -40,5 +40,5 @@ module.exports = [{
   type: 'link',
   className: 'btn7red',
   text: 'AGENDAR CITA',
-  href: '/contacto/agendar-cita/servicio/depilacion-laser',
+  href: '/contacto/depilacion-laser',
 }];
