@@ -9,8 +9,8 @@ export default class Services extends React.Component {
   renderServices(items) {
       // const className = items.length > 5 ? 'col-sm-6' : 'col-sm-12';
     return items.map((service, index) => {
-      return (<div className={'col-sm-4'}>
-        <Link to={service.href} title={service.title} key={index}>
+      return (<div className={'col-sm-4'} key={index}>
+        <Link to={service.href} title={service.title}>
         {service.title}
         </Link>
       </div>);

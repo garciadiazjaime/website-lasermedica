@@ -8,7 +8,7 @@ export default {
     },
     links: {
       link1: {
-        href: '/la-clinica',
+        href: '/nosotros',
         title: 'La clinica',
       },
     },
@@ -70,11 +70,11 @@ export default {
     },
     links: {
       link1: {
-        href: 'contacto/agendar-cita',
+        href: '/contacto/agendar-cita',
         title: 'AGENDAR CITA',
       },
       link2: {
-        href: 'servicios/ver-servicios',
+        href: '/servicios',
         title: 'VER SERVICIOS ',
       },
       link3: {

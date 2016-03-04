@@ -21,8 +21,10 @@ export default class Block3 extends React.Component {
                 {links.link1.title}
               </Link>
               <p className={style.par2}>
-              <span>{texts.text4}</span>
-              {texts.text5}</p>
+                <span>{texts.text4}</span>
+                <span>{texts.text5}</span>
+                <span>{texts.text6}</span>
+              </p>
             </div>
           </div>
           <div className="col-sm-6 col-xs-12">

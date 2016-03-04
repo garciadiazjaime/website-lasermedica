@@ -16,5 +16,5 @@ module.exports = [{
   type: 'link',
   className: 'btn7green',
   text: 'AGENDAR CITA',
-  href: '/contacto/agendar-cita/servicio/rejuvenecimiento',
+  href: '/contacto/rejuvenecimiento',
 }];

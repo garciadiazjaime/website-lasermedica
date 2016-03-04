@@ -3,6 +3,7 @@
 .footerWrapper {
   background-color: $darkBlue;
   padding-top: 50px;
+  margin-top: 50px;
   a{
     font-size: 10px;
     &:hover{
@@ -95,7 +96,7 @@
 
 
 .powered {
-  background-color: $lightGray;
+  background-color: $mediumGray;
   color: $white;
   padding: 10px 0;
   font-family: $fontB;

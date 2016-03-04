@@ -9,56 +9,56 @@ import Utils from './utils';
 
 export default class Body extends React.Component {
 
-  renderTitle(data) {
+  renderTitle(data, index) {
     if (!_.isEmpty(data)) {
-      return (<h2 className={data.className}>
+      return (<h2 className={data.className} key={index}>
         {data.text}
       </h2>);
     }
     return null;
   }
 
-  renderSubtitle(data) {
+  renderSubtitle(data, index) {
     if (!_.isEmpty(data)) {
-      return (<h3 className={data.className}>
+      return (<h3 className={data.className} key={index}>
         {data.text}
       </h3>);
     }
     return null;
   }
 
-  renderText(data) {
+  renderText(data, index) {
     if (!_.isEmpty(data)) {
-      return (<p className={data.className}>
+      return (<p className={data.className} key={index}>
         {data.text}
       </p>);
     }
     return null;
   }
 
-  renderStrong(data) {
+  renderStrong(data, index) {
     if (!_.isEmpty(data)) {
-      return (<p><strong className={data.className}>
+      return (<p key={index}><strong className={data.className}>
         {data.text}
       </strong></p>);
     }
     return null;
   }
 
-  renderImage(data) {
+  renderImage(data, index) {
     if (!_.isEmpty(data)) {
-      return (<img className={data.className} src={data.src} alt={data.alt} />);
+      return (<img className={data.className} src={data.src} alt={data.alt} key={index}/>);
     }
     return null;
   }
 
-  renderList(data) {
+  renderList(data, index) {
     if (!_.isEmpty(data)) {
       if (_.isArray(data.items) && data.items.length) {
-        const itemsEl = data.items.map((item, index) => {
-          return (<li key={index}>{item}</li>);
+        const itemsEl = data.items.map((item, index2) => {
+          return (<li key={index2}>{item}</li>);
         });
-        return itemsEl ? (<ul className={data.className}>
+        return itemsEl ? (<ul className={data.className} key={index}>
           {itemsEl}
         </ul>) : null;
       }
@@ -66,9 +66,9 @@ export default class Body extends React.Component {
     return null;
   }
 
-  renderLink(data) {
+  renderLink(data, index) {
     if (!_.isEmpty(data)) {
-      return (<Link className={style[data.className]} to={data.href}>
+      return (<Link className={style[data.className]} to={data.href} key={index}>
         {data.text}
       </Link>);
     }
@@ -77,22 +77,22 @@ export default class Body extends React.Component {
 
   renderContent(data) {
     if (_.isArray(data) && data.length) {
-      return data.map((item) => {
+      return data.map((item, index) => {
         switch (item.type.toUpperCase()) {
           case 'TITLE':
-            return this.renderTitle(item);
+            return this.renderTitle(item, index);
           case 'SUBTITLE':
-            return this.renderSubtitle(item);
+            return this.renderSubtitle(item, index);
           case 'TEXT':
-            return this.renderText(item);
+            return this.renderText(item, index);
           case 'STRONG':
-            return this.renderStrong(item);
+            return this.renderStrong(item, index);
           case 'IMAGE':
-            return this.renderImage(item);
+            return this.renderImage(item, index);
           case 'LIST':
-            return this.renderList(item);
+            return this.renderList(item, index);
           case 'LINK':
-            return this.renderLink(item);
+            return this.renderLink(item, index);
           default:
             return null;
         }
@@ -124,6 +124,7 @@ export default class Body extends React.Component {
 
   render() {
     const { data, menuItems, service, category, common } = this.props;
+    const serviceId = service && service.indexOf('/') !== -1 ? service.replace('/', '') : null;
     const { classes } = common;
     return (<div className="container-fluid" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
@@ -143,7 +144,7 @@ export default class Body extends React.Component {
             {this.renderControls(menuItems, service)}
             <div className="clearfix" />
           </div>
-          <div className={style.service_content}>
+          <div className={style.service_content} id={serviceId}>
             {this.renderContent(data)}
           </div>
         </div>

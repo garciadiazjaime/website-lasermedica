@@ -8,11 +8,11 @@ export default class Cover extends React.Component {
 
   renderServices(data) {
     return data.map((item, index) => {
-      return (<div className="col-sm-3">
+      return (<div className="col-sm-3" key={index}>
         <div className="row">
-          <div className={style['service_' + index]}>
-            <h2>{item.title}</h2>
-            <Link to={item.href} title={item.title}>Ver servicios</Link>
+          <div className={'service_cover ' + style['service_' + index]} data-index={index}>
+            <h2 data-index={index}>{item.title}</h2>
+            <Link to={item.href} title={item.title} data-index={index}>Ver servicios</Link>
           </div>
         </div>
       </div>);

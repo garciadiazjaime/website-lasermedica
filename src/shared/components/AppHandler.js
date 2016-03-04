@@ -7,12 +7,28 @@ import ServicesMenu from './layout/menu/menu2';
 import scrollUtil from '../utils/scroll';
 import menuUtil from '../utils/menu';
 
-
 export default class AppHandler extends React.Component {
 
   componentDidMount() {
     this.scrollHandler(true);
     window.addEventListener('scroll', this.onScroll, false);
+    let isMenuServiceDisplayed = false;
+    $('a#servicios').hover(() => {
+      $('#services-menu').removeClass('hidden');
+    });
+
+    $('div#services-menu').hover(() => {
+      isMenuServiceDisplayed = true;
+    }, () => {
+      isMenuServiceDisplayed = false;
+      $('#services-menu').addClass('hidden');
+    });
+
+    $('body').click(() => {
+      if (!isMenuServiceDisplayed) {
+        $('#services-menu').addClass('hidden');
+      }
+    });
   }
 
   componentDidUpdate() {
@@ -50,9 +66,9 @@ export default class AppHandler extends React.Component {
   render() {
     return (<div>
       <MainMenu items={sitemap.items.children} icons={sitemap.icons} onClick={this.clickHandler} />
+      <ServicesMenu />
       {this.props.children}
       <Footer items={sitemap.items.children} addresses={sitemap.addresses}/>
-      <ServicesMenu />
     </div>);
   }
 }
