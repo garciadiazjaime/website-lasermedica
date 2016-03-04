@@ -11,7 +11,7 @@ export default class FooterTop extends React.Component {
     return (<div className={'row ' + style.brand}>
       <div className="col-xs-12 col-sm-8">
         <div className={style.pad45}>
-          <Link className={style.logo} to="inicio" />
+          <Link className={style.logo} to="/inicio" />
         </div>
       </div>
       <div className="col-xs-12 col-sm-4">

@@ -8,6 +8,7 @@ import data from './data';
 export default class ContactSection extends React.Component {
 
   render() {
+    // todo: considered params (service, location)
     return (<div>
       <Block1 data={data.block1} />
       <Block2 data={data.block2} />
