@@ -1,0 +1,274 @@
+@import '../constants';
+.btn {
+	display: inline-block;
+	position: relative;
+	&:hover{
+		color: auto;
+		text-decoration: none;
+	}
+}
+.btn1 {
+	@extend .btn;
+	color: $white;
+	font-size: 24px;
+	padding-left: 35px;
+	font-family: $fontB;
+	opacity: .8;
+	&::after {
+		content: "";
+		@extend .vCenter;
+		left: 0;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+	}
+	&:hover{
+		color: $white;
+		opacity: 1;
+	}
+}
+.btn2 {
+	@extend .icon-sprites;
+  	@include sprite($sprites-button_arrow_white);
+  	position: absolute;
+  	right: 20px;
+  	bottom: 35px;
+  	text-indent: 100px;
+  	opacity: .6;
+  	&:hover{
+  		opacity: 1;
+  	}
+}
+.btn3{
+	display: block;
+	background-color: $blue;
+	padding: 6px 0;
+	text-align: center;
+	color: $white;
+	font-size: 14px;
+	font-family: $fontB;
+	margin-bottom: 5px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&:hover{
+		background-color: $hoverBlue;
+		color: $white;
+	}
+}
+.btn4{
+	width: 200px;
+	padding: 20px 50px 20px 20px;
+	color: $white;
+	position: relative;
+	display: block;
+	font-family: $fontBBold;
+	font-size: 14px;
+	&::after {
+		@extend .vCenter;
+		right: 20px;
+		content: "";
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_white_simple);
+	}
+	&:hover{
+		color: $white;
+	}
+}
+.btn4red{
+	@extend .btn4;
+	background-color: $red;
+	&:hover{
+		background-color: $hoverRed;
+	}
+}
+.btn4blue{
+	@extend .btn4;
+	background-color: $blue;
+	&:hover{
+		background-color: $hoverBlue;
+	}
+}
+.btn4white{
+	@extend .btn4;
+	color: $blue;
+	text-transform: uppercase;
+	background-color: $white;
+	&:hover{
+		background-color: $hoverBlue;
+		cursor: pointer;
+	}
+}
+.btn5{
+	background-color: $lightBlue;
+	display: block;
+	padding: 0 45px 0 45px;
+	color: $lightGray;
+	height: 110px;
+	font-family: $fontBBold;
+	position: relative;
+	font-size: 18px;
+	span{
+		color: $lightGray;
+		@extend .vCenter;
+		margin: 0;
+		padding: 0 65px 0 0;
+	}
+	&::after{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_arrow_blue);
+		right: 20px;
+
+	}
+}
+.btn6{
+	background-color: $darkBlue;
+	display: block;
+	position: relative;
+	padding-left: 50px;
+	padding-right: 40px;
+	color: $white;
+	height: 80px;
+	margin-bottom: 100px;
+	span{
+		@extend .vCenterRel;
+		display: block;
+		font-family: $fontBBold;
+	}
+	&:hover{
+		color: $white;
+	}
+	&::after{
+		content: "";
+		@extend .icon-sprites;
+		@extend .vCenter;
+		right: 25px;
+	}
+}
+.btn7{
+	@extend .btn4;
+	width: 100%;
+	margin: 20px 0 80px;
+}
+.btn7red{
+	@extend .btn7;
+	background-color: $red;
+}
+.btn7orange{
+	@extend .btn7;
+	background-color: $orange;
+}
+.btn7green{
+	@extend .btn7;
+	background-color: $green;
+}
+.btn8{
+	margin-bottom: 80px;
+	a{
+		display: block;
+		font-size: 18px;
+		font-family: $fontB;
+		border-bottom: 1px solid $gray;
+		color: $gray;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+		padding-right: 50px;
+		position: relative;
+		&::after{
+			content: "";
+			@extend .icon-sprites;
+			position: absolute;
+			right: 0;
+			bottom: 14px;
+		}
+		&:hover{
+		}
+	}
+}
+.btn8red{
+	@extend .btn8;
+	a{
+
+		&::after{
+			@include sprite($sprites-button_services_square_red);
+		}
+		&:hover{
+			color: $red;
+			&::after{
+				@include sprite($sprites-button_services_square_red_hover);
+			}
+		}
+	}
+}
+.btn8orange{
+	@extend .btn8;
+	a {
+
+			&::after{
+				@include sprite($sprites-button_services_square_orange);
+			}
+			&:hover{
+				color: $orange;
+				&::after{
+					@include sprite($sprites-button_services_square_orange_hover);
+				}
+			}
+	}
+}
+.btn8green{
+	@extend .btn8;
+	a {
+
+		&::after{
+			@include sprite($sprites-button_services_square_green);
+		}
+		&:hover{
+			color: $green;
+			&::after{
+				@include sprite($sprites-button_services_square_green_hover);
+			}
+		}
+	}
+}
+.btn9{
+	font-family: $fontBBold;
+	font-size: 14px;
+	color: $darkBlue;
+	display: block;
+	margin-bottom: 80px;
+	position: relative;
+	padding-left: 20px;
+	&::before{
+		content: "";
+		@extend .vCenter;
+		@extend .icon-sprites;
+		@include sprite($sprites-button_double_arrows_left);
+		left: 0;
+	}
+}
+// --- Responsive
+@media #{$isTablet}{
+  .btn5{
+		font-size: 16px;
+		padding: 0 45px 0 20px;
+    &::after{
+			right: 10px;
+		}
+  }
+	.btn6{
+		padding-left: 30px;
+		font-size: 14px;
+		&::after{
+			right: 15px;
+		}
+	}
+}
+@media #{$isPhone}{
+	.btn5{
+		margin-bottom: 20px;
+	}
+	.btn6{
+		margin-bottom: 2px;
+	}
+}

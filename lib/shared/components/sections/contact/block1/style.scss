@@ -1,0 +1,87 @@
+@import "../../../../theme/wrappers/wrappers.scss";
+@import "../../../../theme/titles/titles.scss";
+@import "../../../../theme/paragraphs/paragraphs.scss";
+@import "../../../../theme/buttons/buttons.scss";
+
+// left column with blue background
+.wr4 {
+  height: 620px;
+  padding-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+
+  h2 {
+    @extend .title2;
+  }
+
+  p {
+    @extend .par1;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  label {
+    @extend .par1;
+    font-size: 12px;
+    text-align: left!important;
+  }
+
+  a {
+    @extend .btn4white;
+    margin-top: 80px;
+  }
+
+  input, textarea {
+    background: $blue;
+    border: none;
+    color: $white;
+    height: 30px;
+    width: 90%;
+    font-size: 12px;
+  }
+
+  textarea {
+    height: 80px;
+  }
+}
+
+// right column with no background
+.localWrapper1 {
+  height: 620px;
+  padding-top: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+  background: white;
+
+  h2 {
+    @extend .title2;
+    color: black;
+  }
+
+  p {
+    @extend .par1;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: black;
+  }
+
+  label {
+    @extend .par1;
+    font-size: 12px;
+    text-align: left!important;
+    color: black;
+  }
+
+  a {
+    @extend .btn4blue;
+    margin-top: 20px;
+  }
+
+  input {
+    border: none;
+    color: black;
+    height: 30px;
+    width: 90%;
+    font-size: 12px;
+  }
+}
