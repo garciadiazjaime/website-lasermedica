@@ -22,7 +22,8 @@
   border-bottom: 1px solid $darkBlue;
   top: 110px;
   z-index: 10;
-  width: 100%;
+  width: 1024px;
+  @extend .hCenter;
 }
 
 .service_0 {
