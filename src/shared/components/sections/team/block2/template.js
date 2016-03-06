@@ -20,7 +20,7 @@ export default class Template extends React.Component {
     const { className, data } = this.props;
     const { texts, classes } = data;
     return (<div className={'row ' + style[className]}>
-      <div className={style[classes.class1]} />
+      <div className={style[classes.class1] + ' img-responsive'} />
       <div className={style.pad0_60}>
         <h2 className={style.title5}>{texts.text1}</h2>
         <h3 className={style.title6}>{texts.text2}</h3>
