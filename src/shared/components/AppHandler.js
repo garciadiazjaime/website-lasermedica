@@ -6,6 +6,7 @@ import Footer from './layout/footer/footer1';
 import ServicesMenu from './layout/menu/menu2';
 import scrollUtil from '../utils/scroll';
 import menuUtil from '../utils/menu';
+// import spriteUtil from '../utils/sprite';
 
 export default class AppHandler extends React.Component {
 
@@ -29,6 +30,8 @@ export default class AppHandler extends React.Component {
         $('#services-menu').addClass('hidden');
       }
     });
+
+    // spriteUtil();
   }
 
   componentDidUpdate() {

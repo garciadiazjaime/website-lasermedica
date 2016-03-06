@@ -40,7 +40,7 @@ export default class Template4 extends React.Component {
         });
         return (<div className="row">
             <div className={'col-xs-12 col-sm-7 ' + style.pad45}>
-              <div className={style[classes.class1] + ' ' + style.service}>
+              <div className={style[classes.class1] + ' ' + style.service + ' img-responsive'}>
               </div>
               { this.renderContent(texts) }
               <Link to={'/contacto' + href} title={href} className={style[classes.class2]}>
