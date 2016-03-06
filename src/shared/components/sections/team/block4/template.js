@@ -10,7 +10,7 @@ export default class Template extends React.Component {
     return (<div className="col-xs-12 col-sm-6">
       <div className="row">
         <div className="col-xs-12 col-sm-6">
-          <div className={style[classes.class1] + ' ' + style.image} />
+          <div className={style[classes.class1] + ' ' + style.image + ' img-responsive'} />
         </div>
         <div className="col-xs-12 col-sm-6">
           <div className="team-item">

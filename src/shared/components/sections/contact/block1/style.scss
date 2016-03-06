@@ -10,6 +10,15 @@
   padding-left: 75px;
   padding-right: 75px;
 
+  @media#{$isTablet}{
+    padding: 30px;
+  }
+
+  @media#{$isPhone}{
+    padding: 30px;
+    height: 680px;
+  }
+
   h2 {
     @extend .title2;
   }
@@ -52,6 +61,15 @@
   padding-left: 75px;
   padding-right: 75px;
   background: white;
+
+  @media#{$isTablet}{
+    padding: 30px;
+  }
+
+  @media#{$isPhone}{
+    padding: 30px;
+    height: 680px;
+  }
 
   h2 {
     @extend .title2;
