@@ -4,7 +4,7 @@ export default () => {
   const data = [{
     image: {
       width: 2036,
-      height: 300,
+      height: 1765,
     },
     sprite: {
       className: 'style__image1___3KY44',
@@ -18,7 +18,7 @@ export default () => {
 
   // image dimensions.
   const imgW = item.image.width;
-  // const imgH = 446;
+  // const imgH = item.image.height;
   // sprite dimensions.
   const sprW = item.sprite.width;
   const sprH = item.sprite.height;
@@ -27,16 +27,15 @@ export default () => {
   let posY = item.sprite.posY;
   // Container dimensions.
   const imgEl = $('.' + item.sprite.className);
-  let conW = imgEl.parent().width();
-  let conH = imgEl.parent().height();
+  let conW = imgEl.width();
+  let conH = imgEl.height();
   // Ratio between the width of the container and the width of the sprite.
   const ratio = conW / sprW;
   const bckSize = imgW * ratio;
-
   // sets container dimensions if they have not been specified.
   if (conW === 0) {
     conW = sprW * ratio;
-    imgEl.css('height', conW);
+    imgEl.css('width', conW);
   }
   if (conH === 0) {
     conH = sprH * ratio;

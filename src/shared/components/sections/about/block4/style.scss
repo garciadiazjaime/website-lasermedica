@@ -4,7 +4,8 @@
 @import '../../../../theme/paragraphs/paragraphs.scss';
 .image1 {
   @extend .icon-sprites;
-  @include sprite($sprites-imagen-clinica-equipo2);
+  //@include sprite($sprites-imagen-clinica-equipo2);
+  display: block;
   margin-bottom: 100px;
 }
 .title6{

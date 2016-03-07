@@ -10,7 +10,7 @@ export default class Block4 extends React.Component {
     return (<div className="container-fluid">
       <div className="row">
         <div className="col-xs-12 col-sm-6">
-          <div className={style[classes.class1] + ' img-responsive'} />
+          <div className={style[classes.class1]} />
         </div>
 
         <div className="col-xs-12 col-sm-6">
