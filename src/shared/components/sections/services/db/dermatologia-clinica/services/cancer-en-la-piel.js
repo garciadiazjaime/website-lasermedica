@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'cancer-en-la-piel',
+  text: 'Cáncer de Piel',
   className: '',
 }, {
   type: 'image',

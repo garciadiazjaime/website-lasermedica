@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'carboxiterapia',
+  text: 'Carboxiterapia',
   className: '',
 }, {
   type: 'image',

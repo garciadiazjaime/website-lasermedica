@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'Escleroterapia con Láser',
+  text: 'Láser CO2 Fraccionado',
   className: '',
 }, {
   type: 'image',

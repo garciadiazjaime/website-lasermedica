@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'cicatrices-de-acne',
+  text: 'Cicatrices de Acné',
   className: '',
 }, {
   type: 'image',

@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'liquid-face-lift',
+  text: 'Liquid Face Lift',
   className: '',
 }, {
   type: 'image',

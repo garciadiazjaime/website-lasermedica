@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'peeling-quimicos',
+  text: 'Peeling Químicos',
   className: '',
 }, {
   type: 'image',

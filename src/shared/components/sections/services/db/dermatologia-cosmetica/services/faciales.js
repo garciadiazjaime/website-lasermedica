@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'faciales',
+  text: 'Faciales',
   className: '',
 }, {
   type: 'image',

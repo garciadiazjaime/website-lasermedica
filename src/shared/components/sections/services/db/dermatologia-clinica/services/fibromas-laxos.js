@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'fibromas-laxos',
+  text: 'Fibromas laxos',
   className: '',
 }, {
   type: 'image',

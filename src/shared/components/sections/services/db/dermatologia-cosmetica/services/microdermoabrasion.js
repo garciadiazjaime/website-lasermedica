@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'microdermoabrasion',
+  text: 'Microdermoabrasión',
   className: '',
 }, {
   type: 'image',

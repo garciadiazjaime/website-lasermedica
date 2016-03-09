@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'escleroterapia-inyectada',
+  text: 'Escleroterapia Inyectada',
   className: '',
 }, {
   type: 'image',

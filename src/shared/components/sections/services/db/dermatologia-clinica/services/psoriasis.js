@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'psoriasis',
+  text: 'Psoriasis',
   className: '',
 }, {
   type: 'image',

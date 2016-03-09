@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'rellenos-dérmicos',
+  text: 'Rellenos Dérmicos',
   className: '',
 }, {
   type: 'image',

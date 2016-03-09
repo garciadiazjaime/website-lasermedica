@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'reafirmación-de-la-piel',
+  text: 'Reafirmación de la Piel',
   className: '',
 }, {
   type: 'image',

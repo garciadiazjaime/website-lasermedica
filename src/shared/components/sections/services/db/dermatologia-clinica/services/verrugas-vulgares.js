@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'verrugas-vulgares',
+  text: 'Verrugas Vulgares',
   className: '',
 }, {
   type: 'image',

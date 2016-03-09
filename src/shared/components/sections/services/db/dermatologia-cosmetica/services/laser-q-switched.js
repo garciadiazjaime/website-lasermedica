@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'laser-q-switched',
+  text: 'Láser Q Switched',
   className: '',
 }, {
   type: 'image',

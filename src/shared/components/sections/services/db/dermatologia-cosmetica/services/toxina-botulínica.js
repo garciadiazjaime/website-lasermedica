@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'toxina-botulínica',
+  text: 'Toxina Botulínica',
   className: '',
 }, {
   type: 'image',

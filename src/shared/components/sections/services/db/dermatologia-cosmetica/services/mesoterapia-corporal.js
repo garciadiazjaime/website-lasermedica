@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'mesoterapia-corporal',
+  text: 'Mesoterapia Corporal',
   className: '',
 }, {
   type: 'image',

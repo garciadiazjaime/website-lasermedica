@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'plasma-rico-en-plaquetas',
+  text: 'Plasma rico en plaquetas',
   className: '',
 }, {
   type: 'image',

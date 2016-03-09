@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'molusco-contagioso',
+  text: 'Molusco Contagioso',
   className: '',
 }, {
   type: 'image',

@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'laser-erbium-fraccionado',
+  text: 'Láser Erbium',
   className: '',
 }, {
   type: 'image',

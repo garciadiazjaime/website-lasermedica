@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'radiofrecuencia',
+  text: 'Radiofrecuencia',
   className: '',
 }, {
   type: 'image',
