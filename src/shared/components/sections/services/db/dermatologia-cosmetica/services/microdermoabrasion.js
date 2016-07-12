@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'microdermoabrasion',
+  text: 'Microdermoabrasión',
   className: '',
 }, {
   type: 'image',
@@ -11,34 +11,36 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
-  text: 'En láser médica sabemos de la importancia de un cutis terso y fresco y es por ello que te ofrecemos el tratamiento 360, un método rápido y –lo más importante- no invasivo que da a tu piel un aspecto rejuvenecido y radi- ante con un aspecto natural. Este tratamiento combate arrugas finas, manchas faciales, mejora el tono de la piel y ayuda a eliminar la flacidez, dándole firmeza al rosto y cuello a través de una combinación de técnicas como el láser fraccionado, IPL y radio frecuencia según las necesidades de cada paciente mostrando resultados a tan sólo 60 días de haber iniciado el tratamiento.',
+  text: 'Una piel de mejor calidad, suave y limpia es el resultado de la microdermoabrasión, la cual ayuda a eliminar las capas exteriores de la piel dejándola libre de células muertas, ayudando a que las células se regeneren para dar paso a una piel nueva. La microdermoabrasión es una forma de exfoliación mecánica que ayuda también a la producción de colágeno en la piel.',
 }, {
   type: 'subtitle',
   className: '',
-  text: 'OBJETIVOS',
+  text: 'Objetivos',
 }, {
   type: 'list',
   className: '',
   items: [
-    'Rejuvenecimiento de la piel.',
-    'Mejorar color.',
-    'Apariencia más lozana y textura más suave.',
+    'Eliminar impurezas e imperfecciones.',
+    'Eliminar manchas de sol.',
+    'Reduce poros dilatados.',
+    'Aminorar arrugas.',
+    'Suavizar cicatrices.',
   ],
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ TÉCNICAS UTILIZAMOS?',
+  text: '¿Cómo funciona?',
 }, {
   type: 'text',
   className: '',
-  text: 'La triple combinación de láser fraccionado, IPL y haz de luz mejorarán invariablemente el aspecto de tu piel. El láser fraccionado ayuda a mejo- rar textura y tono, también a borrar arrugas pequeñas, aunado a lo anteri- or también cierra poros y alisa la piel, Lo mejor de todo es que este trata- miento no causa molesta alguna. El láser IPL (por sus siglas en inglés Luz Pulzada Intensa) elimina manchas en la piel mejorando visiblemente su aspecto pues el haz de luz que emite destruye las lesiones que provocan dichas manchas. Y por último, la terapia de radio frecuencia ayuda a dar firmeza a la piel, induce a la producción de colágeno mejorando también los contornos del rostro. Te invitamos a hacer una cita con nosotros para ayudarte a elegir el tratamiento específico para tu piel, en Láser médica nos preocupamos por tener tecnología de punta y ofrecer el mejor servi- cio a nuestros clientes.',
+  text: 'Con el afán de cuidar tu piel, en lasermedica realizamos de 5 a 10 sesiones dependiendo de la condición de la piel y la profundidad del daño que tenga, cada sesión dura alrededor de media hora en la que se realiza una exfoliación a profundidad con lo que se eliminan células muertas logrando regeneración celular y producción de colágeno. La microdermoabrasión es un tratamiento muy rápido y efectivo, que no duele y te permite regresar a tus actividades diarias sin ninguna complicación; existen recomendaciones para optimizar los resultados de la microdermoabrasión, como evitar la exposición solar, utilizar bloqueador y otros consejos que nuestros profesionales te invitarán a seguir para que tu piel luzca radiante.',
 }, {
   type: 'link',
   className: 'btn7red',
   text: 'AGENDAR CITA',
-  href: '/contacto/depilacion-laser',
+  href: '/contacto/microdermoabrasion',
 }];

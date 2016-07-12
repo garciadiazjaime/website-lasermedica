@@ -11,7 +11,7 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
@@ -19,7 +19,7 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: 'OBJETIVOS',
+  text: 'Objetivos',
 }, {
   type: 'list',
   className: '',
@@ -31,7 +31,7 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ TÉCNICAS UTILIZAMOS?',
+  text: '¿Cómo funciona?',
 }, {
   type: 'text',
   className: '',

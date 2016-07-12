@@ -26,11 +26,11 @@ export default {
       href: '/rejuvenecimiento',
       title: 'Rejuvenecimiento',
     }, {
-      href: '/reafirmación-de-la-piel',
-      title: 'Reafirmación de la Piel',
+      href: '/tratamiento-celulitis',
+      title: 'Tratamiento de Celulitis',
     }, {
-      href: '/remocion-cicatrices',
-      title: 'Remoción: Cicatrices',
+      href: '/remocion-tatuajes',
+      title: 'Remoción de Tatuajes',
     }],
   }],
 };

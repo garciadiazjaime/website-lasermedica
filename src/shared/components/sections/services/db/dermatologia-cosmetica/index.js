@@ -59,10 +59,10 @@ export default {
       href: '/liquid-face-lift',
       title: 'Liquid Face Lift',
     }, {
-      href: '/rellenos-dérmicos',
+      href: '/rellenos-dermicos',
       title: 'Rellenos Dérmicos',
     }, {
-      href: '/toxina-botulínica',
+      href: '/toxina-botulinica',
       title: 'Toxina Botulínica',
     }, {
       href: '/mesoterapia-corporal',
@@ -85,6 +85,9 @@ export default {
     }, {
       href: '/plasma-rico-en-plaquetas',
       title: 'Plasma rico en plaquetas',
+    }, {
+      href: '/nanopore-turbo-roller',
+      title: 'Nanopore Turbo-Roller',
     }],
   }],
 };
