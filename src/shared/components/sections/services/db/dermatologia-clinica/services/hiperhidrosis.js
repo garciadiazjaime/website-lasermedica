@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'hiperhidrosis',
+  text: 'Hiperhidrosis',
   className: '',
 }, {
   type: 'image',
@@ -11,38 +11,46 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
-  text: 'En el mundo, tres de cada cuatro adolescentes han tenido algún tipo de acné; esta recurrencia es debido a que los cambios hormonales sufridos durante la adolescencia estimulan las glándulas sebáceas produciendo más sebo, incrementando las probabilidades de sufrir acné. Aún cuando es más común desarrollar acné al final de la adolescencia y principios de los veintes, existen casos en los que se dá en la edad adulta, suele suced- er por el período menstrual, uso de pastillas anticonceptivas, productos con base de aceite y estrés.',
+  text: 'Se refiere a una sudoración excesiva en la cual se segrega más sudor del necesario para regular la temperatura del cuerpo afectando en especial las manos, pies y axilas. Esta sudoración afecta a nivel físico y emocional, causando molestias e incomodidad significativa a quien la padece, pues comúnmente se manifiesta en situaciones de nervios, estrés o sin causa aparente, su síntoma principal es la humedad. No se conoce una causa en específico, en algunos casos puede ser secundaria a enfermedad subyacente.',
 }, {
   type: 'subtitle',
-  className: '',
-  text: '¿CÓMO LO TRATAMOS?',
+  className: 'regularMargin',
+  text: '¿Cómo lo tratamos?',
 }, {
   type: 'text',
-  className: '',
-  text: 'El medicamento que se puede utilizar puede ser tópico (aplicado en la piel) o sistémico (tomado, pastillas), a algunos pacientes se les dá un trata- miento conjunto que combina ambos procesos. El acné también se puede tratar mediante tecnología basada en láser y fototecnología.',
+  className: 'regularMargin',
+  text: 'Para el tratamiento de la hiperhidrosis existen diversas maneras de controlarlo dependiendo de la gravedad del caso, a continuación te mostramos algunas:',
 }, {
   type: 'strong',
-  className: '',
-  text: 'Tratamiento Tópico',
+  className: 'regularMargin',
+  text: 'Uso de antitranspirantes',
 }, {
   type: 'text',
-  className: '',
-  text: 'Es el cuidado por excelencia para tratar el acné leve; algunos medicamen- tos tópicos comunes que los dermatólogos recomiendan incluyen peróxi- do de benzoilo, antibióticos, retinoides, y ácido salicílico. Los medicamen- tos tópicos varían en su presentación, puede ser gel, lociones y cremas. Su dermatólogo determinará el tratamiento más apropiado para su piel.',
+  className: 'regularMargin',
+  text: 'Los productos a base de hexahidrato de cloruro de aluminio pueden ayudar a controlar la sudoración en exceso pues tapan los conductos sudoríparos.',
 }, {
   type: 'strong',
-  className: '',
-  text: 'Tratamiento Sistémico',
+  className: 'regularMargin',
+  text: 'Bótox',
 }, {
   type: 'text',
-  className: '',
-  text: 'Los antibióticos orales son básicos en el cuidado del acné moderado a severo, sobre todo al que resiste el tratamiento tópico y el acné que cubre largas áreas del cuerpo. Algunos de los antibióticos orales que pueden ser prescritos para tratar el acné incluyen tetraciclina, doxiciclina, eritromici- na, azitromicina, minociclina y clindamicina.',
+  className: 'regularMargin',
+  text: 'Esta toxina bloquea los nervios estimulantes de la sudoración de manera temporal; para más información de este tratamiento pulse el link.',
+}, {
+  type: 'strong',
+  className: 'regularMargin',
+  text: 'Medicamentos',
+}, {
+  type: 'text',
+  className: 'regularMargin',
+  text: 'Los resultados de medicamentos orales varían dependiendo de la causa de la hiperhidrosis, es importante consultar con nuestros expertos acerca de la combinación de los medicamentos con otros tratamientos para mejorar los resultados.',
 }, {
   type: 'link',
   className: 'btn7orange',
   text: 'AGENDAR CITA',
-  href: '/contacto/acne',
+  href: '/contacto/hiperhidrosis',
 }];

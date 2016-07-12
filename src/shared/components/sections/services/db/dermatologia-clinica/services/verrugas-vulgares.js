@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'verrugas-vulgares',
+  text: 'Verrugas virales (Mesquinos)',
   className: '',
 }, {
   type: 'image',
@@ -11,38 +11,46 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
-  text: 'En el mundo, tres de cada cuatro adolescentes han tenido algún tipo de acné; esta recurrencia es debido a que los cambios hormonales sufridos durante la adolescencia estimulan las glándulas sebáceas produciendo más sebo, incrementando las probabilidades de sufrir acné. Aún cuando es más común desarrollar acné al final de la adolescencia y principios de los veintes, existen casos en los que se dá en la edad adulta, suele suced- er por el período menstrual, uso de pastillas anticonceptivas, productos con base de aceite y estrés.',
+  text: 'Las verrugas son excrecencias de la piel de apariencia dura y rugosa que pueden aparecer en cualquier zona, su transmisión es por medio del contacto con el Virus del Papiloma Humano (VPH). Su superficie puede ser rugosa, firme y color similar a la piel, es muy común que aparezca en áreas de piel lesionada donde el virus puede implantarse de manera más rápida. Es importante saber que el aspecto de una verruga puede variar según el área donde se localiza.',
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿CÓMO LO TRATAMOS?',
+  text: '¿Cómo lo tratamos?',
 }, {
   type: 'text',
-  className: '',
-  text: 'El medicamento que se puede utilizar puede ser tópico (aplicado en la piel) o sistémico (tomado, pastillas), a algunos pacientes se les dá un trata- miento conjunto que combina ambos procesos. El acné también se puede tratar mediante tecnología basada en láser y fototecnología.',
+  className: 'regularMargin',
+  text: 'En Lasermedica ofrecemos distintos tipos de tratamiento dependiendo del tipo de verruga y la localización de la misma; entre ellos están:',
 }, {
   type: 'strong',
-  className: '',
-  text: 'Tratamiento Tópico',
+  className: 'regularMargin',
+  text: 'Medicamentos tópicos',
 }, {
   type: 'text',
-  className: '',
-  text: 'Es el cuidado por excelencia para tratar el acné leve; algunos medicamen- tos tópicos comunes que los dermatólogos recomiendan incluyen peróxi- do de benzoilo, antibióticos, retinoides, y ácido salicílico. Los medicamen- tos tópicos varían en su presentación, puede ser gel, lociones y cremas. Su dermatólogo determinará el tratamiento más apropiado para su piel.',
+  className: 'regularMargin',
+  text: 'La aplicación de medicamentos tópicos ayudará a eliminar las verrugas en la piel de manera lenta y sin dejar cicatriz.',
 }, {
   type: 'strong',
-  className: '',
-  text: 'Tratamiento Sistémico',
+  className: 'regularMargin',
+  text: 'Electrocirugía',
+}, {
+  type: 'text',
+  className: 'regularMargin',
+  text: 'Quemando por medio de corriente eléctrica. ',
+}, {
+  type: 'strong',
+  className: 'regularMargin',
+  text: 'Láser',
 }, {
   type: 'text',
   className: '',
-  text: 'Los antibióticos orales son básicos en el cuidado del acné moderado a severo, sobre todo al que resiste el tratamiento tópico y el acné que cubre largas áreas del cuerpo. Algunos de los antibióticos orales que pueden ser prescritos para tratar el acné incluyen tetraciclina, doxiciclina, eritromici- na, azitromicina, minociclina y clindamicina.',
+  text: 'Mediante el láser se quema la verruga eliminándola totalmente.',
 }, {
   type: 'link',
   className: 'btn7orange',
   text: 'AGENDAR CITA',
-  href: '/contacto/acne',
+  href: '/contacto/verrugas-vulgares',
 }];

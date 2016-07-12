@@ -1,0 +1,37 @@
+@import '../../../../theme/constants.scss';
+@import '../../../../theme/wrappers/wrappers.scss';
+@import '../../../../theme/buttons/buttons.scss';
+@import '../../../../theme/titles/titles.scss';
+@import '../../../../theme/paragraphs/paragraphs.scss';
+
+.image1 {
+  @extend .icon-sprites;
+  @include sprite($sprites-imagen-clinica-equipo);
+}
+
+.image2 {
+  @extend .wr5;
+  @extend .icon-sprites;
+  @include sprite($sprites-wrapper-flechas-azules-ubicaciones);
+}
+.par2{
+  margin-bottom: 50px;
+}
+.wr6{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.paragraph4{
+  margin-bottom: 50px;
+}
+.title2{
+  margin-bottom: 50px;
+}
+.title6{
+  margin-bottom: 60px;
+}
+@media #{$isTablet}{
+  .btn4blue{
+    margin-bottom: 45px;
+  }
+}

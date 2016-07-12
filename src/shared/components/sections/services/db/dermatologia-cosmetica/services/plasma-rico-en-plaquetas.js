@@ -2,7 +2,7 @@
 
 module.exports = [{
   type: 'title',
-  text: 'plasma-rico-en-plaquetas',
+  text: 'Plasma Rico en Plaquetas',
   className: '',
 }, {
   type: 'image',
@@ -11,34 +11,34 @@ module.exports = [{
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
-  text: 'En láser médica sabemos de la importancia de un cutis terso y fresco y es por ello que te ofrecemos el tratamiento 360, un método rápido y –lo más importante- no invasivo que da a tu piel un aspecto rejuvenecido y radi- ante con un aspecto natural. Este tratamiento combate arrugas finas, manchas faciales, mejora el tono de la piel y ayuda a eliminar la flacidez, dándole firmeza al rosto y cuello a través de una combinación de técnicas como el láser fraccionado, IPL y radio frecuencia según las necesidades de cada paciente mostrando resultados a tan sólo 60 días de haber iniciado el tratamiento.',
+  text: 'El plasma rico en plaquetas o PRP es una de las técnicas más novedosas para reparar los tejidos del rostro y auxiliar en el foto rejuvenecimiento facial, es muy recomendable puesto que no se tiene riesgo alguno ya que la sustancia que se inyecta es el plasma de las células sanguíneas del mismo paciente, por lo que no hay rechazo, al contrario se estimula la proliferación y regeneración celular. Para obtener mejores resultados puede utilizarse en conjunto con la radiofrecuencia, luz pulsada intensa y otros tratamientos que nuestros expertos pueden recomendarle al momento de la evaluación.',
 }, {
   type: 'subtitle',
   className: '',
-  text: 'OBJETIVOS',
+  text: 'Objetivos',
 }, {
   type: 'list',
   className: '',
   items: [
-    'Rejuvenecimiento de la piel.',
-    'Mejorar color.',
-    'Apariencia más lozana y textura más suave.',
+    'Ayudar a reparar pieles dañadas por el sol.',
+    'Regeneración de tejidos.',
+    'Producción de colágeno.',
   ],
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ TÉCNICAS UTILIZAMOS?',
+  text: '¿Cómo se utiliza?',
 }, {
   type: 'text',
   className: '',
-  text: 'La triple combinación de láser fraccionado, IPL y haz de luz mejorarán invariablemente el aspecto de tu piel. El láser fraccionado ayuda a mejo- rar textura y tono, también a borrar arrugas pequeñas, aunado a lo anteri- or también cierra poros y alisa la piel, Lo mejor de todo es que este trata- miento no causa molesta alguna. El láser IPL (por sus siglas en inglés Luz Pulzada Intensa) elimina manchas en la piel mejorando visiblemente su aspecto pues el haz de luz que emite destruye las lesiones que provocan dichas manchas. Y por último, la terapia de radio frecuencia ayuda a dar firmeza a la piel, induce a la producción de colágeno mejorando también los contornos del rostro. Te invitamos a hacer una cita con nosotros para ayudarte a elegir el tratamiento específico para tu piel, en Láser médica nos preocupamos por tener tecnología de punta y ofrecer el mejor servi- cio a nuestros clientes.',
+  text: 'Este tratamiento se basa en una bio estimulación, pues se extrae sangre del propio paciente, se centrifuga y se obtiene el plasma rico en factores de crecimiento autógeno, los cuales se inyectan en áreas específicas de la piel, como la cara, cuello y manos. En un mismo paciente se realizan 3 sesiones de plasma al año con un intervalo de 1 mes entra las primeras dos sesiones y de 3 meses entre la segunda y tercer sesión.',
 }, {
   type: 'link',
   className: 'btn7red',
   text: 'AGENDAR CITA',
-  href: '/contacto/depilacion-laser',
+  href: '/contacto/plasma-rico-en-plaquetas',
 }];

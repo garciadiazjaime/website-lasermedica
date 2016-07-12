@@ -2,43 +2,45 @@
 
 module.exports = [{
   type: 'title',
-  text: 'radiofrecuencia',
+  text: 'Radiofrecuencia (Alma - Accent)',
   className: '',
 }, {
   type: 'image',
   src: '/images/servicios/dermatologia-cosmetica/tratamiento-360/image1.png',
-  text: 'Tratamiento 360',
+  text: '¿Qué es?',
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ ES?',
+  text: '¿Qué es?',
 }, {
   type: 'text',
   className: '',
-  text: 'En láser médica sabemos de la importancia de un cutis terso y fresco y es por ello que te ofrecemos el tratamiento 360, un método rápido y –lo más importante- no invasivo que da a tu piel un aspecto rejuvenecido y radi- ante con un aspecto natural. Este tratamiento combate arrugas finas, manchas faciales, mejora el tono de la piel y ayuda a eliminar la flacidez, dándole firmeza al rosto y cuello a través de una combinación de técnicas como el láser fraccionado, IPL y radio frecuencia según las necesidades de cada paciente mostrando resultados a tan sólo 60 días de haber iniciado el tratamiento.',
+  text: 'La radiofrecuencia facial es una novedosa opción utilizada para combatir el envejecimiento, lo que hace es tensar la piel que se ha aflojado con el paso del tiempo y se utiliza principalmente en la frente, debajo de los ojos, mejillas, mandíbula y cuello. Es un tratamiento sumamente sencillo que puede ser aplicado a diversas áreas en el cuerpo, utilizándose también en el cuello y el escote, no es doloroso, sintiendo sólo algunas molestias durante el procedimiento.',
 }, {
   type: 'subtitle',
   className: '',
-  text: 'OBJETIVOS',
+  text: 'Objetivos',
 }, {
   type: 'list',
   className: '',
   items: [
-    'Rejuvenecimiento de la piel.',
-    'Mejorar color.',
-    'Apariencia más lozana y textura más suave.',
+    'Refirmar la piel',
+    'Combatir flacidez en el rostro.',
+    'Tensar la piel de la frente.',
+    'Disminuir flacidez a lo largo de la línea de la mandíbula.',
+    'Reducir líneas en el cuello.',
   ],
 }, {
   type: 'subtitle',
   className: '',
-  text: '¿QUÉ TÉCNICAS UTILIZAMOS?',
+  text: '¿Cómo lo hace?',
 }, {
   type: 'text',
   className: '',
-  text: 'La triple combinación de láser fraccionado, IPL y haz de luz mejorarán invariablemente el aspecto de tu piel. El láser fraccionado ayuda a mejo- rar textura y tono, también a borrar arrugas pequeñas, aunado a lo anteri- or también cierra poros y alisa la piel, Lo mejor de todo es que este trata- miento no causa molesta alguna. El láser IPL (por sus siglas en inglés Luz Pulzada Intensa) elimina manchas en la piel mejorando visiblemente su aspecto pues el haz de luz que emite destruye las lesiones que provocan dichas manchas. Y por último, la terapia de radio frecuencia ayuda a dar firmeza a la piel, induce a la producción de colágeno mejorando también los contornos del rostro. Te invitamos a hacer una cita con nosotros para ayudarte a elegir el tratamiento específico para tu piel, en Láser médica nos preocupamos por tener tecnología de punta y ofrecer el mejor servi- cio a nuestros clientes.',
+  text: 'La radiofrecuencia es un sistema no invasivo, no agresivo y con recuperación instantánea, esta novedosa técnica funciona a través de la emisión de calor lo cual hace que se regenere el tejido facial por medio de pequeñas pulsaciones que estimulan la producción de colágeno tonificando el contorno del rostro. Dependiendo del tipo de piel y las necesidades, nuestros expertos determinarán la cantidad de sesiones necesarias para que los resultados obtenidos sean los deseados, por lo que te invitamos a una valoración con nuestro personal.',
 }, {
   type: 'link',
   className: 'btn7red',
   text: 'AGENDAR CITA',
-  href: '/contacto/depilacion-laser',
+  href: '/contacto/radiofrecuencia',
 }];

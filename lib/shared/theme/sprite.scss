@@ -1,0 +1,90 @@
+$sprites-brand-footer: -992px -1020px 191px 32px;
+$sprites-brand: -741px -1020px 251px 42px;
+$sprites-button_arrow_blue: -1993px -746px 23px 25px;
+$sprites-button_arrow_green: -2019px -815px 13px 15px;
+$sprites-button_arrow_orange_left: -2005px -795px 12px 20px;
+$sprites-button_arrow_orange_right: -1993px -795px 12px 20px;
+$sprites-button_arrow_red: -2006px -815px 13px 15px;
+$sprites-button_arrow_white: -2017px -795px 14px 16px;
+$sprites-button_arrow_white_simple: -2018px -721px 12px 20px;
+$sprites-button_arrow_yellow: -1993px -815px 13px 15px;
+$sprites-button_blue_location: -1993px -721px 25px 25px;
+$sprites-button_double_arrows_left: -1993px -830px 13px 10px;
+$sprites-button_services_square_green: -1993px -701px 35px 20px;
+$sprites-button_services_square_green_hover: -1993px -681px 35px 20px;
+$sprites-button_services_square_orange: -1993px -661px 35px 20px;
+$sprites-button_services_square_orange_hover: -1993px -641px 35px 20px;
+$sprites-button_services_square_red: -1993px -621px 35px 20px;
+$sprites-button_services_square_red_hover: -1993px -601px 35px 20px;
+$sprites-carousel_control_triangle: -1826px -520px 167px 322px;
+$sprites-carousel_control_triangle_phone: -1993px -520px 42px 81px;
+$sprites-carousel_control_triangle_tablet: -1410px -1120px 84px 161px;
+$sprites-imagen-clinica-doctor: -1536px -945px 460px 260px;
+$sprites-imagen-clinica-equipo: -460px -1120px 450px 300px;
+$sprites-imagen-clinica-equipo2: -0px -1120px 460px 300px;
+$sprites-imagen-doctor: -0px -1420px 512px 230px;
+$sprites-imagen-enfermeras: -1536px -1205px 285px 215px;
+$sprites-imagen-equipo-doctor-ana: -1748px -1420px 200px 115px;
+$sprites-imagen-equipo-doctor-carlos: -1821px -1205px 200px 115px;
+$sprites-imagen-equipo-doctor-jorge: -962px -720px 512px 300px;
+$sprites-imagen-equipo-doctor-jorge2: -0px -1650px 200px 115px;
+$sprites-imagen-equipo-doctor-prisicilla: -450px -720px 512px 300px;
+$sprites-imagen-facebook: -1993px -771px 23px 24px;
+$sprites-imagen-logo-farmacia: -450px -1020px 291px 49px;
+$sprites-imagen-logo-farmacia_phone: -1183px -1020px 190px 32px;
+$sprites-imagen-marca-aderma: -1826px -842px 160px 75px;
+$sprites-imagen-marca-avene: -1088px -1560px 160px 75px;
+$sprites-imagen-marca-cetaphil: -1821px -1320px 160px 75px;
+$sprites-imagen-marca-le-roche-posay: -768px -1560px 160px 75px;
+$sprites-imagen-marca-vichy: -928px -1560px 160px 75px;
+$sprites-imagen-productos: -1536px -520px 290px 425px;
+$sprites-imagen-tratamiento-360: -1013px -1420px 245px 140px;
+$sprites-imagen-tratamiento-acne: -1258px -1420px 245px 140px;
+$sprites-imagen-tratamiento-depilacion-laser: -1503px -1420px 245px 140px;
+$sprites-imagen-tratamiento-melasma: -768px -1420px 245px 140px;
+$sprites-paragraph_left_quote_blue: -2016px -746px 20px 19px;
+$sprites-paragraph_right_quote_blue: -2016px -771px 20px 19px;
+$sprites-service_control_left: -2028px -661px 5px 9px;
+$sprites-service_control_left_green: -2028px -601px 5px 9px;
+$sprites-service_control_left_orange: -2028px -610px 5px 9px;
+$sprites-service_control_left_red: -2028px -621px 5px 9px;
+$sprites-service_control_right: -2028px -630px 5px 9px;
+$sprites-service_control_right_green: -2028px -641px 5px 9px;
+$sprites-service_control_right_orange: -2028px -650px 5px 9px;
+$sprites-service_control_right_red: -2028px -670px 5px 9px;
+$sprites-submenu_decor: -512px -1420px 256px 225px;
+$sprites-wrapper-flechas-azules-ubicaciones: -0px -720px 450px 400px;
+$sprites-wrapper_services_derma-clinica: -1536px -0px 500px 260px;
+$sprites-wrapper_services_derma-cosmetica: -1536px -260px 500px 260px;
+$sprites-wrapper_services_tratami-dermatologicos: -910px -1120px 500px 260px;
+$sprites-wrapper-ubicacion-ensenada: -1024px -0px 512px 720px;
+$sprites-wrapper-ubicacion-mexicali: -512px -0px 512px 720px;
+$sprites-wrapper-ubicacion-tijuana: -0px -0px 512px 720px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+.icon-sprites {
+  background-image: url('/images/sprites/sprite-sprites.png')!important;
+}

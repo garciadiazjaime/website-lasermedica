@@ -29,7 +29,7 @@ export default class Body extends React.Component {
 
   renderText(data, index) {
     if (!_.isEmpty(data)) {
-      return (<p className={data.className} key={index}>
+      return (<p className={style[data.className]} key={index}>
         {data.text}
       </p>);
     }
@@ -38,9 +38,9 @@ export default class Body extends React.Component {
 
   renderStrong(data, index) {
     if (!_.isEmpty(data)) {
-      return (<p key={index}><strong className={data.className}>
-        {data.text}
-      </strong></p>);
+      return (<p key={index} className={style[data.className]}>
+        <strong>{data.text}</strong>
+      </p>);
     }
     return null;
   }

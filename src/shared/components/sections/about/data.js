@@ -3,7 +3,7 @@
 export default {
   block1: {
     texts: {
-      text1: 'MÁS DE 30 AÑOS DE EXPERIENCIA',
+      text1: 'asdfasdfMÁS DE 30 AÑOS DE EXPERIENCIA',
 
     },
     links: {
@@ -22,9 +22,10 @@ export default {
       text1: 'LA CLÍNICA',
       text2: 'Quiénes Somos',
       text3: 'Lasermedica fue fundada en la ciudad de Tijuana hace más de 30 años por el Doctor Jorge Alberto Ibarra Ibarra, quien al egresar de la Universidad Autónoma de Guadalajara vio en la localidad la necesidad de una clínica dermatológica seria y preocupada por la salud de la piel; Aunado a lo anterior, su dedicación por el estudio de las enfermedades de la piel y su tratamiento lo ha llevado a ser una de las eminencias en cuanto a la cosmetología clínica en México.',
-      text4: 'A través de nuestra especialización en dermatología, cosmetología y cirugía dermatológica en Lasermedica nos avocamos a una atención única en el cuidado de la piel avalándonos en nuestra experiencia y buscando las técnicas más novedosas - y sobre todo eficientes - para lograr los mejores resultados en nuestros pacientes.',
-      text5: 'Atención única',
-      text6: 'en el cuidado de la piel',
+      text4: 'A través de nuestra especialización en dermatología, cosmetología y cirugía dermatológica en Lasermedica nos abocamos a una atención única en el cuidado de la piel avalándonos en nuestra experiencia y buscando las técnicas más novedosas –y sobre todo eficientes- para lograr los mejores resultados en nuestros pacientes.',
+      text5: 'Con experiencia y clientes satisfechos que avalan la calidad de nuestros servicios, nos hemos consolidado no sólo en Tijuana, si no en toda la región de Baja California como una empresa cuya finalidad es proporcionar al público los mejores tratamientos dermatológicos y a través de ellos lograr que nuestros pacientes tengan una piel saludable.',
+      text6: 'Atención única',
+      text7: 'en el cuidado de la piel',
     },
     classes: {
       class1: 'image1',
@@ -47,7 +48,7 @@ export default {
     texts: {
       text1: 'NUESTRA MISIÓN',
       text2: 'Nuestro Compromiso',
-      text3: 'En Lasermedica nos dedicamos al cuidado y tratamiento de enfermedades de la piel así como al mejoramiento de su apariencia; nuestro objetivo es que nuestros pacientes luzcan una piel saludable y radiante, lo que conseguimos a través de la actualización constante de nuestros especialistas, quienes se preocupan por ofrecer el mejor servicio con un trato cálido, responsable y profesional.',
+      text3: 'En LASERMEDICA nos dedicamos al cuidado y tratamiento de enfermedades de la piel así como al mejoramiento de su apariencia; nuestro objetivo es que nuestros pacientes luzcan una piel saludable y radiante, lo que conseguimos a través de la actualización constante de nuestros especialistas, quienes se preocupan por ofrecer el mejor servicio con un trato cálido, responsable y profesional.',
       text4: 'NUESTROS VALORES',
       text5: 'Experiencia',
       text6: 'Confiabiliad',
