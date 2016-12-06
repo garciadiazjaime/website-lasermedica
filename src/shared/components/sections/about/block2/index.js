@@ -1,4 +1,5 @@
 import React from 'react';
+import sanitize from '../../../../utils/sanitize';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -17,9 +18,7 @@ export default class Block2 extends React.Component {
         </div>
         <div className={'row ' + style.wr6}>
           <div className={'col-xs-12 col-sm-6 ' + style.pad50_75_40_45}>
-            <p className={style.par2}>
-              {texts.text3}
-            </p>
+            <p className={style.par2} dangerouslySetInnerHTML={sanitize(texts.text3)} />
             <p className={style.par2}>
               {texts.text4}asdf
             </p>

@@ -18,3 +18,6 @@ By default server will run on http://127.0.0.1:3030/
 
 Note: `npm run sprites` requires 'sass'
 http://sass-lang.com/install
+
+When developing point app.js to
+script(src='http://127.0.0.1:8080/js/app.js', defer)
