@@ -15,7 +15,7 @@ module.exports = [{
 }, {
   type: 'text',
   className: '',
-  text: 'NanoporeTturbo-Rroller es un tratamiento médico no invasivo de micropunción eléctrica que estimula, induce y regenera la producción de colágeno y elastina por los mecanismos normales de autorreparación de la piel e incrementa la penetración de activos permite la aplicación y mejor absorción de tratamientos específicos (mesoterapia transdermica).',
+  text: 'Nanopore Turbo-Roller es un tratamiento médico no invasivo de micropunción eléctrica que estimula, induce y regenera la producción de colágeno y elastina por los mecanismos normales de autorreparación de la piel e incrementa la penetración de activos permite la aplicación y mejor absorción de tratamientos específicos (mesoterapia transdermica).',
 }, {
   type: 'subtitle',
   className: '',

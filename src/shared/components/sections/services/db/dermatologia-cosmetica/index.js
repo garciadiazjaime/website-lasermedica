@@ -86,8 +86,17 @@ export default {
       href: '/plasma-rico-en-plaquetas',
       title: 'Plasma rico en plaquetas',
     }, {
+      href: '/laser-erbium-thulium',
+      title: 'Laser Erbium/Thulium',
+    }, {
+      href: '/silhouette-soft-sutures',
+      title: 'Silhouette Soft Sutures',
+    }, {
       href: '/nanopore-turbo-roller',
       title: 'Nanopore Turbo-Roller',
+    }, {
+      href: '/accent-prime',
+      title: 'Accent Prime',
     }],
   }],
 };

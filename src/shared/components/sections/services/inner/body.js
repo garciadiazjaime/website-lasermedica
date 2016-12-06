@@ -28,10 +28,16 @@ export default class Body extends React.Component {
   }
 
   renderText(data, index) {
-    if (!_.isEmpty(data)) {
+    if (!_.isEmpty(data) && _.isString(data.text)) {
       return (<p className={style[data.className]} key={index}>
         {data.text}
       </p>);
+    } else if (!_.isEmpty(data) && _.isArray(data.text)) {
+      return data.text.map((item, index2) => {
+        return (<p className={data.className ? style[data.className] : ''} key={index2}>
+          {item}
+        </p>);
+      });
     }
     return null;
   }
