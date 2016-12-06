@@ -34,8 +34,11 @@ module.exports = [{
   text: '¿Cómo funciona?',
 }, {
   type: 'text',
-  className: '',
-  text: 'Cada sesión dura menos de 1 hora, el tratamiento consiste en la inyección de una solución esclerosante en la vena, lo que causa que la vena bloqueada –várice- vaya disminuyendo su color y eventualmente desaparezca. Es importante saber que para que la escleroterapia sea exitosa es necesario que se realicen varias sesiones y así obtener los mejores resultados posibles. La escleroterapia no requiere anestesia y puedes regresas a tus actividades normales terminando la sesión.',
+  className: 'normal_break',
+  text: [
+    'Cada sesión dura menos de 1 hora, el tratamiento consiste en la inyección de una solución esclerosante en la vena, lo que causa que la vena bloqueada –várice- vaya disminuyendo su color y eventualmente desaparezca. Es importante saber que para que la escleroterapia sea exitosa es necesario que se realicen varias sesiones y así obtener los mejores resultados posibles.',
+    'La escleroterapia no requiere anestesia y puedes regresas a tus actividades normales terminando la sesión.',
+  ],
 }, {
   type: 'link',
   className: 'btn7red',

@@ -14,8 +14,11 @@ module.exports = [{
   text: '¿Qué es?',
 }, {
   type: 'text',
-  className: '',
-  text: 'También llamado fotorejuvenecimiento, es un método no invasivo a la piel y de fácil recuperación, a base de un haz de luz que provoca la producción de colágeno, lo que resulta una piel visiblemente más saludable, joven, con menos imperfecciones y además combate los daños realizados por la exposición al sol. Es importante mencionar que se puede aplicar a todo tipo de pieles y los efectos secundarios son mínimos y desaparecen rápidamente, cada sesión es personalizada dependiendo de las características de nuestro paciente.',
+  className: 'normal_break',
+  text: [
+    'También llamado fotorejuvenecimiento, es un método no invasivo a la piel y de fácil recuperación, a base de un haz de luz que provoca la producción de colágeno, lo que resulta una piel visiblemente más saludable, joven, con menos imperfecciones y además combate los daños realizados por la exposición al sol.',
+    'Es importante mencionar que se puede aplicar a todo tipo de pieles y los efectos secundarios son mínimos y desaparecen rápidamente, cada sesión es personalizada dependiendo de las características de nuestro paciente.',
+  ],
 }, {
   type: 'subtitle',
   className: '',

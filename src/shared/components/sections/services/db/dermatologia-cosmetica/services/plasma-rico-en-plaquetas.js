@@ -14,8 +14,11 @@ module.exports = [{
   text: '¿Qué es?',
 }, {
   type: 'text',
-  className: '',
-  text: 'El plasma rico en plaquetas o PRP es una de las técnicas más novedosas para reparar los tejidos del rostro y auxiliar en el foto rejuvenecimiento facial, es muy recomendable puesto que no se tiene riesgo alguno ya que la sustancia que se inyecta es el plasma de las células sanguíneas del mismo paciente, por lo que no hay rechazo, al contrario se estimula la proliferación y regeneración celular. Para obtener mejores resultados puede utilizarse en conjunto con la radiofrecuencia, luz pulsada intensa y otros tratamientos que nuestros expertos pueden recomendarle al momento de la evaluación.',
+  className: 'normal_break',
+  text: [
+    'El plasma rico en plaquetas o PRP es una de las técnicas más novedosas para reparar los tejidos del rostro y auxiliar en el foto rejuvenecimiento facial, es muy recomendable puesto que no se tiene riesgo alguno ya que la sustancia que se inyecta es el plasma de las células sanguíneas del mismo paciente, por lo que no hay rechazo, al contrario se estimula la proliferación y regeneración celular.',
+    'Para obtener mejores resultados puede utilizarse en conjunto con la radiofrecuencia, luz pulsada intensa y otros tratamientos que nuestros expertos pueden recomendarle al momento de la evaluación.',
+  ],
 }, {
   type: 'subtitle',
   className: '',
