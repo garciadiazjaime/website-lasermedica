@@ -36,15 +36,15 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Telangiectasias',
+  text: 'Telangiectasias:',
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'son venas muy pequeñas que producen las famosas telarañas violetas. ',
+  text: 'Son venas muy pequeñas que producen las famosas telarañas violetas.',
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Várices',
+  text: 'Várices:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -52,7 +52,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Insuficiencia venosa crónica',
+  text: 'Insuficiencia venosa crónica:',
 }, {
   type: 'text',
   className: '',

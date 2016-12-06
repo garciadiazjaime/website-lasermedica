@@ -41,8 +41,8 @@ export default {
       href: '/psoriasis',
       title: 'Psoriasis',
     }, {
-      href: '/vitiligio',
-      title: 'Vitiligio',
+      href: '/vitiligo',
+      title: 'Vitiligo',
     }, {
       href: '/verrugas-vulgares',
       title: 'Verrugas Vulgares',

@@ -31,7 +31,7 @@ module.exports = [{
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'Existen diversos tipos de tratamiento para contrarrestar los efectos del melasma, entre ellos cremas con hidroquinona el cual es usado para aclarar la piel, sus dosis son variables y se puede combinar con tretinoína, corticoesteroides o ácido glicólico para mejorar el aclaramiento de la piel. Otros ingredientes activos es que se utilizan son el ácido azelaico, ácido kójico y la vitamina C.',
+  text: 'Existen diversos tipos de tratamiento para contrarrestar los efectos del melasma, entre ellos cremas con hidroquinona el cual es usado para aclarar la piel, sus dosis son variables y se puede combinar con tretinoína, corticosteroides o ácido glicólico para mejorar el aclaramiento de la piel. Otros ingredientes activos es que se utilizan son el ácido azelaico,  ácido kójico y la vitamina C.',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -48,7 +48,7 @@ module.exports = [{
 }, {
   type: 'text',
   className: '',
-  text: 'Te invitamos a que visites nuestras instalaciones para que nuestros expertos te guíen al tratamiento indicado para tu caso específico y asi obtener una piel radiante y saludable.',
+  text: 'Te invitamos a que visites nuestras instalaciones para que nuestros expertos te guíen al tratamiento indicado para tu caso específico y así obtener una piel radiante y saludable.',
 }, {
   type: 'link',
   className: 'btn7orange',

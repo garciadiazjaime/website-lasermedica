@@ -23,11 +23,11 @@ module.exports = [{
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'Puede ser difusa o localizada, cicatrizal o no cicatrizal. A continuación comentamos algunas de las más frecuentes',
+  text: 'Puede ser difusa o localizada, cicatrizal o no cicatrizal. A continuación comentamos algunas de las más frecuentes:',
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Alopecia androgénica',
+  text: 'Alopecia androgénica:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -35,7 +35,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Efluvio Telógeno',
+  text: 'Efluvio Telógeno:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -43,7 +43,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Alopecia Areata',
+  text: 'Alopecia Areata:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -51,11 +51,11 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Dermatitis seborreica',
+  text: 'Dermatitis seborreica:',
 }, {
   type: 'text',
   className: '',
-  text: 'Comúnmente conocida como caspa en sus estadios leves, se produce por una elevada producción de grasa la cual puede condicionar a la caída de cabello.',
+  text: 'comúnmente conocida como caspa en sus estadios leves, se produce por una elevada producción de grasa la cual puede condicionar a la caída de cabello.',
 }, {
   type: 'subtitle',
   className: '',

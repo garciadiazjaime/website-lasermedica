@@ -34,7 +34,7 @@ module.exports = [{
   text: '¿Cómo lo tratamos?',
 }, {
   type: 'text',
-  className: 'regularMargin',
+  className: '',
   text: 'Dependiendo de la intensidad de la psoriasis y el nivel de respuesta del paciente, existen diversos tratamientos que pueden ayudar a controlar la enfermedad y en algunos casos los síntomas desaparecen, entre ellos están el uso de sustancias tópicas como cremas y lociones en el área afectada, fototerapia y medicamentos vía oral. Los anteriores pueden utilizarse por separado o en conjunto para un mejor control de la enfermedad.',
 }, {
   type: 'text',

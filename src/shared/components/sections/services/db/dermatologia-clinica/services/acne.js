@@ -14,8 +14,11 @@ module.exports = [{
   text: '¿Qué es?',
 }, {
   type: 'text',
-  className: '',
-  text: 'En el mundo, tres de cada cuatro adolescentes han tenido algún tipo de acné; esta recurrencia es debido a que los cambios hormonales sufridos durante la adolescencia estimulan las glándulas sebáceas produciendo más sebo, incrementando las probabilidades de sufrir acné. Aún cuando es más común desarrollar acné al final de la adolescencia y principios de los veintes, existen casos en los que se da en la edad adulta, suele suceder por el período menstrual, uso de pastillas anticonceptivas, productos con base de aceite y estrés.',
+  className: 'normal_break',
+  text: [
+    'En el mundo, tres de cada cuatro adolescentes han tenido algún tipo de acné; esta recurrencia es debido a que los cambios hormonales sufridos durante la adolescencia estimulan las glándulas sebáceas produciendo más sebo, incrementando las probabilidades de sufrir acné.',
+    'Aún cuando es más común desarrollar acné al final de la adolescencia y principios de los veintes, existen casos en los que se da en la edad adulta, suele suceder por el período menstrual, uso de pastillas anticonceptivas, productos con base de aceite y estrés.',
+  ],
 }, {
   type: 'subtitle',
   className: '',
@@ -23,9 +26,9 @@ module.exports = [{
 }, {
   type: 'text',
   className: '',
-  text: 'El medicamento que se puede utilizar puede ser tópico (aplicado en la piel) o sistémico (tomado, pastillas), a algunos pacientes se les da un tratamiento conjunto que combina ambos procesos. El acné también se puede tratar mediante tecnología basada en láser y fototecnología.',
+  text: 'El medicamento que se puede utilizar puede ser tópico (aplicado en la piel) o sistémico (tomado, pastillas), a algunos pacientes se les da un tratamiento conjunto que combina ambos procesos. El acné también se puede tratar mediante tecnología basada en láser y foto tecnología.',
 }, {
-  type: 'strong',
+  type: 'subtitle',
   className: '',
   text: 'Tratamiento Tópico',
 }, {
@@ -33,7 +36,7 @@ module.exports = [{
   className: '',
   text: 'Es el cuidado por excelencia para tratar el acné leve; algunos medicamentos tópicos comunes que los dermatólogos recomiendan incluyen peróxido de benzoilo, antibióticos, retinoides, y ácido salicílico. Los medicamentos tópicos varían en su presentación, puede ser gel, lociones y cremas. Su dermatólogo determinará el tratamiento más apropiado para su piel.',
 }, {
-  type: 'strong',
+  type: 'subtitle',
   className: '',
   text: 'Tratamiento Sistémico',
 }, {
