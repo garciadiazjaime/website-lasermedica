@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import sanitize from '../../../../utils/sanitize';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -9,9 +10,7 @@ export default class Template extends React.Component {
   renderContent(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<p key={index} className={style.par2}>
-          {item}
-        </p>);
+        return (<p key={index} className={style.par2} dangerouslySetInnerHTML={sanitize(item)} />);
       });
     }
   }
