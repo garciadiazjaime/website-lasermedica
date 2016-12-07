@@ -29,8 +29,14 @@ export default {
       href: '/tratamiento-celulitis',
       title: 'Tratamiento de Celulitis',
     }, {
-      href: '/remocion-tatuajes',
-      title: 'Remoción de Tatuajes',
+      href: '/eliminacion-tatuajes',
+      title: 'Eliminación de Tatuajes',
+    }, {
+      href: '/tratamiento-cicatrices-queloides',
+      title: 'Tratamiento de Cicatrices Queloides',
+    }, {
+      href: '/cirugia-dermatologica',
+      title: 'Cirugía Dermatológica',
     }],
   }],
 };

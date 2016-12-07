@@ -27,7 +27,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Uso de antitranspirantes',
+  text: 'Uso de antitranspirantes:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -35,7 +35,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Bótox',
+  text: 'Bótox:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -43,10 +43,10 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Medicamentos',
+  text: 'Medicamentos:',
 }, {
   type: 'text',
-  className: 'regularMargin',
+  className: '',
   text: 'Los resultados de medicamentos orales varían dependiendo de la causa de la hiperhidrosis, es importante consultar con nuestros expertos acerca de la combinación de los medicamentos con otros tratamientos para mejorar los resultados.',
 }, {
   type: 'link',

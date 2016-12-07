@@ -27,7 +27,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Medicamentos tópicos',
+  text: 'Medicamentos tópicos:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -35,15 +35,15 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Electrocirugía',
+  text: 'Electrocirugía:',
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'Quemando por medio de corriente eléctrica. ',
+  text: 'Quemando por medio de corriente eléctrica.',
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Láser',
+  text: 'Láser:',
 }, {
   type: 'text',
   className: '',

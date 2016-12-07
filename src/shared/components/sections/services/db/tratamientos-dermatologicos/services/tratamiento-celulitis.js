@@ -11,7 +11,7 @@ module.exports = [{
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'Comúnmente llamada “piel de naranja”, la celulitis afecta a un gran porcentaje de la población femenina y aunque no es maligna ni forma parte de las manifestaciones de alguna enfermedad, estéticamente no es muy agradable debido a la apariencia rugosa que se presenta en la piel causado por la formación de nódulos de grasa.',
+  text: 'Comúnmente llamada "piel de naranja", la celulitis afecta a un gran porcentaje de la población femenina y aunque no es maligna ni forma parte de las manifestaciones de alguna enfermedad, estéticamente no es muy agradable debido a la apariencia rugosa que se presenta en la piel causado por la formación de nódulos de grasa.',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -20,7 +20,7 @@ module.exports = [{
   type: 'list',
   className: '',
   items: [
-    'Radio frecuencia',
+    'Radiofrecuencia',
     'Carboxiterapia',
     'Mesoterapia',
   ],

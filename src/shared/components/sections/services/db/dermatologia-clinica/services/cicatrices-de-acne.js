@@ -15,11 +15,11 @@ module.exports = [{
 }, {
   type: 'text',
   className: 'regularMargin',
-  text: 'Las cicatrices de acné son las marcas dejadas en la piel debido a la inflamación; estas cicatrices varían según el tipo de piel, capacidad de cicatrización, genética y severidad del acné. Hay tres tipos de cicatrices producidas por el acné.',
+  text: 'Las cicatrices de acné son las marcas dejadas en la piel debido a la inflamación; estas cicatrices varían según el tipo de piel, capacidad de cicatrización, genética y severidad del acné. Hay tres tipos de cicatrices producidas por el acné:',
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Cicatrices pigmentadas / manchas',
+  text: 'Cicatrices pigmentadas/ manchas:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -27,7 +27,7 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Atróficas / Deprimidas ó hundimientos',
+  text: 'Atróficas/Deprimidas ó hundimientos:',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -35,10 +35,10 @@ module.exports = [{
 }, {
   type: 'strong',
   className: 'regularMargin',
-  text: 'Hipertróficas y Queloides',
+  text: 'Hipertróficas y Queloides:',
 }, {
   type: 'text',
-  className: 'regularMargin',
+  className: '',
   text: 'Cuando se forma una cantidad excesiva de colágeno, presentándose como bolas o bordos. Su localización es especialmente frecuentes en pecho y parte superior de espalda. Se presentan con mayor frecuencia en acné severo (Nódulo-quístico).',
 }, {
   type: 'subtitle',
