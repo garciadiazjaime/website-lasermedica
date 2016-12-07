@@ -29,6 +29,10 @@
     padding-left: 20px;
     li{
       list-style-type: disc;
+
+      a {
+        color: $darkBlue;
+      }
     }
   }
   strong{
