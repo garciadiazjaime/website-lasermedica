@@ -2,12 +2,12 @@
 
 module.exports = [{
   type: 'title',
-  text: 'Remoción de Tatuajes',
+  text: 'Eliminación de Tatuajes',
   className: '',
 }, {
   type: 'image',
   src: '/images/servicios/tratamientos-dermatologicos/rejuvenecimiento/image1.png',
-  text: 'Remoción de Tatuajes',
+  text: 'Eliminación de Tatuajes',
 }, {
   type: 'text',
   className: 'regularMargin',
@@ -16,11 +16,11 @@ module.exports = [{
   type: 'list',
   className: '',
   items: [
-    'Laser Q Switched',
+    'Laser Q Switched Nd:YAG',
   ],
 }, {
   type: 'link',
   className: 'btn7green',
   text: 'AGENDAR CITA',
-  href: '/contacto/remocion-tatuajes',
+  href: '/contacto/eliminacion-tatuajes',
 }];

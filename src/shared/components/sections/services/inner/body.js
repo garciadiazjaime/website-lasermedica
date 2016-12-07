@@ -59,15 +59,27 @@ export default class Body extends React.Component {
   }
 
   renderList(data, index) {
-    if (!_.isEmpty(data)) {
-      if (_.isArray(data.items) && data.items.length) {
-        const itemsEl = data.items.map((item, index2) => {
-          return (<li key={index2}>{item}</li>);
-        });
-        return itemsEl ? (<ul className={data.className} key={index}>
-          {itemsEl}
-        </ul>) : null;
-      }
+    if (data && _.isArray(data.items) && data.items.length) {
+      const itemsEl = data.items.map((item, index2) => {
+        return (<li key={index2}>{item}</li>);
+      });
+      return itemsEl ? (<ul className={data.className} key={index}>
+        {itemsEl}
+      </ul>) : null;
+    }
+    return null;
+  }
+
+  renderListLink(data, index) {
+    if (data && _.isArray(data.items) && data.items.length) {
+      const itemsEl = data.items.map((item, index2) => {
+        return (<li key={index2}>
+          <Link to={item.href} title={item.title}>{item.title}</Link>
+        </li>);
+      });
+      return itemsEl ? (<ul className={data.className} key={index}>
+        {itemsEl}
+      </ul>) : null;
     }
     return null;
   }
@@ -95,6 +107,8 @@ export default class Body extends React.Component {
             return this.renderStrong(item, index);
           case 'IMAGE':
             return this.renderImage(item, index);
+          case 'LIST_LINK':
+            return this.renderListLink(item, index);
           case 'LIST':
             return this.renderList(item, index);
           case 'LINK':
