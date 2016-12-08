@@ -5,7 +5,7 @@
 
 .image2 {
   @extend .icon-sprites;
-  @include sprite($sprites-imagen-enfermeras);
+  @include sprite($sprites-imagen-doctores);
 }
 .image3 {
   @extend .icon-sprites;
