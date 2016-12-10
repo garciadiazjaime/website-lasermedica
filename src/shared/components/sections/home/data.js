@@ -56,7 +56,7 @@ export default {
       text5: 'Tratamientos para enfermedades de la piel.',
       text6: 'Nuestros doctores',
       text7: 'Dermatólogos Certificados',
-      text8: 'Doctores certificados por el consejo mexicano de dermatología.',
+      text8: 'Doctores certificados por el Consejo Mexicano de Dermatología.',
       text9: 'Nuestras',
       text10: 'Ubicaciones',
       text11: 'Tijuana',
@@ -188,6 +188,36 @@ export default {
         }, {
           classes: {
             class1: 'slide5',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide6',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide7',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide8',
           },
           links: {
             link1: {

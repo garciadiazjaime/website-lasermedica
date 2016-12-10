@@ -3,7 +3,7 @@
 .slidex{
   @extend .icon-sprites;
   display: inline-block!important;
-  margin: 0 10px;
+  margin: 0 6px;
 }
 .item{
   text-align: center;
@@ -18,25 +18,40 @@
 
 .slide1 {
   @extend  .slidex;
-  @include sprite($sprites-imagen-marca-le-roche-posay);
+  @include sprite($sprites-image_client_ducray);
 }
 
 .slide2 {
   @extend  .slidex;
-  @include sprite($sprites-imagen-marca-avene);
+  @include sprite($sprites-image_client_farmapiel);
 }
 
 .slide3 {
   @extend  .slidex;
-  @include sprite($sprites-imagen-marca-vichy);
+  @include sprite($sprites-image_client_galderma);
 }
 
 .slide4 {
   @extend .slidex;
-  @include sprite($sprites-imagen-marca-cetaphil);
+  @include sprite($sprites-image_client_genove);
 }
 
 .slide5 {
   @extend  .slidex;
-  @include sprite($sprites-imagen-marca-aderma);
+  @include sprite($sprites-image_client_glenmark);
+}
+
+.slide6 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_obayan);
+}
+
+.slide7 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_sesderma);
+}
+
+.slide8 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_stiefel);
 }

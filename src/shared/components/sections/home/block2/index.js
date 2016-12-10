@@ -18,7 +18,7 @@ export default class Block2 extends React.Component {
           </div>
           <div className="col-sm-6 col-xs-12">
             <div className={'row ' + style.hideOverflow}>
-              <div className={style.image1}></div>
+              <div className={style.image1} />
             </div>
           </div>
           <div className="col-sm-3 col-xs-6">
