@@ -21,7 +21,8 @@ export default class Block4 extends React.Component {
               {texts.text3}
             </p>
 
-            <h3 className={style.title5 + ' ' + style.pad0_0_50}>{texts.text4}</h3>
+            <h3 className={style.title5}>{texts.text4}</h3>
+            <br />
             <div className="col-xs-6 col-sm-5">
               <div className="row">
                 <ul className={style.bluelist}>
