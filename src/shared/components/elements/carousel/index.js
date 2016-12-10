@@ -25,10 +25,10 @@ export default class Carousel1 extends React.Component {
 
   renderControls(data, sliderID, className) {
     return (<div className={style[className]}>
-      <a className="left carousel-control" href={'#' + sliderID} role="button" data-slide="prev">
+      <a className="left" href={'#' + sliderID} role="button" data-slide="prev">
         <span className="sr-only">Previous</span>
       </a>
-      <a className="right carousel-control" href={'#' + sliderID} role="button" data-slide="next">
+      <a className="right" href={'#' + sliderID} role="button" data-slide="next">
         <span className="sr-only">Next</span>
       </a>
     </div>);
@@ -39,7 +39,6 @@ export default class Carousel1 extends React.Component {
     const slides = this.props.children.props.data;
     return (
       <div id={sliderID} className="carousel slide" data-ride="carousel" data-interval={interval}>
-
         { indicators.status ? this.renderIndicators(slides, sliderID, indicators.className) : null }
 
         { this.props.children }

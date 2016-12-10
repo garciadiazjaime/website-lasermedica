@@ -1,5 +1,5 @@
+/* eslint max-len: [2, 500, 4] */
 import React from 'react';
-import { Link } from 'react-router';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -7,12 +7,12 @@ const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 export default class HomeBrandsTemplate extends React.Component {
 
   render() {
-    const { classes, links } = this.props.data;
+    const { classes } = this.props.data;
     const statusClass = !this.props.index ? 'active' : null;
     const className = ['item', statusClass].join(' ');
 
-    return (<div className={className + ' ' + style.item}>
-        <Link className={style[classes.class1]} to={links.link1.href} title={links.link1.title} />
+    return (<div className={className + ' ' + style.item} key={this.props.index}>
+        <div className={style[classes.class1]} />
     </div>);
   }
 }
