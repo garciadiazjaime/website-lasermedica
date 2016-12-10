@@ -64,7 +64,7 @@ export default {
     },
     texts: {
       text1: 'Dr. Jorge Varela',
-      text2: 'Medicina Estetica y Cirugía Láser',
+      text2: 'Medicina Estética y Cirugía Láser',
     },
   }, {
     classes: {
