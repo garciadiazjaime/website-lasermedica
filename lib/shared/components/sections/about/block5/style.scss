@@ -9,6 +9,10 @@
   @include sprite($sprites-imagen-clinica-equipo);
 }
 
+.title5 {
+  font-family: $fontBBold;
+}
+
 .image2 {
   @extend .wr5;
   @extend .icon-sprites;

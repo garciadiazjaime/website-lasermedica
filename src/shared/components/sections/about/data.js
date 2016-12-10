@@ -49,7 +49,7 @@ export default {
       text1: 'Misión',
       text2: 'Nuestro Compromiso',
       text3: 'En Lasermedica nos dedicamos al cuidado y tratamiento de enfermedades de la piel así como al mejoramiento de su apariencia; nuestro objetivo es que nuestros pacientes luzcan una piel saludable y radiante, lo que conseguimos a través de la actualización constante de nuestros especialistas, quienes se preocupan por ofrecer el mejor servicio con un trato cálido, responsable y profesional.',
-      text4: 'Valores',
+      text4: 'Nuestros Valores',
       text5: 'Experiencia',
       text6: 'Confiabilidad',
       text7: 'Honestidad',

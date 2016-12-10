@@ -8,7 +8,6 @@ export default class Block2 extends React.Component {
 
   render() {
     const { texts, classes } = this.props.data;
-    console.log('texts', texts);
     return (<div className="container-fluid">
         <div className="row">
           <div className={'col-xs-12 ' + style.pad45}>
@@ -20,7 +19,7 @@ export default class Block2 extends React.Component {
           <div className={'col-xs-12 col-sm-6 ' + style.pad50_75_40_45}>
             <p className={style.par2} dangerouslySetInnerHTML={sanitize(texts.text3)} />
             <p className={style.par2}>
-              {texts.text4}asdf
+              {texts.text4}
             </p>
             <p className={style.par2}>
               {texts.text5}
