@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/dermatologia-cosmetica/tratamiento-360/image1.png',
+  src: '/images/servicios/dermatologia-cosmetica/08_escleroterapia_inyectada.jpg',
   text: 'Tratamiento 360',
 }, {
   type: 'subtitle',

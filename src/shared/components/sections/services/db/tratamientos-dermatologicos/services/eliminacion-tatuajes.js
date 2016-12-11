@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/tratamientos-dermatologicos/rejuvenecimiento/image1.png',
+  src: '/images/servicios/tratamientos-dermatologicos/03_eliminacion_de_tatuajes.jpg',
   text: 'Eliminación de Tatuajes',
 }, {
   type: 'text',

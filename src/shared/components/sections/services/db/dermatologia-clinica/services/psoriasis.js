@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/dermatologia-clinica/acne/image1.png',
+  src: '/images/servicios/dermatologia-clinica/04_psoriasis.jpg',
   text: 'Tratamiento 360',
 }, {
   type: 'subtitle',

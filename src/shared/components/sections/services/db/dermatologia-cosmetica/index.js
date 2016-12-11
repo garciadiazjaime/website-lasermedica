@@ -65,12 +65,6 @@ export default {
       href: '/toxina-botulinica',
       title: 'Toxina Botulínica',
     }, {
-      href: '/mesoterapia-corporal',
-      title: 'Mesoterapia Corporal',
-    }, {
-      href: '/mesoterapia-facial',
-      title: 'Mesoterapia Facial',
-    }, {
       href: '/faciales',
       title: 'Faciales',
     }, {
@@ -87,7 +81,7 @@ export default {
       title: 'Plasma rico en plaquetas',
     }, {
       href: '/laser-erbium-thulium',
-      title: 'Laser Erbium/Thulium',
+      title: 'Fraxel Dual',
     }, {
       href: '/silhouette-soft-sutures',
       title: 'Silhouette Soft Sutures',
@@ -100,3 +94,11 @@ export default {
     }],
   }],
 };
+
+// , {
+//   href: '/mesoterapia-corporal',
+//   title: 'Mesoterapia Corporal',
+// }, {
+//   href: '/mesoterapia-facial',
+//   title: 'Mesoterapia Facial',
+// }
