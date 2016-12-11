@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/tratamientos-dermatologicos/rejuvenecimiento/image1.png',
+  src: '/images/servicios/tratamientos-dermatologicos/02_tratamiento_celulitis.jpg',
   text: 'Rejuvenecimiento',
 }, {
   type: 'text',

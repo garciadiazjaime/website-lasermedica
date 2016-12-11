@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/dermatologia-clinica/acne/image1.png',
+  src: '/images/servicios/dermatologia-clinica/06_verrugas_vulgares.jpg',
   text: 'Tratamiento 360',
 }, {
   type: 'subtitle',

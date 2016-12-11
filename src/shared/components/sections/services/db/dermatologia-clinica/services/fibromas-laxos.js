@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/dermatologia-clinica/acne/image1.png',
+  src: '/images/servicios/dermatologia-clinica/07_fibromas_laxos.jpg',
   text: 'Tratamiento 360',
 }, {
   type: 'subtitle',

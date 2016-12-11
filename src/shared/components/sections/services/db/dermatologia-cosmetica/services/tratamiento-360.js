@@ -6,7 +6,7 @@ module.exports = [{
   className: '',
 }, {
   type: 'image',
-  src: '/images/servicios/dermatologia-cosmetica/tratamiento-360/image1.png',
+  src: '/images/servicios/dermatologia-cosmetica/02_tratamiento_360.jpg',
   text: 'Tratamiento 360',
 }, {
   type: 'subtitle',
