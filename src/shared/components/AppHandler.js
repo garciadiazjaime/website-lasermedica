@@ -1,3 +1,4 @@
+/* eslint max-len: [2, 500, 4] */
 import React from 'react';
 
 import sitemap from '../config/sitemap';
@@ -6,32 +7,39 @@ import Footer from './layout/footer/footer1';
 import ServicesMenu from './layout/menu/menu2';
 import scrollUtil from '../utils/scroll';
 import menuUtil from '../utils/menu';
-// import spriteUtil from '../utils/sprite';
+
 
 export default class AppHandler extends React.Component {
 
   componentDidMount() {
     this.scrollHandler(true);
     window.addEventListener('scroll', this.onScroll, false);
-    let isMenuServiceDisplayed = false;
-    $('a#servicios').hover(() => {
-      $('#services-menu').removeClass('hidden');
-    });
+    if (!this.isMobile()) {
+      let isMenuServiceDisplayed = false;
+      $('a#servicios').hover(() => {
+        $('#services-menu').removeClass('hidden');
+      });
 
-    $('div#services-menu').hover(() => {
-      isMenuServiceDisplayed = true;
-    }, () => {
-      isMenuServiceDisplayed = false;
-      $('#services-menu').addClass('hidden');
-    });
-
-    $('body').click(() => {
-      if (!isMenuServiceDisplayed) {
+      $('div#services-menu').hover(() => {
+        isMenuServiceDisplayed = true;
+      }, () => {
+        isMenuServiceDisplayed = false;
         $('#services-menu').addClass('hidden');
+      });
+
+      $('body').click(() => {
+        if (!isMenuServiceDisplayed) {
+          $('#services-menu').addClass('hidden');
+        }
+      });
+    }
+
+    // close open mainmenu, this happens on mobile
+    $(document).on('click', '.navbar-collapse.in', (e) => {
+      if ($(e.target).is('a')) {
+        $('.navbar-collapse.in').collapse('hide');
       }
     });
-
-    // spriteUtil();
   }
 
   componentDidUpdate() {
@@ -60,15 +68,13 @@ export default class AppHandler extends React.Component {
     }
   }
 
-  clickHandler() {
-    if ($('.navbar-header button').is(':visible')) {
-      $('.navbar-header button').click();
-    }
+  isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
   render() {
     return (<div>
-      <MainMenu items={sitemap.items.children} icons={sitemap.icons} onClick={this.clickHandler} />
+      <MainMenu items={sitemap.items.children} icons={sitemap.icons} />
       <ServicesMenu />
       {this.props.children}
       <Footer items={sitemap.items.children} addresses={sitemap.addresses}/>
