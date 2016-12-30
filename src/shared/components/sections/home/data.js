@@ -225,6 +225,36 @@ export default {
               title: 'a derma',
             },
           },
+        }, {
+          classes: {
+            class1: 'slide9',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide10',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
+        }, {
+          classes: {
+            class1: 'slide11',
+          },
+          links: {
+            link1: {
+              href: '/',
+              title: 'a derma',
+            },
+          },
         }],
       },
     },
@@ -270,7 +300,7 @@ export default {
       href: '/servicios/dermatologia-clinica/acne',
       className: 'item3',
     }, {
-      title: 'Melasma',
+      title: 'Botox',
       href: '/servicios/dermatologia-clinica/melasma',
       className: 'item4',
     }],

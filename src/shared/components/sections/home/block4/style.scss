@@ -55,3 +55,18 @@
   @extend  .slidex;
   @include sprite($sprites-image_client_stiefel);
 }
+
+.slide9 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_roche);
+}
+
+.slide10 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_allergan);
+}
+
+.slide11 {
+  @extend  .slidex;
+  @include sprite($sprites-image_client_avene);
+}
