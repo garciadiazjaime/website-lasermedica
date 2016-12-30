@@ -38,7 +38,7 @@ module.exports = [{
 }, {
   type: 'text',
   className: '',
-  text: 'Este tratamiento se basa en una bio estimulación, pues se extrae sangre del propio paciente, se centrifuga y se obtiene el plasma rico en factores de crecimiento autógeno, los cuales se inyectan en áreas específicas de la piel, como la cara, cuello y manos. En un mismo paciente se realizan 3 sesiones de plasma al año con un intervalo de 1 mes entra las primeras dos sesiones y de 3 meses entre la segunda y tercer sesión.',
+  text: 'Este tratamiento se basa en una bio estimulación, pues se extrae sangre del propio paciente, se centrifuga y se obtiene el plasma rico en factores de crecimiento autógeno, los cuales se inyectan en áreas específicas de la piel, como la cara, cuello y manos. En un mismo paciente se realizan 3 sesiones de plasma al año.',
 }, {
   type: 'link',
   className: 'btn7red',

@@ -44,6 +44,9 @@ export default {
       href: '/radiofrecuencia',
       title: 'Radiofrecuencia',
     }, {
+      href: '/accent-prime',
+      title: 'Accent Prime',
+    }, {
       href: '/ipl-vasculight',
       title: 'IPL (vasculight)',
     }, {
@@ -88,9 +91,6 @@ export default {
     }, {
       href: '/nanopore-turbo-roller',
       title: 'Nanopore Turbo-Roller',
-    }, {
-      href: '/accent-prime',
-      title: 'Accent Prime',
     }],
   }],
 };

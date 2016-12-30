@@ -8,7 +8,7 @@ export default class Template3 extends React.Component {
 
   render() {
     const { data } = this.props;
-    return (<div className={'col-xs-12 col-sm-4 ' + style.wr8}>
+    return (<div className={'col-xs-12 col-sm-4 ' + style.wr8} key={this.props.index}>
       <div className="row">
       <Link to={data.href} title={data.title} className={style.btn6 + ' ' + style[data.className]}>
           <span>{data.title}</span>
@@ -20,4 +20,5 @@ export default class Template3 extends React.Component {
 
 Template3.propTypes = {
   data: React.PropTypes.object.isRequired,
+  index: React.PropTypes.number,
 };

@@ -13,10 +13,9 @@ export default class MainMenu extends React.Component {
       const { title, url } = item;
       const elementID = url.replace('/', '');
       const className = style.navbarNavAnchor;
-      const { onClick } = this.props;
       return (
         <li key={index}>
-          <Link to={url} className={className} id={elementID} onClick={onClick}>{title}</Link>
+          <Link to={url} className={className} id={elementID}>{title}</Link>
         </li>
       );
     });
@@ -63,5 +62,4 @@ MainMenu.propTypes = {
   items: React.PropTypes.array.isRequired,
   icons: React.PropTypes.array,
   location: React.PropTypes.any,
-  onClick: React.PropTypes.func.isRequired,
 };
