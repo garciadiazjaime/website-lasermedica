@@ -71,7 +71,7 @@ export default {
           links: {
             link1: {
               href: '/aboutus',
-              title: 'La clínica',
+              title: 'The clinic',
             },
           },
         }, {
@@ -84,7 +84,7 @@ export default {
           links: {
             link1: {
               href: '/aboutus',
-              title: 'La clínica',
+              title: 'The clinic',
             },
           },
         }],
