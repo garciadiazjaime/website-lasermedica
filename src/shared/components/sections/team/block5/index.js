@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
 
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 export default class Block5 extends React.Component {
 
   render() {
-    const { texts, links } = this.props.data;
+    const { texts, links } = data[locationUtil.getLang()];
     return (<div className="container-fluid">
       <div className={'row ' + style.wr6}>
           <div className="col-xs-12 col-sm-5 col-sm-offset-2">
@@ -22,7 +24,3 @@ export default class Block5 extends React.Component {
       </div>);
   }
 }
-
-Block5.propTypes = {
-  data: React.PropTypes.object.isRequired,
-};

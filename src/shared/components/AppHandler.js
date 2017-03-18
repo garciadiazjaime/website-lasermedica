@@ -73,8 +73,9 @@ export default class AppHandler extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
     return (<div>
-      <MainMenu items={sitemap.items.children} icons={sitemap.icons} />
+      <MainMenu items={sitemap.items.children} icons={sitemap.icons} location={location} />
       <ServicesMenu />
       {this.props.children}
       <Footer items={sitemap.items.children} addresses={sitemap.addresses}/>

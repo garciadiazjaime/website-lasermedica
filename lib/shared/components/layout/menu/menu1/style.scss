@@ -86,3 +86,24 @@ $height: 110px;
     left: 10px;
   }
 }
+
+.lang {
+  float: right;
+
+  li {
+    float: left;
+    padding: 0 3px;
+    height: 110px;
+
+    a, span {
+      position: relative;
+      top: 40%;
+
+      color: $darkBlue!important;
+      &:hover {
+        color: $blueGray!important;
+        background-color: initial;
+      }
+    }
+  }
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
-
 
 export default class Block3 extends React.Component {
 
   render() {
-    const { texts, links } = this.props.data;
+    const { texts, links } = data[locationUtil.getLang()];
     return (<div className="container-fluid">
         <div className="row">
           <div className="col-sm-6 col-xs-12">
@@ -34,7 +35,3 @@ export default class Block3 extends React.Component {
       </div>);
   }
 }
-
-Block3.propTypes = {
-  data: React.PropTypes.object.isRequired,
-};

@@ -1,12 +1,15 @@
 import React from 'react';
 
-const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import Template from './template';
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
+
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 export default class Block2 extends React.Component {
 
   render() {
-    const { texts, template } = this.props.data;
+    const { texts, template } = data[locationUtil.getLang()];
     return (<div className="container-fluid">
       <div className="row">
         <div className="col-xs-12 col-sm-6">
@@ -22,7 +25,3 @@ export default class Block2 extends React.Component {
       </div>);
   }
 }
-
-Block2.propTypes = {
-  data: React.PropTypes.object.isRequired,
-};
