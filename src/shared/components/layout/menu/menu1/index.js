@@ -45,6 +45,11 @@ export default class MainMenu extends React.Component {
               </div>
 
               <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
+                <ul className={style.lang}>
+                  <li><a href="" title="">EN</a></li>
+                  <li><span>/</span></li>
+                  <li><a href="" title="">ES</a></li>
+                </ul>
                 <ul className={style.socialNetwork}>
                   {this.getIcons(this.props.icons)}
                 </ul>
