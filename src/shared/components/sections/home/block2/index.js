@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import data from './data';
-const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import locationUtil from '../../../../utils/locationUtil';
+
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 export default class Block2 extends React.Component {
 
