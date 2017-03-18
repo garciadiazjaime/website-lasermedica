@@ -1,31 +1,40 @@
-export default class LocationUtil {
+const locationUtil = function () {
+};
 
-  constructor(location) {
-    this.location = location;
-    this.lang = this.getLangByLocation(location);
-  }
+locationUtil.setLocation = function (location) {
+  this.location = location;
+  this.lang = locationUtil.getLangByLocation(location);
+};
 
-  getSpanishLocation() {
-    if (this.lang === 'ES') {
-      return this.location;
-    }
-    return '/inicio';
-  }
+locationUtil.getLocation = function () {
+  return this.location;
+};
 
-  getEnglishLocation() {
-    if (this.lang === 'EN') {
-      return this.location;
-    }
-    return '/home';
-  }
+locationUtil.getLang = function () {
+  return this.lang || 'ES';
+};
 
-  getBaseUrl() {
-    return this.lang === 'ES' ? '/inicio' : '/home';
+locationUtil.getSpanishLocation = function () {
+  if (this.lang === 'ES') {
+    return this.location;
   }
+  return '/inicio';
+};
 
-  getLangByLocation(location) {
-    console.log('location', location);
-    const spanishLocations = ['/', '/inicio'];
-    return spanishLocations.indexOf(location) !== -1 ? 'ES' : 'EN';
+locationUtil.getEnglishLocation = function () {
+  if (this.lang === 'EN') {
+    return this.location;
   }
-}
+  return '/home';
+};
+
+locationUtil.getBaseUrl = function () {
+  return this.lang === 'ES' ? '/inicio' : '/home';
+};
+
+locationUtil.getLangByLocation = function (location) {
+  const spanishLocations = ['/', '/inicio'];
+  return spanishLocations.indexOf(location) !== -1 ? 'ES' : 'EN';
+};
+
+export default locationUtil;

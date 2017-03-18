@@ -47,61 +47,6 @@ export default {
     },
   },
 
-  block2: {
-    texts: {
-      text1: 'Nuestros Servicios',
-      text2: 'Dermatología Cosmetíca',
-      text3: 'Procedimientos de alta tecnología para el cuidado de la piel.',
-      text4: 'Dermatología Clínica',
-      text5: 'Tratamientos para enfermedades de la piel.',
-      text6: 'Nuestros doctores',
-      text7: 'Dermatólogos Certificados',
-      text8: 'Doctores certificados por el Consejo Mexicano de Dermatología.',
-      text9: 'Nuestras',
-      text10: 'Ubicaciones',
-      text11: 'Tijuana',
-      text12: 'Ensenada',
-      text13: 'Mexicali',
-      text14: 'La siguiente generación en dermatología',
-    },
-    links: {
-      link1: {
-        href: '/servicios/dermatologia-cosmetica',
-        title: 'Dermatología Cosmetíca',
-      },
-      link2: {
-        href: '/servicios/dermatologia-clinica',
-        title: 'Dermatología Clínica',
-      },
-      link3: {
-        href: '/equipo',
-        title: 'Dermatólogos Certificados',
-      },
-      link4: {
-        href: '/ubicacion/tijuana',
-        title: 'Tijuana',
-      },
-      link5: {
-        href: '/ubicacion/ensenada',
-        title: 'Ensenada',
-      },
-      link6: {
-        href: '/ubicacion/mexicali',
-        title: 'Mexicali',
-      },
-    },
-    images: {
-      image1: {
-        src: '',
-        alt: 'dermatologos certificados',
-      },
-      image2: {
-        src: '',
-        alt: 'dermatologia cosmetica',
-      },
-    },
-  },
-
   block3: {
     texts: {
       text1: 'Contamos con una amplia variedad de productos para tratamientos dermatológicos, cremas y cuidado de la piel.',
