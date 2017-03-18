@@ -1,21 +1,7 @@
 /* eslint max-len: [2, 1000, 4] */
 
 export default {
-  block1: {
-    texts: {
-      text1: 'DERMATÓLOGOS CERTIFICADOS',
-    },
-    links: {
-      link1: {
-        href: '/equipo',
-        title: 'Nuestro Equipo',
-      },
-    },
-    classes: {
-      class1: 'equipo-banner',
-    },
-  },
-  block2: {
+  ES: {
     texts: {
       text1: 'La siguiente generación en dermatología',
     },
@@ -47,51 +33,37 @@ export default {
       },
     }],
   },
-  block3: {
+  EN: {
     texts: {
-      text1: 'En Lasermedica contamos también con un equipo de médicos profesionales que lo guiarán durante su tratamiento, quienes ayudarán a contestar sus dudas y tratamiento a seguir.',
+      text1: 'La siguiente generación en dermatología',
     },
-    images: {
-      image1: {
-        src: '',
-        alt: 'en lasermedica contamos',
+    template: [{
+      classes: {
+        class1: 'image1',
       },
-    },
-  },
-  block4: [{
-    classes: {
-      class1: 'image3',
-    },
-    texts: {
-      text1: 'Dr. Jorge Varela',
-      text2: 'Medicina Estética y Cirugía Láser',
-    },
-  }, {
-    classes: {
-      class1: 'image2',
-    },
-    texts: {
-      text1: 'Dr. Carlos Rojo',
-      text2: 'Cirugía Láser',
-    },
-  }, {
-    classes: {
-      class1: 'image1',
-    },
-    texts: {
-      text1: 'Ana Luisa Encinas',
-      text2: 'Cosmetóloga',
-    },
-  }],
-  block5: {
-    texts: {
-      text1: 'Conoce nuestros servicios y descubre cómo podemos ayudarte.',
-    },
-    links: {
-      link1: {
-        href: '/servicios',
-        title: 'VER SERVICIOS',
+      texts: {
+        text1: 'Dr. Jorge Alberto Ibarra',
+        text2: 'Dermatologist',
+        text3: 'Visionary and precursor of dermatology in Mexico',
+        text4: [
+          'In Lasermedica we have a group of professional doctors widely trained and qualified in their field; Such is the case of our founder Dr. Jorge Alberto Ibarra Ibarra, who over more than 30 years ago, after graduating from the University of Guadalajara and finishing his graduate studies in Dermatology at the Dermatological Institute of Jalisco, began a successful career as a visionary and precursor of dermatology in the country. Within his work as a physician, he has distinguished himself as former president of the Medical College of Dermatologists, belongs to the Mexican Academy of Dermatology and the Mexican Society of Dermatology.',
+          'Likewise, within the curriculum of Dr. Jorge Ibarra is being part of the Medical College of Dermatologists of Jalisco and the Society of Dermatology A.C., important entities for the development of dermatology in Mexico. Dr. Ibarra is an active member of the prestigious International Society of Dermatologic Surgery based in Switzerland, where research is conducted to obtain the most innovative treatments for dermatological surgery. On the other hand, he also is part of the Ibero-Latin American College of Dermatology, which seeks to study the most updated dermatological diseases and its treatments.',
+          'Currently Dr. Jorge Ibarra also works as a professor at the Autonomous University of Baja California School of Medicine, giving his students the bases of dermatology, whilst instilling passion and dedication in this subject.',
+        ],
       },
-    },
+    }, {
+      classes: {
+        class1: 'image2',
+      },
+      texts: {
+        text1: 'Dra. Paulina Priscilla Ibarra Ramírez',
+        text2: 'Dermatologist',
+        text3: 'Miembro activo de la Academia Mexicana de Dermatología',
+        text4: [
+          'As head of Dermatological Surgery, we have Dr. Paulina Priscilla Ibarra Ramírez, a dermatologist who graduated from the Autonomous University of Baja California, did her internship at the Old Civil Hospital of Guadalajara, and finished the specialty of Dermatology at the Dermatology Institute of Jalisco "Dr. José Barba Rubio", with the subspecialty in Dermatologic Surgery.',
+          'As an essential part of her professional growth, Dr. Ibarra has received training in Laser Surgery in Malaga, Spain and in Cosmetic Dermatology in Buenos Aires, Argentina. She is also an active member of the College of Dermatologists of Tijuana, Medical College of Dermatologists of Jalisco, Society of Dermatology A.C., Mexican Academy of Dermatology and the Ibero-Latin American College of Dermatology. Dr. Paulina Ibarra also held academic assignments in the course of Dermatology at the School of Medicine at the Autonomous University of Baja California.',
+        ],
+      },
+    }],
   },
 };
