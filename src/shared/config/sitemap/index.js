@@ -13,22 +13,52 @@ export default {
     children: [{
       title: 'Inicio',
       url: '/inicio',
+      lang: 'ES',
+      component: HomeSection,
+    }, {
+      title: 'Home',
+      url: '/home',
+      lang: 'EN',
       component: HomeSection,
     }, {
       title: 'La Clínica',
       url: '/nosotros',
+      lang: 'ES',
+      component: AboutSection,
+    }, {
+      title: 'About US',
+      url: '/aboutus',
+      lang: 'EN',
       component: AboutSection,
     }, {
       title: 'Equipo',
       url: '/equipo',
+      lang: 'ES',
+      component: EquipoSection,
+    }, {
+      title: 'Team',
+      url: '/team',
+      lang: 'EN',
       component: EquipoSection,
     }, {
       title: 'Servicios',
       url: '/servicios',
+      lang: 'ES',
+      component: ServicesSection,
+    }, {
+      title: 'Services',
+      url: '/services',
+      lang: 'EN',
       component: ServicesSection,
     }, {
       title: 'Contacto',
       url: '/contacto',
+      lang: 'ES',
+      component: ContactSection,
+    }, {
+      title: 'Contact',
+      url: '/contact',
+      lang: 'EN',
       component: ContactSection,
     }],
   },
