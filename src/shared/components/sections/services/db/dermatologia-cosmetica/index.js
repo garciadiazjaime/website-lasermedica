@@ -130,8 +130,8 @@ export default {
         href: '/360-treatment',
         title: '360 Treatment',
       }, {
-        href: '/laser-erbium-fraccionado',
-        title: 'Láser Erbium',
+        href: '/fractionated-erbium-laser',
+        title: 'Fractionated Erbium Laser',
       }, {
         href: '/laser-co2-fraccionado',
         title: 'Láser CO2 Fraccionado',
