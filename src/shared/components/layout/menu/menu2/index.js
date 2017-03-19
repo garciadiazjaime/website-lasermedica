@@ -2,6 +2,7 @@
 import React from 'react';
 import _ from 'lodash';
 
+import locationUtil from '../../../../utils/locationUtil';
 import dbServices from '../../../sections/services/db';
 import Cover from './cover';
 
@@ -41,7 +42,7 @@ export default class ServicesMenu extends React.Component {
   }
 
   render() {
-    const servicesData = this.getServicesData(dbServices);
+    const servicesData = this.getServicesData(dbServices[locationUtil.getLang()]);
     return (<div id="services-menu" className="container-fluid hidden" style={{ position: 'relative' }}>
       <div className={'row ' + style.services_menu}>
           <div className={'col-xs-3 ' + style.leftPanel}>
