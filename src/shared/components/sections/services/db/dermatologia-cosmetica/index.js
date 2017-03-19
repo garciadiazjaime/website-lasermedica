@@ -157,8 +157,8 @@ export default {
         href: '/liquid-face-lift',
         title: 'Liquid Face Lift',
       }, {
-        href: '/rellenos-dermicos',
-        title: 'Rellenos Dérmicos',
+        href: '/dermal-fillers',
+        title: 'Dermal Fillers',
       }, {
         href: '/toxina-botulinica',
         title: 'Toxina Botulínica',
