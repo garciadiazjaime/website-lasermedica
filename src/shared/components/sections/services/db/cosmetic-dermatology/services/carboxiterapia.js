@@ -1,4 +1,6 @@
 /* eslint max-len: [2, 1000, 4] */
+import _ from 'lodash';
+import Common from '../../common';
 
 module.exports = [{
   type: 'title',
@@ -8,42 +10,27 @@ module.exports = [{
   type: 'image',
   src: '/images/servicios/dermatologia-cosmetica/09_carboxiterapia.jpg',
   text: 'Tratamiento 360',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Qué es?',
-}, {
+}, Common.EN.item1, {
   type: 'text',
   className: 'normal_break',
   text: [
-    'La carboxiterapia es un tratamiento novedoso y sumamente efectivo, que utiliza el bióxido de carbono (CO2) para ayudar a combatir la celulitis, estrías, cicatrices, mejora la circulación y elasticidad de la piel y destruye zonas de grasa depositada. Es un procedimiento seguro y mínimamente invasivo, no representa riesgo alguno de toxicidad ni efectos secundarios.',
-    'Este procedimiento consta de varias sesiones, según sea lo recomendado por el equipo de Lasermedica, tiene cambios notorios al momento de realizarse y puede llevarse en conjunto con otros tratamientos para obtener mejores resultados.',
+    'Carboxytherapy is a novelty and extremely effective treatment that uses carbon dioxide (CO2) to help fight cellulite, stretch marks, scars; it also improves circulation and elasticity of the skin and destroys stored fat in problem areas. It is a safe and minimally invasive procedure, it does not pose any risk of toxicity or side effects.',
+    'This procedure consists of several sessions, as recommended by the team of Lasermedica. It has notable results and can be performed in conjunction with other treatments for better results.',
   ],
-}, {
-  type: 'subtitle',
-  className: '',
-  text: 'Objetivos',
-}, {
+}, Common.EN.item5, {
   type: 'list',
   className: '',
   items: [
-    'Combatir celulitis.',
-    'Reducir estrías.',
-    'Combate flacidez',
-    'Varices pequeñas.',
-    'Mejora los resultados de la lipoescultura.',
+    'Combat cellulite',
+    'Reduce stretch marks',
+    'Fight sagging skin',
+    'Treat small varicose veins',
+    'Improves the results of liposculpture',
   ],
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Cómo se hace?',
-}, {
+}, Common.EN.item7, {
   type: 'text',
   className: '',
-  text: 'A través de una aguja muy pequeña se transmite el CO2 que se encuentra resguardado en un tanque similar al tanque de oxígeno, la máquina será monitoreada por nuestro equipo profesional para regular el flujo del CO2 y el porcentaje necesario para que el tratamiento se realice correctamente durante la sesión; esta puede durar alrededor de 40 minutos, dando resultados visibles casi al instante.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/carboxiterapia',
-}];
+  text: 'Through a very small needle, Co2 is injected. The Co2 is stored in a tank similar to the oxygen tank. The machine will be monitored by our team of professions, so they can regulate the flow of CO2 and the percentage necessary for the treatment. This can last for about 40 minutes, giving visible results almost instantly.',
+}, _.assign({}, Common.EN.item4, {
+  href: '/contact/carboxiterapia',
+})];

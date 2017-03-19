@@ -148,8 +148,8 @@ export default {
         href: '/laser-sclerotherapy',
         title: 'Laser Sclerotherapy',
       }, {
-        href: '/escleroterapia-inyectada',
-        title: 'Escleroterapia Inyectada',
+        href: '/injection-sclerotherapy',
+        title: 'Injection Sclerotherapy',
       }, {
         href: '/carboxiterapia',
         title: 'Carboxiterapia',
