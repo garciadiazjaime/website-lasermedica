@@ -1,4 +1,6 @@
 /* eslint max-len: [2, 1000, 4] */
+import _ from 'lodash';
+import Common from '../../common';
 
 module.exports = [{
   type: 'title',
@@ -8,39 +10,23 @@ module.exports = [{
   type: 'image',
   src: '/images/servicios/dermatologia-cosmetica/20_nanopore_turbo_roller.jpg',
   text: 'Tratamiento 360',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Qué es?',
-}, {
+}, Common.EN.item1, {
   type: 'text',
   className: '',
-  text: 'Nanopore Turbo-Roller es un tratamiento médico no invasivo de micropunción eléctrica que estimula, induce y regenera la producción de colágeno y elastina por los mecanismos normales de autorreparación de la piel e incrementa la penetración de activos permite la aplicación y mejor absorción de tratamientos específicos (mesoterapia transdermica).',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: 'Objetivos',
-}, {
+  text: 'Nanopore Turbo-Roller is a non-invasive medical treatment of electric micropuncture that stimulates, induces and regenerates the production of collagen and elastin by the skin\'s normal self-repair mechanisms. It also increases the penetration of active substances and allows the application and better absorption of specific treatments (Transdermal Mesotherapy).',
+}, Common.EN.item5, {
   type: 'list',
   className: '',
   items: [
-    'Arrugas',
-    'Manchas',
-    'Cicatrices',
-    'Estrías',
-    'Alopecia',
+    'Smooth out wrinkles',
+    'Get rid of discoloration patches',
+    'Reduce scars and stretch marks',
+    'Combat alopecia',
   ],
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Cómo lo utilizamos?',
-}, {
+}, Common.EN.item8, {
   type: 'text',
   className: '',
-  text: 'Dependiendo de la condición a tratar se seleccionará el protocolo que sea más adecuado para usted procediendo realizar las micropunciones con el Nanopore Turbo-Roller y aplicación de los activos correspondientes. Puede experimentar nulo o mínimo dolor durante el procedimiento, ligera irritación, sin proceso de cicatrización con resultados visibles en pocas sesiones.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/nanopore-turbo-roller',
-}];
+  text: 'Depending on the condition to be treated, we will select the protocol that is most appropriate to each case, proceeding to perform the micro-functions with the Nanopore Turbo-Roller and applying the corresponding active substances. You may experience null or minimal pain during the procedure, slight irritation, no process of cicatrization, with visible results in just a few sessions.',
+}, _.assign({}, Common.EN.item4, {
+  href: '/contact/nanopore-turbo-roller',
+})];
