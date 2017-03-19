@@ -1,46 +1,33 @@
 /* eslint max-len: [2, 1000, 4] */
+import _ from 'lodash';
+import Common from '../../common';
 
 module.exports = [{
   type: 'title',
-  text: 'Laser Erbium/Thulium (Fraxel Dual)',
+  text: 'Erbium Laser / Thulium Laser (Fraxel Dual)',
   className: '',
 }, {
   type: 'image',
   src: '/images/servicios/dermatologia-cosmetica/18_fraxel_dual.jpg',
   text: 'Tratamiento 360',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Qué es?',
-}, {
+}, Common.EN.item1, {
   type: 'text',
   className: '',
-  text: 'Fraxel Dual es un sistema con tecnología revolucionaria para el rejuvenecimiento de la piel por medio de láser fraccionado, permitiendo la combinación de un láser  superficial (Thulium) y uno más profundo (Erbium) ofreciendo alto control del daño térmico y así posibilitando una recuperación más rápida con menos efectos secundarios.',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: 'Objetivos',
-}, {
+  text: 'Fraxel Dual is a system with revolutionary technology for skin rejuvenation by means of fractional laser, allowing the combination of a surface laser (Thulium) and a deeper laser (Erbium), offering high control of the thermal damage and thus enabling a faster recovery with fewer side effects.',
+}, Common.EN.item5, {
   type: 'list',
   className: '',
   items: [
-    'Borrar manchas',
-    'Mejorar tono y textura',
-    'Mejorar apariencia de cicatrices de acné y quirúrgicas',
-    'Suavizar líneas de expresión y eliminar arrugas finas',
-    'Apariencia más fresca',
+    'Clear spots',
+    'Improve tone and texture',
+    'Improve the appearance of acne and surgical scars',
+    'Smooth expression lines and eliminate fine wrinkles',
+    'Fresher-looking skin',
   ],
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Cómo funciona?',
-}, {
+}, Common.EN.item7, {
   type: 'text',
   className: '',
-  text: 'Por medio de columnas de láser microscópicas que penetran de manera superficial y profunda a la piel para facilitar el remodelamiento del colágeno. Durante el tratamiento se daña sólo una fracción del tejido, dejando el tejido circundante intacto lo que permite una rápida recuperación. En resumen, Fraxel Dual genera una nueva superficie de la piel, estimulando el crecimiento de nuevas y sanas células desde lo profundo.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/laser-erbium-thulium',
-}];
+  text: 'By microscopic laser columns that penetrate the skin, both superficially and deeply, to facilitate the remodeling of collagen. During treatment, only a fraction of the tissue is damaged, leaving surrounding tissue intact, allowing a fast recovery. In short, Fraxel Dual generates a new skin surface, stimulating the growth of new and healthy cells.',
+}, _.assign({}, Common.EN.item4, {
+  href: '/contact/laser-erbium-thulium',
+})];
