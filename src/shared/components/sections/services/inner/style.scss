@@ -42,7 +42,7 @@
     margin-bottom: 25px;
   }
 }
-#dermatologia-cosmetica {
+#dermatologia-cosmetica, #cosmetic-dermatology {
 
   .service_content {
     h2{
@@ -51,7 +51,7 @@
   }
 }
 
-#dermatologia-clinica {
+#dermatologia-clinica, #clinical-dermatology {
   .service_content {
     h2{
       color: $orange;
@@ -59,7 +59,7 @@
   }
 }
 
-#tratamientos-dermatologicos {
+#tratamientos-dermatologicos, #treatments-dermatological {
   .service_content {
     h2{
       color: $green;

@@ -7,8 +7,9 @@ import Header from './header';
 import Body from './body';
 import servicesData from '../db';
 import Utils from './utils';
-const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
+import locationUtil from '../../../../utils/locationUtil';
 
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 export default class ServiceInner extends React.Component {
 
@@ -97,10 +98,11 @@ export default class ServiceInner extends React.Component {
     const bits = pathname.split('/');
     const category = '/' + bits[2];
     const service = bits[3] ? '/' + bits[3] : null;
-    const params = this.getDefaultValues(servicesData, '/servicios', category, service);
+    const defaultSection = locationUtil.getLang === 'ES' ? '/servicios' : '/services';
+    const params = this.getDefaultValues(servicesData[locationUtil.getLang()], defaultSection, category, service);
     const data = this.getData(category, params.service);
     const categoryUrl = [params.section, params.category].join('');
-    const menuItems = this.getMenuItems(servicesData, categoryUrl, service);
+    const menuItems = this.getMenuItems(servicesData[locationUtil.getLang()], categoryUrl, service);
     return (<div className="container-fluid" id={bits[2]}>
       <Header data={data.header} />
       <Body data={data.body} menuItems={menuItems} service={service} category={category} common={data.header} />

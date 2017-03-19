@@ -7,8 +7,6 @@ import Block3 from './block3';
 export default class ServicesSection extends React.Component {
 
   render() {
-    // const servicesData = this.getServicesData(dataServices);
-    // <Block3 data={servicesData} />
     return (<div>
       <Block1 />
       <Block2 />

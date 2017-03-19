@@ -20,8 +20,14 @@ export default(
 
       <Route path="servicios/:category/:service" component={ServicesInnerSection} />
       <Route path="servicios/:category" component={ServicesInnerSection} />
+      <Route path="services/:category/:service" component={ServicesInnerSection} />
+      <Route path="services/:category" component={ServicesInnerSection} />
+
       <Route path="contacto/:service" component={ContactSection} />
+      <Route path="contact/:service" component={ContactSection} />
+
       <Route path="ubicacion/:ubicacion" component={ContactSection} />
+      <Route path="location/:ubicacion" component={ContactSection} />
     </Route>
   </Router>
 );

@@ -6,6 +6,7 @@ const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import Repeat from '../../../elements/repeat';
 import Template5 from '../../../templates/template5';
 import Utils from './utils';
+import locationUtil from '../../../../utils/locationUtil';
 
 export default class Body extends React.Component {
 
@@ -121,22 +122,30 @@ export default class Body extends React.Component {
   }
 
   renderControls(data, service) {
+    // todo: improve texts and ternary
     const controls = Utils.getPrevNext(data, service);
+    const controlTitles = locationUtil.getLang() === 'ES' ? {
+      back: 'Anterior',
+      next: 'Siguiente',
+    } : {
+      back: 'Back',
+      next: 'Next',
+    };
     return (<div>
       {
         controls.prev ?
         (<Link className="" to={controls.prev} title="anterior">
-          Anterior
+          {controlTitles.back}
         </Link>) : (<span>
-          Anterior
+          {controlTitles.back}
         </span>)
       }
       {
         controls.next ?
         (<Link className="" to={controls.next} title="siguiente">
-          Siguiente
+          {controlTitles.next}
         </Link>) : (<span>
-          Siguiente
+          {controlTitles.next}
         </span>)
       }
     </div>);
@@ -146,11 +155,12 @@ export default class Body extends React.Component {
     const { data, menuItems, service, category, common } = this.props;
     const serviceId = service && service.indexOf('/') !== -1 ? service.replace('/', '') : null;
     const { classes } = common;
+    const listTitle = locationUtil.getLang() === 'ES' ? 'Menú de Servicios' : 'Services Menu';
     return (<div className="container-fluid" id={style[category.replace('/', '')]}>
       <div className="col-xs-12 col-sm-6">
         <div className={'row ' + style.pad45}>
           <Link className={style.btn9} to="/servicios" title="servicios">
-            Menú de Servicios
+            {listTitle}
           </Link>
           <div className={style[classes.class2]}>
             <Repeat data={menuItems} Template={Template5} />
