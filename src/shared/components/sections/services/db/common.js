@@ -40,5 +40,10 @@ export default {
       className: '',
       text: 'How does it work?',
     },
+    item8: {
+      type: 'subtitle',
+      className: '',
+      text: 'How do we use it?',
+    },
   },
 };
