@@ -166,8 +166,8 @@ export default {
         href: '/facials',
         title: 'Facials',
       }, {
-        href: '/microdermoabrasion',
-        title: 'Microdermoabrasión',
+        href: '/microdermabrasion',
+        title: 'Microdermabrasion',
       }, {
         href: '/peeling-quimicos',
         title: 'Peeling Químicos',
