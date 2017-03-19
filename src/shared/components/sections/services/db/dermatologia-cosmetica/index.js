@@ -133,8 +133,8 @@ export default {
         href: '/fractionated-erbium-laser',
         title: 'Fractionated Erbium Laser',
       }, {
-        href: '/laser-co2-fraccionado',
-        title: 'Láser CO2 Fraccionado',
+        href: '/laser-co2-fractionated',
+        title: 'Fractionated C02 Laser',
       }, {
         href: '/radiofrecuencia',
         title: 'Radiofrecuencia',
