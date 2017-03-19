@@ -19,6 +19,9 @@ export default class AppHandler extends React.Component {
       $('a#servicios').hover(() => {
         $('#services-menu').removeClass('hidden');
       });
+      $('a#services').hover(() => {
+        $('#services-menu').removeClass('hidden');
+      });
 
       $('div#services-menu').hover(() => {
         isMenuServiceDisplayed = true;

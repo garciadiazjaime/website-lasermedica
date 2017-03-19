@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
 import dbServices from '../../../sections/services/db';
+import locationUtil from '../../../../utils/locationUtil';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
-
 
 export default class Services extends React.Component {
 
@@ -57,7 +57,7 @@ export default class Services extends React.Component {
   }
 
   render() {
-    const servicesData = this.getServicesData(dbServices);
+    const servicesData = this.getServicesData(dbServices[locationUtil.getLang()]);
 
     return (<div>
       {this.renderServices(servicesData)}

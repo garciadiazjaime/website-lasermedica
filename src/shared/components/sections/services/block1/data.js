@@ -1,9 +1,7 @@
 /* eslint max-len: [2, 600, 4] */
 
-import servicesData from './db';
-
 export default {
-  block1: {
+  ES: {
     texts: {
       text1: 'Tratamientos de Alta Tecnología',
     },
@@ -17,5 +15,18 @@ export default {
       },
     },
   },
-  services: servicesData,
+  EN: {
+    texts: {
+      text1: 'High Tech Treatments',
+    },
+    classes: {
+      class1: 'servicios-banner',
+    },
+    links: {
+      link1: {
+        title: 'Our Services',
+        href: '/services',
+      },
+    },
+  },
 };
