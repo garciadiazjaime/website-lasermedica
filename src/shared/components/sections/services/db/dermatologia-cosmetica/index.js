@@ -136,8 +136,8 @@ export default {
         href: '/laser-co2-fractionated',
         title: 'Fractionated C02 Laser',
       }, {
-        href: '/radiofrecuencia',
-        title: 'Radiofrecuencia',
+        href: '/radiofrequency',
+        title: 'Radiofrequency',
       }, {
         href: '/accent-prime',
         title: 'Accent Prime',
