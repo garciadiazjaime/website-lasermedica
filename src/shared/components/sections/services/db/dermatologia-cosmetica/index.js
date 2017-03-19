@@ -175,8 +175,8 @@ export default {
         href: '/q-switched-laser',
         title: 'Q-switched laser',
       }, {
-        href: '/plasma-rico-en-plaquetas',
-        title: 'Plasma rico en plaquetas',
+        href: '/rich-platelet-plasma',
+        title: 'Rich Platelet Plasma',
       }, {
         href: '/laser-erbium-thulium',
         title: 'Fraxel Dual',
