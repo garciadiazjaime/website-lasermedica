@@ -127,8 +127,8 @@ export default {
         href: '/laser-hair-removal',
         title: 'Laser Hair Removal',
       }, {
-        href: '/tratamiento-360',
-        title: 'Tratamiento 360',
+        href: '/360-treatment',
+        title: '360 Treatment',
       }, {
         href: '/laser-erbium-fraccionado',
         title: 'Láser Erbium',
