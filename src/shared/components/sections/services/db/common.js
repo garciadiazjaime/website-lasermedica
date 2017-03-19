@@ -35,5 +35,10 @@ export default {
       className: '',
       text: 'What techniques do we use?',
     },
+    item7: {
+      type: 'subtitle',
+      className: '',
+      text: 'How does it work?',
+    },
   },
 };
