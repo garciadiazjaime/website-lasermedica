@@ -169,8 +169,8 @@ export default {
         href: '/microdermabrasion',
         title: 'Microdermabrasion',
       }, {
-        href: '/peeling-quimicos',
-        title: 'Peeling Químicos',
+        href: '/chemical-peel',
+        title: 'Chemical Peel',
       }, {
         href: '/laser-q-switched',
         title: 'Láser Q Switched',
