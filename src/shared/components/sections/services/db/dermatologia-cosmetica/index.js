@@ -145,8 +145,8 @@ export default {
         href: '/ipl-vasculight',
         title: 'IPL (vasculight)',
       }, {
-        href: '/escleroterapia-con-laser',
-        title: 'Escleroterapia con Láser',
+        href: '/laser-sclerotherapy',
+        title: 'Laser Sclerotherapy',
       }, {
         href: '/escleroterapia-inyectada',
         title: 'Escleroterapia Inyectada',
