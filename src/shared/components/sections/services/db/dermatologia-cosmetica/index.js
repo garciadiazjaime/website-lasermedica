@@ -172,8 +172,8 @@ export default {
         href: '/chemical-peel',
         title: 'Chemical Peel',
       }, {
-        href: '/laser-q-switched',
-        title: 'Láser Q Switched',
+        href: '/q-switched-laser',
+        title: 'Q-switched laser',
       }, {
         href: '/plasma-rico-en-plaquetas',
         title: 'Plasma rico en plaquetas',
