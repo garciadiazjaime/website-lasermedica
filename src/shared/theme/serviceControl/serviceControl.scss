@@ -66,7 +66,7 @@
     }
   }
 }
-.serviceControl_dermatologia-cosmetica{
+.serviceControl_dermatologia-cosmetica, .serviceControl_cosmetic-dermatology {
   @extend .serviceControl;
   a:first-child{
     &::before{
@@ -79,7 +79,7 @@
     }
   }
 }
-.serviceControl_dermatologia-clinica{
+.serviceControl_dermatologia-clinica, .serviceControl_clinical-dermatology {
   @extend .serviceControl;
   a:first-child{
     &::before{
@@ -92,7 +92,7 @@
     }
   }
 }
-.serviceControl_tratamientos-dermatologicos{
+.serviceControl_tratamientos-dermatologicos, .serviceControl_treatments-dermatological {
   @extend .serviceControl;
   a:first-child{
     &::before{

@@ -23,7 +23,7 @@ export default class Block3 extends React.Component {
   render() {
     const data = this.getServicesData(dataServices[locationUtil.getLang()]);
     return (<div className="container-fluid">
-        <Repeat data={data} Template={Template4} />
-      </div>);
+      <Repeat data={data} Template={Template4} />
+    </div>);
   }
 }
