@@ -60,5 +60,31 @@ export default {
       className: '',
       text: 'How do we do it?',
     },
+    item12: {
+      type: 'subtitle',
+      className: '',
+      text: 'How do we treat it?',
+    },
+    item13: {
+      type: 'subtitle',
+      className: '',
+      text: 'Topical Treatment',
+    },
+    item14: {
+      type: 'subtitle',
+      className: '',
+      text: 'Systemic Treatment',
+    },
+    item15: {
+      type: 'link',
+      className: 'btn7orange',
+      text: 'SCHEDULE APPOINTMENT',
+      href: '/contact',
+    },
+    item16: {
+      type: 'subtitle',
+      className: '',
+      text: 'Causes',
+    },
   },
 };

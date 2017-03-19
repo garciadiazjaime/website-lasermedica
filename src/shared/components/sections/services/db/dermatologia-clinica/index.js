@@ -101,10 +101,10 @@ export default {
       href: '/clinical-dermatology',
       children: [{
         href: '/acne',
-        title: 'Acné',
+        title: 'Acne',
       }, {
-        href: '/cicatrices-de-acne',
-        title: 'Cicatrices de Acné',
+        href: '/acne-scars',
+        title: 'Acne Scars',
       }, {
         href: '/melasma',
         title: 'Melasma',
@@ -115,29 +115,29 @@ export default {
         href: '/vitiligo',
         title: 'Vitiligo',
       }, {
-        href: '/verrugas-vulgares',
-        title: 'Verrugas Vulgares',
+        href: '/common-warts',
+        title: 'Common Warts',
       }, {
-        href: '/fibromas-laxos',
-        title: 'Fibromas laxos',
+        href: '/soft-fibroma',
+        title: 'Soft Fibroma',
       }, {
-        href: '/varices',
-        title: 'Várices',
+        href: '/varicose-veins',
+        title: 'Varicose Veins',
       }, {
-        href: '/cancer-en-la-piel',
-        title: 'Cáncer de Piel',
+        href: '/skin-cancer',
+        title: 'Skin Cancer',
       }, {
         href: '/alopecia',
         title: 'Alopecia',
       }, {
         href: '/rosacea',
-        title: 'Rosácea',
+        title: 'Rosacea',
       }, {
-        href: '/hiperhidrosis',
-        title: 'Hiperhidrosis',
+        href: '/hyperhidrosis',
+        title: 'Hyperhidrosis',
       }, {
-        href: '/molusco-contagioso',
-        title: 'Molusco Contagioso',
+        href: '/molluscum-contagiosum',
+        title: 'Molluscum contagiosum',
       }],
     }],
   },
