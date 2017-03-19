@@ -163,8 +163,8 @@ export default {
         href: '/botulinum-toxin',
         title: 'Botulinum Toxin',
       }, {
-        href: '/faciales',
-        title: 'Faciales',
+        href: '/facials',
+        title: 'Facials',
       }, {
         href: '/microdermoabrasion',
         title: 'Microdermoabrasión',
