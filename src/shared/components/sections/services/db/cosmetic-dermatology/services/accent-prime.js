@@ -1,4 +1,6 @@
 /* eslint max-len: [2, 1000, 4] */
+import _ from 'lodash';
+import Common from '../../common';
 
 module.exports = [{
   type: 'title',
@@ -8,31 +10,20 @@ module.exports = [{
   type: 'image',
   src: '/images/servicios/dermatologia-cosmetica/21_accent_prime.jpg',
   text: 'Tratamiento 360',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: '¿Qué es?',
-}, {
+}, Common.EN.item1, {
   type: 'text',
   className: '',
-  text: 'Accent Prime es una de las plataformas más avanzadas para reafirmar piel y contorneado corporal siendo la última y más novedosa generación de las plataformas Accent. Combina el Ultrasonido y la Radiofrecuencia permitiendo aplicar las tecnologías de manera efectiva y obteniendo resultados naturales y duraderos.',
-}, {
-  type: 'subtitle',
-  className: '',
-  text: 'Objetivos',
-}, {
+  text: 'Accent prime is Alma Laser’s most advanced workstation for skin tightening, body contouring and aesthetic enhancement. The platform combines the latest innovations in ultrasound and radio frequency technologies to deliver effective, highly customized treatments- with natural, long lasting results.',
+}, Common.EN.item5, {
   type: 'list',
   className: '',
   items: [
-    'Actua simultáneamente sobre el adipocito y el colágeno.',
-    'Reduce el tiempo de duración del tratamiento',
-    'Resultados uniformes',
-    'Control de la profundidad',
-    'Seguro para todo tipo de piel',
+    'It acts simultaneously on fat cells and collagen',
+    'Reduces treatment time',
+    'Uniform Results',
+    'Depth Control',
+    'Safe for all skin types',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/accent-prime',
-}];
+}, _.assign({}, Common.EN.item4, {
+  href: '/contact/accent-prime',
+})];
