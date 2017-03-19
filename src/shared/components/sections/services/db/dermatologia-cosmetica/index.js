@@ -160,8 +160,8 @@ export default {
         href: '/dermal-fillers',
         title: 'Dermal Fillers',
       }, {
-        href: '/toxina-botulinica',
-        title: 'Toxina Botulínica',
+        href: '/botulinum-toxin',
+        title: 'Botulinum Toxin',
       }, {
         href: '/faciales',
         title: 'Faciales',
