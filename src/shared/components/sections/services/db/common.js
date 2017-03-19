@@ -45,5 +45,10 @@ export default {
       className: '',
       text: 'How do we use it?',
     },
+    item9: {
+      type: 'subtitle',
+      className: '',
+      text: 'How is it done?',
+    },
   },
 };
