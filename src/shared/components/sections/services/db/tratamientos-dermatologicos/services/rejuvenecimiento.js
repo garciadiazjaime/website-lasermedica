@@ -44,9 +44,6 @@ module.exports = [{
     title: 'Toxina Botulínica',
     href: '/servicios/dermatologia-cosmetica/toxina-botulinica',
   }, {
-    title: 'Mesoterapia Facial',
-    href: '/servicios/dermatologia-cosmetica/mesoterapia-facial',
-  }, {
     title: 'Faciales',
     href: '/servicios/dermatologia-cosmetica/faciales',
   }, {
