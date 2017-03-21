@@ -64,20 +64,20 @@ export default {
       ],
       href: '/treatments-dermatological',
       children: [{
-        href: '/rejuvenecimiento',
-        title: 'Rejuvenecimiento',
+        href: '/rejuvenation',
+        title: 'Rejuvenation',
       }, {
-        href: '/tratamiento-celulitis',
-        title: 'Tratamiento de Celulitis',
+        href: '/cellulite-treatment',
+        title: 'Cellulite Treatment',
       }, {
-        href: '/eliminacion-tatuajes',
-        title: 'Eliminación de Tatuajes',
+        href: '/tattoo-removal',
+        title: 'Tattoo Removal',
       }, {
-        href: '/tratamiento-cicatrices-queloides',
-        title: 'Tratamiento de Cicatrices Queloides',
+        href: '/treatment-keloid',
+        title: 'Treatment of Keloid',
       }, {
-        href: '/cirugia-dermatologica',
-        title: 'Cirugía Dermatológica',
+        href: '/dermatologic-surgery',
+        title: 'Dermatologic Surgery',
       }],
     }],
   },
