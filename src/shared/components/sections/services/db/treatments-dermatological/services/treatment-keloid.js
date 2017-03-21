@@ -29,5 +29,5 @@ module.exports = [{
   type: 'link',
   className: 'btn7green',
   text: 'SCHEDULE APPOINTMENT',
-  href: '/contacto/treatment-keloid',
+  href: '/contacto/tratamiento-cicatrices-queloides',
 }];
