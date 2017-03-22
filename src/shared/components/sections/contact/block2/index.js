@@ -1,16 +1,14 @@
 import React from 'react';
 
 import Location from '../location';
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
 
 export default class Block2 extends React.Component {
 
   render() {
     return (<div className="container-fluid">
-      <Location data={this.props.data} />
+      <Location data={data[locationUtil.getLang()]} />
     </div>);
   }
 }
-
-Block2.propTypes = {
-  data: React.PropTypes.object.isRequired,
-};

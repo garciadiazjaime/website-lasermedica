@@ -3,6 +3,8 @@
 import React from 'react';
 import _ from 'lodash';
 
+import locationUtil from '../../../../../utils/locationUtil';
+
 const style = process.env.TIER === 'FE' ? require('../../style.scss') : {};
 import restClient from '../../../../../../server/helpers/rest-client';
 
@@ -39,7 +41,7 @@ export default class Form1 extends React.Component {
   }
 
   getInitialFormState() {
-    return {
+    return locationUtil.getLang() === 'ES' ? {
       name: {
         title: 'Nombre',
         value: '',
@@ -57,6 +59,27 @@ export default class Form1 extends React.Component {
       },
       message: {
         title: 'Mensaje',
+        value: '',
+        require: true,
+      },
+    } : {
+      name: {
+        title: 'Name',
+        value: '',
+        require: true,
+      },
+      email: {
+        title: 'Email',
+        value: '',
+        require: true,
+      },
+      location: {
+        title: 'To',
+        value: 'Tijuana',
+        require: true,
+      },
+      message: {
+        title: 'Message',
         value: '',
         require: true,
       },
@@ -96,6 +119,15 @@ export default class Form1 extends React.Component {
     const msgElement = $('#msg');
     msgElement.removeClass(style.errorCSSClass + ' ' + style.successCSSClass);
     msgElement.html('');
+    const texts = locationUtil.getLang() === 'ES' ? {
+      text1: 'Información enviada de manera exitosa, gracias.',
+      text2: 'Lo sentimos, favor de intentar más tarde.',
+      text3: 'Favor de llenar los campos en rojo.',
+    } : {
+      text1: 'Data successfully sent, thanks.',
+      text2: 'We are sorry, pleas try again later.',
+      text3: 'Please fill in all fields on red.',
+    };
 
     if (isFormValid) {
       this.setState({
@@ -125,21 +157,28 @@ export default class Form1 extends React.Component {
         _this.setState(state);
         msgElement.addClass(response.entity.status ? style.successCSSClass : style.errorCSSClass);
         msgElement.html(response.entity.status ?
-          'Información enviada de manera exitosa, gracias.' :
-          'Lo sentimos, favor de intentar más tarde.');
+          texts.text1 :
+          texts.text2);
       });
     } else {
       msgElement.addClass(style.errorCSSClass);
     }
-    msgElement.html(!isFormValid ? 'Favor de llenar los campos en rojo.' : '');
+    msgElement.html(!isFormValid ? texts.text3 : '');
   }
 
   render() {
     const { name, email, location, message } = this.state.formData;
+    const texts = locationUtil.getLang() === 'ES' ? {
+      text1: 'Cargando',
+      text2: 'Enviar',
+    } : {
+      text1: 'Loading',
+      text2: 'Send',
+    };
 
     return (<form id="form" className={'form-horizontal'}>
         <div className="form-group">
-          <label id="lab_name" className="col-sm-2 control-label">Nombre</label>
+          <label id="lab_name" className="col-sm-2 control-label">{name.title}</label>
           <div className="col-sm-10">
             <input type="text" name="name" onChange={this.onChangeHandler} value={name.value} />
           </div>
@@ -147,7 +186,7 @@ export default class Form1 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_email" className={'col-sm-2 control-label ' + style.title1}>Correo</label>
+          <label id="lab_email" className={'col-sm-2 control-label ' + style.title1}>{email.title}</label>
           <div className="col-sm-10">
             <input type="text" name="email" onChange={this.onChangeHandler} value={email.value}/>
           </div>
@@ -155,7 +194,7 @@ export default class Form1 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_location" className="col-sm-2 control-label">Para</label>
+          <label id="lab_location" className="col-sm-2 control-label">{location.title}</label>
           <div className="col-sm-10">
             <div className={style.styled_select_1}>
               <select name="location" onChange={this.onChangeHandler} value={location.value}>
@@ -169,7 +208,7 @@ export default class Form1 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_message" className="col-sm-2 control-label">Mensaje</label>
+          <label id="lab_message" className="col-sm-2 control-label">{message.title}</label>
           <div className="col-sm-10">
             <textarea name="message" onChange={this.onChangeHandler} value={message.value} />
           </div>
@@ -180,13 +219,13 @@ export default class Form1 extends React.Component {
         <div>
           {
             this.state.showLoading ?
-              (<span className={style.loader}>Cargando</span>)
+              (<span className={style.loader}>{texts.text1}</span>)
               : null
           }
         </div>
         <div className="pull-right">
           <a className={style.d} onClick={this.submitFormHandler}>
-            <div className={style.title}>Enviar</div>
+            <div className={style.title}>{texts.text2}</div>
           </a>
         </div>
       </form>

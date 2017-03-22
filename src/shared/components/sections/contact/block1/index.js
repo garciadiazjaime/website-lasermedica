@@ -2,6 +2,8 @@ import React from 'react';
 
 import Form1 from '../forms/form1';
 import Form2 from '../forms/form2';
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -9,7 +11,7 @@ const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 export default class Block1 extends React.Component {
 
   render() {
-    const { texts } = this.props.data;
+    const { texts } = data[locationUtil.getLang()];
     return (<div className="container-fluid">
       <div className="col-xs-12 col-sm-6">
         <div className="row">
@@ -32,7 +34,3 @@ export default class Block1 extends React.Component {
     </div>);
   }
 }
-
-Block1.propTypes = {
-  data: React.PropTypes.object.isRequired,
-};
