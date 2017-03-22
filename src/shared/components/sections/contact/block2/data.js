@@ -62,7 +62,7 @@ export default {
   EN: {
     texts: {
       text1: 'Locations',
-      text2: 'Open in Google Maps',
+      text2: 'See in Google Maps',
     },
     maps: {
       locationTijuana: {
