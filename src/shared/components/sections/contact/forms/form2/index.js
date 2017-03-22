@@ -3,6 +3,7 @@
 import React from 'react';
 import _ from 'lodash';
 
+import locationUtil from '../../../../../utils/locationUtil';
 const style = process.env.TIER === 'FE' ? require('../../style.scss') : {};
 import restClient from '../../../../../../server/helpers/rest-client';
 
@@ -39,7 +40,7 @@ export default class Form2 extends React.Component {
   }
 
   getInitialFormState() {
-    return {
+    return locationUtil.getLang() === 'ES' ? {
       name2: {
         title: 'Nombre',
         value: '',
@@ -67,6 +68,37 @@ export default class Form2 extends React.Component {
       },
       message2: {
         title: 'Mensaje',
+        value: '',
+        require: true,
+      },
+    } : {
+      name2: {
+        title: 'Name',
+        value: '',
+        require: true,
+      },
+      email2: {
+        title: 'Email',
+        value: '',
+        require: true,
+      },
+      tel2: {
+        title: 'Telephone',
+        value: '',
+        require: true,
+      },
+      location2: {
+        title: 'To',
+        value: 'Tijuana',
+        require: true,
+      },
+      date2: {
+        title: 'Date',
+        value: '',
+        require: true,
+      },
+      message2: {
+        title: 'Procedure of Interest',
         value: '',
         require: true,
       },
@@ -146,10 +178,17 @@ export default class Form2 extends React.Component {
 
   render() {
     const { name2, email2, tel2, location2, date2, message2 } = this.state.formData;
+    const texts = locationUtil.getLang() === 'ES' ? {
+      text1: 'Cargando',
+      text2: 'AGENDAR CITA',
+    } : {
+      text1: 'Loading',
+      text2: 'REQUEST DATE',
+    };
 
     return (<form id="form" className={style.form + ' form-horizontal'}>
         <div className="form-group">
-          <label id="lab_name2" className="col-sm-3 control-label">Nombre</label>
+          <label id="lab_name2" className="col-sm-3 control-label">{name2.title}</label>
           <div className="col-sm-9">
             <input type="text" name="name2" onChange={this.onChangeHandler} value={name2.value} />
           </div>
@@ -157,7 +196,7 @@ export default class Form2 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_email2" className="col-sm-3 control-label">Correo</label>
+          <label id="lab_email2" className="col-sm-3 control-label">{email2.title}</label>
           <div className="col-sm-9">
             <input type="text" name="email2" onChange={this.onChangeHandler} value={email2.value}/>
           </div>
@@ -165,7 +204,7 @@ export default class Form2 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_tel2" className="col-sm-3 control-label">Teléfono</label>
+          <label id="lab_tel2" className="col-sm-3 control-label">{tel2.title}</label>
           <div className="col-sm-9">
             <input type="tel" name="tel2" onChange={this.onChangeHandler} value={tel2.value}/>
           </div>
@@ -173,7 +212,7 @@ export default class Form2 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_location2" className="col-sm-3 control-label">Para</label>
+          <label id="lab_location2" className="col-sm-3 control-label">{location2.title}</label>
           <div className="col-sm-9">
             <div className={style.styled_select2}>
               <select name="location2" onChange={this.onChangeHandler} value={location2.value}>
@@ -187,7 +226,7 @@ export default class Form2 extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_date2" className="col-sm-3 control-label">Fecha</label>
+          <label id="lab_date2" className="col-sm-3 control-label">{date2.title}</label>
           <div className="col-sm-9">
             <input type="text" name="date2" onChange={this.onChangeHandler} value={date2.value} />
           </div>
@@ -196,7 +235,7 @@ export default class Form2 extends React.Component {
 
         <div className="form-group">
           <label id="lab_message2" className="col-sm-10 control-label">
-            Procedimiento de Interés
+            {message2.title}
           </label>
           <div className="col-sm-12 col-sm-offset-1">
             <input type="text" name="message2" onChange={this.onChangeHandler} value={message2.value} />
@@ -208,13 +247,13 @@ export default class Form2 extends React.Component {
         <div>
           {
             this.state.showLoading ?
-              (<span className={style.loader}>Cargando</span>)
+              (<span className={style.loader}>{texts.text1}</span>)
               : null
           }
         </div>
         <div className="pull-right">
           <a className={style.d} onClick={this.submitFormHandler}>
-            <div className={style.title}>AGENDAR CITA</div>
+            <div className={style.title}>{texts.text2}</div>
           </a>
         </div>
       </form>

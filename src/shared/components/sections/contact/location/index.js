@@ -31,11 +31,11 @@ export default class Location extends React.Component {
     return null;
   }
 
-  renderMap(data) {
+  renderMap(data, texts) {
     if (!_.isEmpty(data)) {
       return (<div className={style[data.className]}>
         <a href={data.href} target="_blank">
-          Ver en Google Maps
+          {texts.text2}
         </a>
       </div>
       );
@@ -53,7 +53,7 @@ export default class Location extends React.Component {
         </div>
         <div className="col-sm-6 hidden-xs">
           <div className="row">
-            {this.renderMap(maps[location])}
+            {this.renderMap(maps[location], texts)}
           </div>
         </div>
       </div>);
