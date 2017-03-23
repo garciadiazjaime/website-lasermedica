@@ -36,7 +36,6 @@ locationUtil.getBaseUrl = function () {
 
 locationUtil.getLangByLocation = function (location) {
   const spanishLocations = ['/', '/inicio', '/nosotros', '/equipo', '/servicios', '/contacto'];
-  console.log('spanishLocations', spanishLocations);
   return spanishLocations.indexOf(location) !== -1 ? 'ES' : 'EN';
 };
 
