@@ -1,5 +1,10 @@
+/* eslint max-len: [2, 600, 4] */
 import React from 'react';
 import { Link } from 'react-router';
+
+import data from './data';
+import locationUtil from '../../../../utils/locationUtil';
+
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 
@@ -19,6 +24,7 @@ export default class Addresses extends React.Component {
   }
 
   render() {
+    const content = data[locationUtil.getLang()];
     const itemsEl = this.props.data.map((item, index) => {
       return this.renderAddress(item, index);
     });
@@ -26,8 +32,8 @@ export default class Addresses extends React.Component {
     return (<div>
       <div className="row">
         <div className="col-xs-12">
-          <Link className={style.contactBlock} to="contacto" title="Contáctanos">
-            Contáctanos
+          <Link className={style.contactBlock} to={content.links.link1} title={content.texts.title1}>
+            {content.texts.text2}
           </Link>
         </div>
       </div>

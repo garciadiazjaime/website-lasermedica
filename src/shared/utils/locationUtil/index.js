@@ -1,3 +1,5 @@
+/* eslint max-len: [2, 500, 4] */
+
 const locationUtil = function () {
 };
 
@@ -33,8 +35,13 @@ locationUtil.getBaseUrl = function () {
 };
 
 locationUtil.getLangByLocation = function (location) {
-  const spanishLocations = ['/', '/inicio'];
+  const spanishLocations = ['/', '/inicio', '/nosotros', '/equipo', '/servicios', '/contacto'];
+  console.log('spanishLocations', spanishLocations);
   return spanishLocations.indexOf(location) !== -1 ? 'ES' : 'EN';
+};
+
+locationUtil.isLangEs = function () {
+  return this.lang === 'ES';
 };
 
 export default locationUtil;

@@ -5,6 +5,7 @@ import _ from 'lodash';
 import locationUtil from '../../../../utils/locationUtil';
 import dbServices from '../../../sections/services/db';
 import Cover from './cover';
+import dataTexts from './data';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -43,11 +44,12 @@ export default class ServicesMenu extends React.Component {
 
   render() {
     const servicesData = this.getServicesData(dbServices[locationUtil.getLang()]);
+    const data = dataTexts[locationUtil.getLang()];
     return (<div id="services-menu" className="container-fluid hidden" style={{ position: 'relative' }}>
       <div className={'row ' + style.services_menu}>
           <div className={'col-xs-3 ' + style.leftPanel}>
-            <h3>Nuestros Servicios</h3>
-            <p>Conoce nuestros servicios y descubre cómo podemos ayudarte.</p>
+            <h3>{data.texts.text1}</h3>
+            <p>{data.texts.text2}</p>
             <div className="bgImage" />
           </div>
           <Cover data={servicesData} />

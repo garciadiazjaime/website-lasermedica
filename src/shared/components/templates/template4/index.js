@@ -1,11 +1,14 @@
+/* eslint max-len: [2, 1000, 4] */
 import React from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
 
-
-const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 import Repeat from '../../elements/repeat';
 import Template5 from '../template5';
+import dbData from './data';
+import locationUtil from '../../../utils/locationUtil';
+
+const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
 // **************** Services Blocks rendered on Service Landing Page
 export default class Template4 extends React.Component {
@@ -32,6 +35,7 @@ export default class Template4 extends React.Component {
         </div>);
       case 'LIST':
         const { classes, texts, href, children } = data;
+        const content = dbData[locationUtil.getLang()];
         const childrenData = children.map((item) => {
           return {
             title: item.title,
@@ -43,8 +47,8 @@ export default class Template4 extends React.Component {
               <div className={style[classes.class1] + ' ' + style.service + ' img-responsive'}>
               </div>
               { this.renderContent(texts) }
-              <Link to={'/contacto' + href} title={href} className={style[classes.class2]}>
-                AGENDAR CITA
+              <Link to={content.links.link1 + href} title={content.texts.text1} className={style[classes.class2]}>
+                {content.texts.text1}
               </Link>
             </div>
             <div className="col-xs-12 col-sm-5 col-sm-offset-0">

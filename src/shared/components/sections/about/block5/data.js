@@ -46,23 +46,23 @@ export default {
     },
     links: {
       link1: {
-        href: '/contacto/agendar-cita',
-        title: 'AGENDAR CITA',
+        href: '/contact/agendar-cita',
+        title: 'REQUEST A DATE',
       },
       link2: {
-        href: '/servicios',
-        title: 'VER SERVICIOS ',
+        href: '/services',
+        title: 'SEE SERVICES',
       },
       link3: {
-        href: '/ubicacion/tijuana',
+        href: '/location/tijuana',
         title: 'Tijuana',
       },
       link4: {
-        href: '/ubicacion/ensenada',
+        href: '/location/ensenada',
         title: 'Ensenada',
       },
       link5: {
-        href: '/ubicacion/mexicali',
+        href: '/location/mexicali',
         title: 'Mexicali',
       },
     },

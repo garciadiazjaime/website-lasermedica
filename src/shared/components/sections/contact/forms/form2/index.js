@@ -52,7 +52,7 @@ export default class Form2 extends React.Component {
         require: true,
       },
       tel2: {
-        title: 'Tel&eacute;fono',
+        title: 'Teléfono',
         value: '',
         require: true,
       },
@@ -183,7 +183,7 @@ export default class Form2 extends React.Component {
       text2: 'AGENDAR CITA',
     } : {
       text1: 'Loading',
-      text2: 'REQUEST DATE',
+      text2: 'SEND',
     };
 
     return (<form id="form" className={style.form + ' form-horizontal'}>

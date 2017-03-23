@@ -18,8 +18,8 @@ export default {
     },
     links: {
       link1: {
-        href: '/servicios',
-        title: 'VER SERVICIOS',
+        href: '/services',
+        title: 'SEE SERVICES',
       },
     },
   },
