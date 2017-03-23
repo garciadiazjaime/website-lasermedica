@@ -98,7 +98,7 @@ export default class ServiceInner extends React.Component {
     const bits = pathname.split('/');
     const category = '/' + bits[2];
     const service = bits[3] ? '/' + bits[3] : null;
-    const defaultSection = locationUtil.getLang === 'ES' ? '/servicios' : '/services';
+    const defaultSection = locationUtil.getLang() === 'ES' ? '/servicios' : '/services';
     const params = this.getDefaultValues(servicesData[locationUtil.getLang()], defaultSection, category, service);
     const data = this.getData(category, params.service);
     const categoryUrl = [params.section, params.category].join('');
