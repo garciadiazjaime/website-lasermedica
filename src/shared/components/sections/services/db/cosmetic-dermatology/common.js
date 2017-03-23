@@ -6,6 +6,6 @@ module.exports = {
     class2: 'btn8red',
   },
   texts: {
-    text1: 'Dermatología Cosmética',
+    text1: 'Cosmetic Dermatology',
   },
 };
