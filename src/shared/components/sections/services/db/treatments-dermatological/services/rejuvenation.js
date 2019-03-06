@@ -56,9 +56,4 @@ module.exports = [{
     title: 'Nanopore Turbo Roller',
     href: '/services/cosmetic-dermatology/nanopore-turbo-roller',
   }],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'SCHEDULE APPOINTMENT',
-  href: '/contact/rejuvenation',
 }];

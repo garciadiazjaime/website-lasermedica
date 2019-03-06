@@ -42,7 +42,7 @@ export default class ServiceInner extends React.Component {
     if (_.isArray(data) && data.length) {
       const serviceData = this.getServiceData(data, categoryUrl);
 
-      if (_.isArray(serviceData.children) && serviceData.children.length) {
+      if (serviceData && _.isArray(serviceData.children) && serviceData.children.length) {
         return serviceData.children.map((item, index) => {
           let className = '';
           const activeClass = style.active;

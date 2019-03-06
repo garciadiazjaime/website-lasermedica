@@ -43,9 +43,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Se realizan de manera tópica comenzando por limpiar y exfoliar la piel, después se aplica el tratamiento específico para cada tipo de piel a través de un masaje que relaja en el rostro, cuello y hombros para terminar con una mascarilla y así completar el tratamiento. Se recomienda que se haga esto una vez al mes.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/faciales',
 }];

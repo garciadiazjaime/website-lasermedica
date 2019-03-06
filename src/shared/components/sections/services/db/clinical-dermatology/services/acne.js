@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -29,6 +28,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Oral antibiotics are usually prescribed in the treatment of moderate to severe acne, especially in cases where topical treatment had no effect and also if the patient suffers from acne in large areas of the body. Some of the oral antibiotics include tetracycline, doxycycline, erythromycin, azithromycin, minocycline and clindamycin. Other systemic medications that the doctor might prescribe are isotretinoin and hormones, depending on the case.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/acne',
-})];
+}];

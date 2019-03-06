@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -58,6 +57,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'There are several treatments depending on the cause of alopecia. After a medical assessment, the doctor will indicate the most appropriate treatment according to the type of alopecia and may use various shampoos, hair lotions, steroid infiltration, dietary supplements, hormonal treatments, etc.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/alopecia',
-})];
+}];

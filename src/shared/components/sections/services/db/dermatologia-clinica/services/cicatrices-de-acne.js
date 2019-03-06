@@ -59,9 +59,4 @@ module.exports = [{
     'Radiofrecuencia',
     'Rellenos dérmicos',
   ],
-}, {
-  type: 'link',
-  className: 'btn7orange',
-  text: 'AGENDAR CITA',
-  href: '/contacto/cicatrices-de-acne',
 }];

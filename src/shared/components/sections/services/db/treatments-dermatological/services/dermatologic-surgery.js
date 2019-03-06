@@ -23,9 +23,4 @@ module.exports = [{
     'Skin cancer',
     'Scars',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'SCHEDULE APPOINTMENT',
-  href: '/contact/dermatologic-surgery',
 }];

@@ -18,9 +18,4 @@ module.exports = [{
   items: [
     'Q-switched laser Nd:YAG',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'SCHEDULE APPOINTMENT',
-  href: '/contact/tattoo-removal',
 }];

@@ -41,9 +41,4 @@ module.exports = [{
     'En láser médica contamos con el mejor equipo técnico y médico, este tratamiento se realiza a través de la emisión de haces luminosos que penetran en la piel provocando lesiones microscópicas las cuales regenera la dermis y activan el colágeno que tensa la piel y por lo tanto obtiene una apariencia más joven y tersa.',
     'Te invitamos a conocer nuestras instalaciones y demás tratamientos dermatológicos, nuestros expertos te ayudarán a encontrar el tratamiento indicado para lucir una piel excelente.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/laser-co2-fraccionado',
 }];

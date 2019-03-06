@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -21,6 +20,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'In Lasermedica we use the best techniques to eliminate soft fibromas in a radical way so we can improve our patient\'s image; using lasers, electrocauterization and / or cutting, depending on the specific needs of each case.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/soft-fibroma',
-})];
+}];

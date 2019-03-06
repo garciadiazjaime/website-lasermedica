@@ -13,10 +13,6 @@ export default {
         href: '',
         title: 'ENVIAR',
       },
-      link2: {
-        href: '',
-        title: 'AGENDAR CITA',
-      },
     },
   },
   EN: {
@@ -30,10 +26,6 @@ export default {
       link1: {
         href: '',
         title: 'SEND',
-      },
-      link2: {
-        href: '',
-        title: 'SCHEDULE APPOINTMENT',
       },
     },
   },

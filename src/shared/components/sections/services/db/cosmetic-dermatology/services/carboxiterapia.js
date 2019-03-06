@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -31,6 +30,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Through a very small needle, Co2 is injected. The Co2 is stored in a tank similar to the oxygen tank. The machine will be monitored by our team of professions, so they can regulate the flow of CO2 and the percentage necessary for the treatment. This can last for about 40 minutes, giving visible results almost instantly.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/carboxiterapia',
-})];
+}];

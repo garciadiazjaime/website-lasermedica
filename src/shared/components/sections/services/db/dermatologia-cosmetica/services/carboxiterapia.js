@@ -41,9 +41,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'A través de una aguja muy pequeña se transmite el CO2 que se encuentra resguardado en un tanque similar al tanque de oxígeno, la máquina será monitoreada por nuestro equipo profesional para regular el flujo del CO2 y el porcentaje necesario para que el tratamiento se realice correctamente durante la sesión; esta puede durar alrededor de 40 minutos, dando resultados visibles casi al instante.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/carboxiterapia',
 }];

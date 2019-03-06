@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -30,6 +29,4 @@ module.exports = [{
     'This laser stimulates the production of collagen, also creating a protective layer on the skin, returning its natural tone, giving it a fresher and smoother appearance.',
     'It is important to mention that the erbium laser works on all skin types, although it is necessary for one of our experts to perform an assessment to indicate the treatment that offers the best results for you.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/fractionated-erbium-laser',
-})];
+}];

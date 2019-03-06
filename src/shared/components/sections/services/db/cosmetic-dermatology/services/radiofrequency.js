@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -33,6 +32,4 @@ module.exports = [{
     'Radiofrequency is a non-invasive, non-aggressive system with instant recovery. This novelty technique works through the emission of heat which causes the facial tissue to regenerate. This small heat pulsations stimulate the production of collagen, toning and improving the contour of the face.',
     'Depending on the type of skin and the patient\'s needs, our experts will determine the number of sessions required to achieve the desired results, so we invite you to have an assessment with our staff.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/radiofrequency',
-})];
+}];

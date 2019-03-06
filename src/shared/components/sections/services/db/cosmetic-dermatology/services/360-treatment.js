@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -35,6 +34,4 @@ module.exports = [{
     'The IPL (Intense Pulsed Light) gets rid of discolored skin patches, visibly improving its appearance, this is because the light beam it emits destroys the pigment that cause these spots. And finally, Radiofrequency therapy helps tighten the skin, it induces the production of collagen.',
     'We invite you to make an appointment with us to help you choose the specific treatment for your skin. In Lasermedica we care about having the latest technology and offering the best service to our patients.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/360-treatment',
-})];
+}];

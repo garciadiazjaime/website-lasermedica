@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -26,6 +25,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'It\'s an outpatient procedure without the need for incisions and only using local anesthesia. The sutures are placed by needles in the subcutaneous tissue, with a depth of 5 mm, generating the tension we need for the redefinition of the face. Subsequent to the application there may be slight inflammation and small sinkage at the sites of insertion which disappear within a few days.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/silhouette-soft-sutures',
-})];
+}];

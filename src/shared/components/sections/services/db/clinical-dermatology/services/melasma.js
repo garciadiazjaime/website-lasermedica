@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -39,6 +38,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'We invite you to visit our facilities so that our experts guide you to the treatment indicated for your specific case and thus obtain a radiant and healthy skin.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/melasma',
-})];
+}];

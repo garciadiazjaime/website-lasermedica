@@ -25,9 +25,4 @@ module.exports = [{
     'Ablative Laser (CO2)',
     'Surgery',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'SCHEDULE APPOINTMENT',
-  href: '/contacto/treatment-keloid',
 }];

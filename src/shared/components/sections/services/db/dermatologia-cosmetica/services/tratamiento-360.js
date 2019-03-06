@@ -46,9 +46,4 @@ module.exports = [{
     'Y por último, la terapia de radiofrecuencia ayuda a dar firmeza a la piel, induce a la producción de colágeno mejorando también los contornos del rostro.',
     'Te invitamos a hacer una cita con nosotros para ayudarte a elegir el tratamiento específico para tu piel, en Láser médica nos preocupamos por tener tecnología de punta y ofrecer el mejor servicio a nuestros clientes.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/tratamiento-360',
 }];

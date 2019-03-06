@@ -34,9 +34,4 @@ module.exports = [{
     'Tratamiento con medicamento.',
     'Intervención quirúrgica.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7orange',
-  text: 'AGENDAR CITA',
-  href: '/contacto/molusco-contagioso',
 }];

@@ -9,6 +9,7 @@ export default class ContactSection extends React.Component {
     // todo: considered params (service, location)
     return (<div>
       <Block1 />
+      <br />
       <Block2 />
     </div>);
   }

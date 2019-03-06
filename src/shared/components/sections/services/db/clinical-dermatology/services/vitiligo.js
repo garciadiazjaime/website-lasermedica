@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -18,6 +17,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'There are different types of treatments to deal with vitiligo, some are topical medications, others are oral, ultraviolet treatment and grafts. It is important to take into account the instructions given by the doctor, because the improvement of this condition depends on them. In Lasermedica we know that each case is different, so we invite you to consult with our specialists to clarify your doubts about your skin\'s health.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/vitiligo',
-})];
+}];

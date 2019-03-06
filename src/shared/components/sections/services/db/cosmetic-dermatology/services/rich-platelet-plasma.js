@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -29,6 +28,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'This treatment is based on bio-stimulation, as blood is extracted from the patient, centrifuged and plasma rich in autogenous growth factors is obtained, then it is injected into specific areas of the skin, such as the face, neck and hands. In one patient, 3 plasma sessions are performed per year, with an interval of 1 month between the first two sessions and 3 months between the second and third session.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/rich-platelet-plasma',
-})];
+}];

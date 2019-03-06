@@ -24,9 +24,4 @@ module.exports = [{
     'Carboxytherapy',
     'Mesotherapy',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'SCHEDULE APPOINTMENT',
-  href: '/contact/cellulite-treatment',
 }];

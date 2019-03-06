@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -30,6 +29,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'This treatment consists in the application of pulsed light in the area to be treated, which will cause the skin to become clear and recover it\'s freshness. Each session lasts approximately 30 minutes, and it takes usually 4 sessions to start achieving a healthier, fresher skin.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/ipl-vasculight',
-})];
+}];

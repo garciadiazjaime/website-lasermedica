@@ -25,9 +25,4 @@ module.exports = [{
     'Laser ablativo (CO2)',
     'Cirugía',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'AGENDAR CITA',
-  href: '/contacto/tratamiento-cicatrices-queloides',
 }];

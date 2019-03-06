@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -24,6 +23,4 @@ module.exports = [{
     'Depth Control',
     'Safe for all skin types',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/accent-prime',
-})];
+}];

@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -29,6 +28,4 @@ module.exports = [{
     'Each session lasts less than 1 hour; the treatment consists of injecting a sclerosing solution into the vein, which causes the blocked vein - varix - to diminish its color and eventually disappear. It is important to know that for sclerotherapy to be successful it is necessary to perform several sessions to obtain the best possible results.',
     'Sclerotherapy does not require anesthesia and you can return to your normal activities as soon as the session has finished.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/injection-sclerotherapy',
-})];
+}];

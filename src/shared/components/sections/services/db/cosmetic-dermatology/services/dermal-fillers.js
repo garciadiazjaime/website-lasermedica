@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -31,6 +30,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'This treatment is based on injections in specific areas of the face. It is important to note that there are several types of fillers which have different use and a specific area to treat. The treatment takes no more than 30 minutes and topical anesthesia may be used to reduce discomfort. The results are immediate, as well as the recovery and reincorporation into daily activities.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/dermal-fillers',
-})];
+}];

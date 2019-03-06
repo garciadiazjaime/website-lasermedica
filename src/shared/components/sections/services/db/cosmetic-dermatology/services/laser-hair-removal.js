@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -22,6 +21,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'At Lasermedica we have state-of-the-art technology for effective hair removal. Using only appliances from companies that meet FDA quality standards. Our appliances: Soprano Ice of Alma Laser and Vasculight of Lumenis.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/laser-hair-removal',
-})];
+}];

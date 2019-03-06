@@ -32,9 +32,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'En Lasermedica contamos con tecnología de punta para la depilación efectiva del vello. Utilizando solo aparatos de compañías que cumplen con los estándares de calidad, aprobados por la FDA. Nuestros aparatos, Soprano Ice de Alma Laser y Vasculight de Lumenis.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/depilacion-laser',
 }];

@@ -38,9 +38,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Por medio de columnas de láser microscópicas que penetran de manera superficial y profunda a la piel para facilitar el remodelamiento del colágeno. Durante el tratamiento se daña sólo una fracción del tejido, dejando el tejido circundante intacto lo que permite una rápida recuperación. En resumen, Fraxel Dual genera una nueva superficie de la piel, estimulando el crecimiento de nuevas y sanas células desde lo profundo.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/laser-erbium-thulium',
 }];

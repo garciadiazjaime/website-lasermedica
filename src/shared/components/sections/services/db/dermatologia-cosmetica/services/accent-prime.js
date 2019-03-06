@@ -30,9 +30,4 @@ module.exports = [{
     'Control de la profundidad',
     'Seguro para todo tipo de piel',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/accent-prime',
 }];

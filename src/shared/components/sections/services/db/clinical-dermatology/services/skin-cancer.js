@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -26,6 +25,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'The treatment and management will be different depending on the type of cancer, for this a medical examination is required and, if necessary, a biopsy will be performed prior to the definitive treatment. The treatment to remove the skin cancer is by the complete excision of the tumor with surgery, sometimes it is possible to apply topical treatment (on the injury) or to use laser, cryosurgery, electrodesecación, etc.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/skin-cancer',
-})];
+}];

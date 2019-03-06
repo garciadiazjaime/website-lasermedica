@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -59,6 +58,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'The indicated treatment will be according to the type, and state, of the varicose vein. They can be eliminated through injection sclerotherapy or laser. We invite you to click on each one to know how they work.',
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/varicose-veins',
-})];
+}];

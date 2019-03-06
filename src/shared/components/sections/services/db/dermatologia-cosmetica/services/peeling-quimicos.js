@@ -44,9 +44,4 @@ module.exports = [{
     'Previo al tratamiento, se indica el uso de ciertas cremas para preparar la piel y ayudar a que los resultados del peeling sean mejores. Durante la colocación del químico en la piel, es normal sentir un poco de picazón pues los químicos están haciendo efecto en la piel, dejándola rojiza para posteriormente descamarse.',
     'Es importante seguir al pie de la letra las indicaciones de nuestros expertos para lograr que el peeling tenga los mejores resultados posibles y que tu piel luzca radiante.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/peeling-quimicos',
 }];

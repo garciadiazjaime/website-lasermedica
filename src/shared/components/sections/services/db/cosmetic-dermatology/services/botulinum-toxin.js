@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -31,6 +30,4 @@ module.exports = [{
     'It\'s a painless treatment that consists of a series of small injections into the lines of expression around the eyes, frown, forehead and over the lips. It may cause itchiness at the time of the application, but it does not cause disability and the results are visible in just a couple of days. The application is extremely fast and you can resume normal activity immediately after treatment.',
     'We know the importance of having a natural appearance, so in Lasermedica we take care of each session, making sure that our patients are satisfied with their results. We invite you to meet our medical team and other treatments by visiting our facilities.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/botulinum-toxin',
-})];
+}];

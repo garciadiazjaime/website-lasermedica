@@ -48,9 +48,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Mediante el láser se quema la verruga eliminándola totalmente.',
-}, {
-  type: 'link',
-  className: 'btn7orange',
-  text: 'AGENDAR CITA',
-  href: '/contacto/verrugas-vulgares',
 }];

@@ -24,9 +24,4 @@ module.exports = [{
     'Carboxiterapia',
     'Mesoterapia',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'AGENDAR CITA',
-  href: '/contacto/tratamiento-celulitis',
 }];

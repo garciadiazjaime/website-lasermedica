@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -31,6 +30,4 @@ module.exports = [{
     'The Q-switched laser emits heat through a light, which causes the molecules that are present in the pigmentation to fragment and disperse until the spot disappears. The wonderful thing about this laser is that it practically leaves no injuries or scars.',
     'The Q-switched laser can be used in conjunction with other lasers to improve the appearance of the skin. We invite you to learn more about the different treatments we offer in Lasermedica, and also contact us for any questions or to make an appointment with our team of professionals.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/q-switched-laser',
-})];
+}];

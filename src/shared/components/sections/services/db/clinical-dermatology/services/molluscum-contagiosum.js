@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -28,6 +27,4 @@ module.exports = [{
     'Treatment with medication',
     'Surgical intervention',
   ],
-}, _.assign({}, Common.EN.item15, {
-  href: '/contact/molluscum-contagiosum',
-})];
+}];

@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -31,6 +30,4 @@ module.exports = [{
     'In Lasermedica we have the best technical and medical equipment, this treatment is done through the emission of light beams that penetrate the skin causing microscopic lesions that regenerate the dermis and activate the collagen that tightens the skin, obtaining a more youthful and smooth appearance.',
     'We invite you to come and get to know our facilities and other dermatological treatments, our experts will assist you in finding the treatment that will help you achieve excellent skin.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/laser-co2-fractionated',
-})];
+}];

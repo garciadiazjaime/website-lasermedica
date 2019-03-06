@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -33,6 +32,4 @@ module.exports = [{
     'Prior to treatment, we indicate the use of certain creams to prepare the skin. During the application of the chemical on the skin, it is normal to feel a bit itchy because of the effects of the chemicals on the skin, and there will be some redness before the skin eventually peels of',
     'It is important to carefully follow the instructions of our experts to achieve the best results possible and leave with your skin looking radiant.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/chemical-peel',
-})];
+}];

@@ -10,10 +10,6 @@ export default {
       text5: 'Conoce nuestras Ubicaciones',
     },
     links: {
-      link1: {
-        href: '/contacto/agendar-cita',
-        title: 'AGENDAR CITA',
-      },
       link2: {
         href: '/servicios',
         title: 'VER SERVICIOS ',

@@ -25,9 +25,6 @@ export default class Block5 extends React.Component {
             <p className={style.par2}>
               {texts.text3}
             </p>
-            <Link to={links.link1.href} title={links.link1.title} className={style.btn4blue}>
-              {links.link1.title}
-            </Link>
           </div>
         </div>
         <div className="col-xs-12 col-sm-6">

@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -27,6 +26,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Depending on the condition to be treated, we will select the protocol that is most appropriate to each case, proceeding to perform the micro-functions with the Nanopore Turbo-Roller and applying the corresponding active substances. You may experience null or minimal pain during the procedure, slight irritation, no process of cicatrization, with visible results in just a few sessions.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/nanopore-turbo-roller',
-})];
+}];

@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -24,6 +23,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'The treatment lasts up to 30 minutes, depending on the area to be treated and several sessions are performed, depending on the needs of our patient. In the procedure, the laser is damaging the walls of the veins through the heat that it\'s emitting. The veins then shrink and after several sessions may disappear completely.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/laser-sclerotherapy',
-})];
+}];

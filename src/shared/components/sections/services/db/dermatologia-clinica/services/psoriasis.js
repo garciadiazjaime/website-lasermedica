@@ -40,9 +40,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'En láser médica nos preocupamos por tu salud, te invitamos a contactarnos para conocer tus dudas e inquietudes acerca del tratamiento.',
-}, {
-  type: 'link',
-  className: 'btn7orange',
-  text: 'AGENDAR CITA',
-  href: '/contacto/psoriasis',
 }];

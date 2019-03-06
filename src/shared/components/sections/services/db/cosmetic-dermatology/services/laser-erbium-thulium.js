@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -28,6 +27,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'By microscopic laser columns that penetrate the skin, both superficially and deeply, to facilitate the remodeling of collagen. During treatment, only a fraction of the tissue is damaged, leaving surrounding tissue intact, allowing a fast recovery. In short, Fraxel Dual generates a new skin surface, stimulating the growth of new and healthy cells.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/laser-erbium-thulium',
-})];
+}];

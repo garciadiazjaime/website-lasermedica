@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -34,6 +33,4 @@ module.exports = [{
     'In order to take care of your skin and give you optimal results, in Lasermedica we perform from 5 to 10 sessions of microdermabrasion, depending on the condition of the patient\'s skin and the extent of the damage it has. Each session takes about 30 minutes, in which a deep exfoliation is performed, by which dead cells are eliminated, achieving cellular regeneration and collagen production.',
     'Microdermabrasion is a very fast and effective treatment that does not hurt and allows you to resume your daily activities without any complication. There are some recommendations to optimize the results of microdermabrasion, such as avoiding sun exposure, using sunscreen and other tips that our professionals will invite you to follow to make your skin look radiant.',
   ],
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/microdermabrasion',
-})];
+}];

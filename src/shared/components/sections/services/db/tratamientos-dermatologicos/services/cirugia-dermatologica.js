@@ -23,9 +23,4 @@ module.exports = [{
     'Cáncer de piel',
     'Cicatrices',
   ],
-}, {
-  type: 'link',
-  className: 'btn7green',
-  text: 'AGENDAR CITA',
-  href: '/contacto/cirugia-dermatologica',
 }];

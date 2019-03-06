@@ -40,9 +40,4 @@ module.exports = [{
     'Este láser estimula la producción de colágeno, creando también una capa protectora en la piel, devolviendo su tono natural, dándole una apariencia más fresca y lisa.',
     'Es importante mencionar que el láser erbium funciona en todo tipo de pieles, aunque es necesario que uno de nuestros expertos realice una evaluación propia para indicar el tratamiento que ofrezca mejores resultados para ti.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/laser-erbium-fraccionado',
 }];

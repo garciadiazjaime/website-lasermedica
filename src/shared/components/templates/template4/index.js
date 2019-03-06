@@ -1,12 +1,9 @@
 /* eslint max-len: [2, 1000, 4] */
 import React from 'react';
-import { Link } from 'react-router';
 import _ from 'lodash';
 
 import Repeat from '../../elements/repeat';
 import Template5 from '../template5';
-import dbData from './data';
-import locationUtil from '../../../utils/locationUtil';
 
 const style = process.env.TIER === 'FE' ? require('./style.scss') : {};
 
@@ -34,8 +31,7 @@ export default class Template4 extends React.Component {
           </div>
         </div>);
       case 'LIST':
-        const { classes, texts, href, children } = data;
-        const content = dbData[locationUtil.getLang()];
+        const { classes, texts, children } = data;
         const childrenData = children.map((item) => {
           return {
             title: item.title,
@@ -47,9 +43,6 @@ export default class Template4 extends React.Component {
               <div className={style[classes.class1] + ' ' + style.service + ' img-responsive'}>
               </div>
               { this.renderContent(texts) }
-              <Link to={content.links.link1 + href} title={content.texts.text1} className={style[classes.class2]}>
-                {content.texts.text1}
-              </Link>
             </div>
             <div className="col-xs-12 col-sm-5 col-sm-offset-0">
               <div className={'row ' + style[classes.class3] + ' ' + style.pad45}>

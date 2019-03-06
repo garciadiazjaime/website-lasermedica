@@ -35,9 +35,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'El proceso es realizado de manera ambulatoria sin necesidad de incisiones y utilizando sólamente anestesia local. Se colocan las suturas en el tejido subcutáneo por medio de agujas a una profundidad de 5mm generando la tensión para la redefinición del rostro. Posterior a la aplicación puede haber ligera inflamación y pequeñas depresiones en los sitios de inserción los cuales desaparecen a los pocos días después del tratamiento.',
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/silhouette-soft-sutures',
 }];

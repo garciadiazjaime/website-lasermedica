@@ -1,5 +1,4 @@
 /* eslint max-len: [2, 1000, 4] */
-import _ from 'lodash';
 import Common from '../../common';
 
 module.exports = [{
@@ -33,6 +32,4 @@ module.exports = [{
   type: 'text',
   className: '',
   text: 'Facials are a topical treatment, and we start by cleaning and exfoliating the skin, then the specific treatment for each type of skin is applied through a massage that relaxes the face, neck and shoulders. We finish with the application of a mask and thus complete the treatment. It is recommended that facials be done once a month.',
-}, _.assign({}, Common.EN.item4, {
-  href: '/contact/facials',
-})];
+}];

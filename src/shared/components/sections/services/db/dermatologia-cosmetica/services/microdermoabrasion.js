@@ -44,9 +44,4 @@ module.exports = [{
     'Con el afán de cuidar tu piel, en lasermedica realizamos de 5 a 10 sesiones dependiendo de la condición de la piel y la profundidad del daño que tenga, cada sesión dura alrededor de media hora en la que se realiza una exfoliación a profundidad con lo que se eliminan células muertas logrando regeneración celular y producción de colágeno.',
     'La microdermoabrasión es un tratamiento muy rápido y efectivo, que no duele y te permite regresar a tus actividades diarias sin ninguna complicación; existen recomendaciones para optimizar los resultados de la microdermoabrasión, como evitar la exposición solar, utilizar bloqueador y otros consejos que nuestros profesionales te invitarán a seguir para que tu piel luzca radiante.',
   ],
-}, {
-  type: 'link',
-  className: 'btn7red',
-  text: 'AGENDAR CITA',
-  href: '/contacto/microdermoabrasion',
 }];
