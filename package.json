@@ -16,7 +16,11 @@
     "lint": "./node_modules/.bin/eslint --ignore-pattern **/app-*.js, **/**/sprite.js --ext .js,.jsx src",
     "deploy": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "bower": "./node_modules/.bin/bower install",
-    "update": "git push openshift HEAD:master"
+    "update": "git push openshift HEAD:master",
+    "docker:build": "docker build -t garciadiazjaime/website-laserm .",
+    "docker:push": "docker push garciadiazjaime/website-laserm",
+    "doker:pull": "docker pull garciadiazjaime/website-laserm",
+    "docker:deploy": "npm run docker:build && docker:push && echo 'docker pull garciadiazjaime/website-laserm'"
   },
   "author": "",
   "license": "ISC",

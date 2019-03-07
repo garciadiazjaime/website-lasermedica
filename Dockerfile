@@ -10,6 +10,6 @@ WORKDIR /usr/src/app
 
 ADD . /usr/src/app
 
-EXPOSE 3038
+EXPOSE 3030
 
 CMD [ "node", "./lib/server/server.js" ]

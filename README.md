@@ -25,3 +25,11 @@ script(src='http://127.0.0.1:8080/js/app.js', defer)
 /* eslint max-len: [2, 500, 4] */
 
 node version: 4
+
+
+## Docker commands
+
+`docker build -t garciadiazjaime/website-laserm .`
+`docker run -d -p 49168:3038 garciadiazjaime/website-laserm`
+`docker push garciadiazjaime/website-laserm`
+`docker pull garciadiazjaime/website-laserm`
