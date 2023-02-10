@@ -17,7 +17,7 @@
     "deploy": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "bower": "./node_modules/.bin/bower install",
     "update": "git push openshift HEAD:master",
-    "docker:build": "docker build -t garciadiazjaime/website-laserm .",
+    "docker:build": "docker build -t garciadiazjaime/website-laserm . --platform linux/amd64",
     "docker:push": "docker push garciadiazjaime/website-laserm",
     "doker:pull": "docker pull garciadiazjaime/website-laserm",
     "docker:deploy": "npm run docker:build && docker:push && echo 'docker pull garciadiazjaime/website-laserm'"
@@ -42,7 +42,6 @@
     "gulp-copy": "0.0.2",
     "gulp-if": "^2.0.0",
     "gulp-replace": "^0.5.4",
-    "node-sass": "^3.4.2",
     "nodemon": "^1.8.1",
     "react-hot-loader": "^1.3.0",
     "run-sequence": "^1.1.5",

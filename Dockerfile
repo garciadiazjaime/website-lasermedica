@@ -1,4 +1,5 @@
-FROM node:boron
+FROM python:2.7
+FROM node:14.8.0-slim
 
 ADD package.json /tmp/package.json
 
